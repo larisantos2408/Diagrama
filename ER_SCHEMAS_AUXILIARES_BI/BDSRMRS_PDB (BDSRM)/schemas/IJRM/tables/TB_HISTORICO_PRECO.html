@@ -1,0 +1,294 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_HISTORICO_PRECO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_HISTORICO_FILIAL_DADOS.html" TITLE="TB_HISTORICO_FILIAL_DADOS">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_HISTORICO_PRECO">Table TB_HISTORICO_PRECO</A></TD>
+<TD Class="NavR"><A HREF="./TB_HISTORICO_PRECOBK26022019.html" TITLE="TB_HISTORICO_PRECOBK26022019">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_HISTORICO_PRECO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_HISTORICO_PRECO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>VALOR_CNE</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>VALOR_JUCEMG</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>FLAG_SITUACAO_PRECO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>L=liberado(preço em vigor)      B=bloqueado(novo registro de preço)      E=preço que não está mais em vigor</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>VALOR_VIA_ADICIONAL</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Primeiro dia da vigência do preço</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fim da vigência do preço, quando ele não será mais válido . É o primeiro dia da vigência do novo preço.</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>SEQ_EVENTO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">9</TD>
+<TD>SEQ_ATO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">10</TD>
+<TD>SEQ_TIPO_JURIDICO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>SEQ_TIPO_ENQUADRAMENTO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Valores possíveis:  1=ME, 2=EPP ou nulo=NORMAL que é preço sem especificação de porte</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_HISTORICO_PRECO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_HISTORICO_PRECO_ATO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_ATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_HISTORICO_PRECO_TIPO_JURI</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_JURIDICO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_HISTORICO_PRECO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_HISTORICO_PRECO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_HISTORICO_PRECO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_HISTORICO_PRECO_ATO</TD>
+<TD>SEQ_ATO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_ATO" HREF="../tables/TB_ATO.html">TB_ATO</A></TD>
+<TD>SEQ_ATO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_HISTORICO_PRECO_TIPO_JURI</TD>
+<TD>SEQ_TIPO_JURIDICO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_TIPO_JURIDICO" HREF="../tables/TX_TIPO_JURIDICO.html">TX_TIPO_JURIDICO</A></TD>
+<TD>SEQ_TIPO_JURIDICO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_HISTORICO_PRECO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_SEQ_TIPO_ENQUADRAMENTO</TD>
+<TD>Check</TD>
+<TD>SEQ_TIPO_ENQUADRAMENTO IN (1,2)</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_TIPO_ENQUADRAMENTO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010697</TD>
+<TD>Check</TD>
+<TD>"SEQ_HISTORICO_PRECO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_HISTORICO_PRECO</TD>
+</TR>
+<TR>
+<TD>PK_TB_HISTORICO_PRECO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_HISTORICO_PRECO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_HISTORICO_PRECO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,312 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_VOTACAO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_VISUALIZACAO_COMUNICACAO_VERSAO.html" TITLE="TB_VISUALIZACAO_COMUNICACAO_VERSAO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables4.html#TB_VOTACAO">Table TB_VOTACAO</A></TD>
+<TD Class="NavR"><A HREF="./TDB_USUARIO_IJRM.html" TITLE="TDB_USUARIO_IJRM">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_VOTACAO</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Tabela que irá registrar o voto do vogal na análise de processo</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_VOTACAO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_TB_VOTACAO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave Primária</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave Estrangeira para tb_solicitacao</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>DT_VOTACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data que foi realizado o voto.</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">4</TD>
+<TD>DS_RESULTADO</TD>
+<TD nowrap>CHAR(2 BYTE)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Resultado do voto.</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">6</TD>
+<TD>DT_SOLICITACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data do início ou retorno pendência da solicitação.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">7</TD>
+<TD>SEQ_EXAMINADOR_TURMA_VOGAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para tb_examinador_turma_vogal</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>CD_ASSINOU</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>S - Assinou | N - Nao assinou</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>DESC_PARECER</TD>
+<TD nowrap>VARCHAR2(3000 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Parecer do voto, explicando o motivo da pendência ou indeferimento</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">10</TD>
+<TD>DT_CANCELAMENTO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de cancelamento do voto.</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_VOTACAO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_EXAM_TURMA_VOGAL_VOTACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EXAMINADOR_TURMA_VOGAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_SOLICITACAO_VOTACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>SYS_C0013364</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TB_VOTACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>UK_VOTACAO_01</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO, SEQ_EXAMINADOR_TURMA_VOGAL, DS_RESULTADO, DT_CANCELAMENTO, DT_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_VOTACAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_EXAM_TURMA_VOGAL_VOTACAO</TD>
+<TD>SEQ_EXAMINADOR_TURMA_VOGAL</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_EXAMINADOR_TURMA_VOGAL" HREF="../tables/TB_EXAMINADOR_TURMA_VOGAL.html">TB_EXAMINADOR_TURMA_VOGAL</A></TD>
+<TD>SEQ_EXAMINADOR_TURMA_VOGAL</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOLICITACAO_VOTACAO</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_SOLICITACAO" HREF="../tables/TB_SOLICITACAO.html">TB_SOLICITACAO</A></TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_VOTACAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_DS_RESULTADO_01</TD>
+<TD>Check</TD>
+<TD>DS_RESULTADO IN ('DE','PE','IN')</TD>
+<TD>ENABLED</TD>
+<TD>DS_RESULTADO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010708</TD>
+<TD>Check</TD>
+<TD>"SEQ_TB_VOTACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_TB_VOTACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0013363</TD>
+<TD>Check</TD>
+<TD>CD_ASSINOU IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_ASSINOU</TD>
+</TR>
+<TR>
+<TD>SYS_C0013364</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_TB_VOTACAO</TD>
+</TR>
+<TR>
+<TD>UK_VOTACAO_01</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_SOLICITACAO, SEQ_EXAMINADOR_TURMA_VOGAL, DS_RESULTADO, DT_CANCELAMENTO, DT_SOLICITACAO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_VOTACAO does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

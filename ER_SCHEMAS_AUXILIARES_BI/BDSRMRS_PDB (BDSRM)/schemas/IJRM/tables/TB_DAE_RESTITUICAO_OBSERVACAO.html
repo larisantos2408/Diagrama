@@ -1,0 +1,270 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_DAE_RESTITUICAO_OBSERVACAO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_DAE_RESTITUICAO_IMAGEM.html" TITLE="TB_DAE_RESTITUICAO_IMAGEM">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_DAE_RESTITUICAO_OBSERVACAO">Table TB_DAE_RESTITUICAO_OBSERVACAO</A></TD>
+<TD Class="NavR"><A HREF="./TB_DAE_TESTE.html" TITLE="TB_DAE_TESTE">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_DAE_RESTITUICAO_OBSERVACAO</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Armazena as observações ao pedido por parte do usuário do  Portal de Serviços e da Junta Comercial</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_DAE_RESTITUICAO_OBSERVACAO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_DAE_RESTITUICAO_OBSERVACAO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela tb_dae_restituicao_observacao</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_DAE_RESTITUICAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dados do dae a ser restituido. Identificador da tabela ijrm.tb_dae_restituicao (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>DS_OBSERVACAO</TD>
+<TD nowrap>VARCHAR2(4000 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Observações a serem anotadas pelo pedido de restituição tanto do usuário do Portal de Serviços e da Junta Comercial</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Controle de versão do sistema</TD>
+</TR>
+<TR>
+<TD Class="NumRed">5</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Usuário que cadastrou a observação no SRM. Identificador da tabela ijss.tb_usuario (FK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">6</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Usuário que cadastrou a observação no Portal de Serviços. Identificador da tabela portal_servicos.seq_tb_usuarioportal (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DT_OBSERVACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data que foi cadastrada a observação</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_DAE_RESTITUICAO_OBSERVACAO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_DAERESTOBS_SEQDAEREST</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_DAE_RESTITUICAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_DAERESTOBS_SEQUSUARIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_DAERESTOBS_SEQUSUARIOPORTA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_DAE_RESTITUICAO_OBSERVACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_DAE_RESTITUICAO_OBSERVACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_DAE_RESTITUICAO_OBSERVACAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_DAERESTOBS_DAERESTITUICAO</TD>
+<TD>SEQ_DAE_RESTITUICAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_DAE_RESTITUICAO" HREF="../tables/TB_DAE_RESTITUICAO.html">TB_DAE_RESTITUICAO</A></TD>
+<TD>SEQ_DAE_RESTITUICAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_DAERESTOBS_USUARIO</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>IJSS</TD>
+<TD>TB_USUARIO</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_DAERESTOBS_USUARIOPORTAL</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+<TD>PORTAL_SERVICOS</TD>
+<TD>TB_USUARIOPORTAL</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_DAE_RESTITUICAO_OBSERVACAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0010569</TD>
+<TD>Check</TD>
+<TD>"SEQ_DAE_RESTITUICAO_OBSERVACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_DAE_RESTITUICAO_OBSERVACAO</TD>
+</TR>
+<TR>
+<TD>PK_DAE_RESTITUICAO_OBSERVACAO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_DAE_RESTITUICAO_OBSERVACAO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_DAE_RESTITUICAO_OBSERVACAO does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

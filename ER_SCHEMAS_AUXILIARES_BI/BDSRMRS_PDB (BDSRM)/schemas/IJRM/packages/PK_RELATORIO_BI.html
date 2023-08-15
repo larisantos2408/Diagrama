@@ -1,0 +1,1060 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Package PK_RELATORIO_BI</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./PK_RELATORIO.html" TITLE="PK_RELATORIO">Prior Package</A></TD>
+<TD Class="NavC">Package PK_RELATORIO_BI</TD>
+<TD Class="NavR"><A HREF="./PK_RELATORIO_SRM.html" TITLE="PK_RELATORIO_SRM">Next Package</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Objects and Arguments for Package PK_RELATORIO_BI</CAPTION>
+<TR>
+<TH>Object Name</TH>
+<TH>Overload</TH>
+<TH>Argument Name</TH>
+<TH>Position</TH>
+<TH>Datatype</TH>
+<TH>Direction</TH>
+</TR>
+<TR>
+<TD>R_ABERTURA_EMPRESAS_BH</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ABERTURA_EMPRESAS_BH</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ABERTURA_EMPRESAS_BH</TD>
+<TD>&nbsp;</TD>
+<TD>PCD_VISAO</TD>
+<TD Class="Num">3</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ABERTURA_EMPRESAS_BH</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ANALISE_DOCUMENTOS</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ANALISE_DOCUMENTOS</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ANALISE_DOCUMENTOS</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">3</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ANALISE_REGISTROS</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ANALISE_REGISTROS</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ANALISE_REGISTROS</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">3</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_CALCULA_TEMPO_MEDIO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_CALCULA_TEMPO_MEDIO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_CALCULA_TEMPO_MEDIO</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_CALCULA_TEMPO_MEDIO</TD>
+<TD>&nbsp;</TD>
+<TD>PMOVIMENTO</TD>
+<TD Class="Num">4</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_CALCULA_TEMPO_MEDIO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">5</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_DOCUMENTOS_POR_SETOR</TD>
+<TD>&nbsp;</TD>
+<TD>PDT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_DOCUMENTOS_POR_SETOR</TD>
+<TD>&nbsp;</TD>
+<TD>PDT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_DOCUMENTOS_POR_SETOR</TD>
+<TD>&nbsp;</TD>
+<TD>PDIAS</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_DOCUMENTOS_POR_SETOR</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_DOCUMENTOS_POR_SETOR</TD>
+<TD>&nbsp;</TD>
+<TD>PSITSOLIC</TD>
+<TD Class="Num">5</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_DOCUMENTOS_POR_SETOR</TD>
+<TD>&nbsp;</TD>
+<TD>PTRAMITACAO</TD>
+<TD Class="Num">6</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_DOCUMENTOS_POR_SETOR</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">7</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_ARQUIVAMENTO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_ARQUIVAMENTO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_ARQUIVAMENTO</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_ARQUIVAMENTO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_ARRECADACAO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_ARRECADACAO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_ARRECADACAO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">3</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_CANCEL_REATIV</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_CANCEL_REATIV</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_CANCEL_REATIV</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_CANCEL_REATIV</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_CERTIDAO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_CERTIDAO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_CERTIDAO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">3</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_CONSTITUICAOMEI</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_CONSTITUICAOMEI</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_CONSTITUICAOMEI</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">3</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_EMPRESAS_ME_EPP</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_EMPRESAS_ME_EPP</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_EMPRESAS_ME_EPP</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_EMPRESAS_ME_EPP</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_EMPRESAS_MEI</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_EMPRESAS_MEI</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_EMPRESAS_MEI</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_EMPRESAS_MEI</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_MICROEMPRESA</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_MICROEMPRESA</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_MICROEMPRESA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_MICROEMPRESA</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_MOV_FILIAIS</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_MOV_FILIAIS</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_MOV_FILIAIS</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_MOV_FILIAIS</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_OUTRO_SERVICO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_OUTRO_SERVICO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_OUTRO_SERVICO</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_OUTRO_SERVICO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_PEQUENO_PORTE</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_PEQUENO_PORTE</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_PEQUENO_PORTE</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_PEQUENO_PORTE</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_PROT_EXIGENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_PROT_EXIGENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_PROT_EXIGENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_PROT_EXIGENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_TRANSFERENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_TRANSFERENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_TRANSFERENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_TRANSFERENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTAT_MENSAL_VALOR_CNE</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_VALOR_CNE</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTAT_MENSAL_VALOR_CNE</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">3</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_LIVROS_APROVADOS_ORIGEM</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_LIVROS_APROVADOS_ORIGEM</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_LIVROS_APROVADOS_ORIGEM</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_LIVROS_APROVADOS_ORIGEM</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">4</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_LIVROS_PROTOC_ORIGEM_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_LIVROS_PROTOC_ORIGEM_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_LIVROS_PROTOC_ORIGEM_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_LIVROS_PROTOC_ORIGEM_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PRETORNO</TD>
+<TD Class="Num">4</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_LIVROS_PROTOC_ORIGEM_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">5</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_PROCESSOS_APROVADOS</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PROCESSOS_APROVADOS</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PROCESSOS_APROVADOS</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PROCESSOS_APROVADOS</TD>
+<TD>&nbsp;</TD>
+<TD>PDS_FORMATRAB</TD>
+<TD Class="Num">4</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PROCESSOS_APROVADOS</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">5</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_PROCESSOS_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PROCESSOS_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PROCESSOS_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PROCESSOS_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PDS_FORMATRAB</TD>
+<TD Class="Num">4</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PROCESSOS_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PRETORNO</TD>
+<TD Class="Num">5</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PROCESSOS_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">6</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_PRODUCAO_POR_ANALISTA</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_ANALISTA</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_ANALISTA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_ANALISTA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDANALISTA</TD>
+<TD Class="Num">4</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_ANALISTA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_USUARIO</TD>
+<TD Class="Num">5</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_ANALISTA</TD>
+<TD>&nbsp;</TD>
+<TD>PDS_FORMATRAB</TD>
+<TD Class="Num">6</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_ANALISTA</TD>
+<TD>&nbsp;</TD>
+<TD>PDS_RESULTADO</TD>
+<TD Class="Num">7</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_ANALISTA</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">8</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_PRODUCAO_POR_AUTENTICADOR</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_AUTENTICADOR</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_AUTENTICADOR</TD>
+<TD>&nbsp;</TD>
+<TD>PDS_FORMATRAB</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_AUTENTICADOR</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_TIPOLIVRO</TD>
+<TD Class="Num">4</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_AUTENTICADOR</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">5</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_AUTENTICADOR</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDANALISTA</TD>
+<TD Class="Num">6</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_AUTENTICADOR</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_USUARIO</TD>
+<TD Class="Num">7</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_PRODUCAO_POR_AUTENTICADOR</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">8</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_RANKING_MOTIVO_PENDENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>PDT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RANKING_MOTIVO_PENDENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>PDT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RANKING_MOTIVO_PENDENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>PTIPOSOLICITACAO</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RANKING_MOTIVO_PENDENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">4</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RANKING_MOTIVO_PENDENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_USUARIO</TD>
+<TD Class="Num">5</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RANKING_MOTIVO_PENDENCIA</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">6</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_SITUACAO_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_INICIO</TD>
+<TD Class="Num">1</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_SITUACAO_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PDAT_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_SITUACAO_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_SITUACAO_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PTIPOSOLIC</TD>
+<TD Class="Num">4</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_SITUACAO_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>PRETORNO</TD>
+<TD Class="Num">5</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_SITUACAO_PROTOC_RETORNO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">6</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

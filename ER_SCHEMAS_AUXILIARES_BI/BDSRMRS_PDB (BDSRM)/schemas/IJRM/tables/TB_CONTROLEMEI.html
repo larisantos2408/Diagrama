@@ -1,0 +1,264 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_CONTROLEMEI</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_CONTROLE_DBE.html" TITLE="TB_CONTROLE_DBE">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_CONTROLEMEI">Table TB_CONTROLEMEI</A></TD>
+<TD Class="NavR"><A HREF="./TB_CONTROLE_SERVICO.html" TITLE="TB_CONTROLE_SERVICO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_CONTROLEMEI</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_CONTROLEMEI</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_EMPRESA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>DT_PROCESSAMENTO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Data em que o XML foi processado</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>NU_SEQUENCIAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Sequencial de envio geral do MDIC</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>NU_SEQUENCIALUF</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Sequencial de envio para nossa UF</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>NU_SEQUENCIALNIRE</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Sequencial do arquivamento na empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>DS_IPCONTRIBUINTE</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>IP da máquina do contribuinte. Este dado é enviado no XML</TD>
+</TR>
+<TR>
+<TD Class="NumRed">9</TD>
+<TD>DS_IDENTIFICADOR</TD>
+<TD nowrap>VARCHAR2(55 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">10</TD>
+<TD>SEQ_FILIAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo que indica qual filial da empresa está sendo criada/alterada</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>NU_PROTOCOLO_REDESIM</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do protocolo do REDESIM.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_CONTROLEMEI</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONTROLEMEI_DSIDENTIFICADO</TD>
+<TD>NORMAL</TD>
+<TD>DS_IDENTIFICADOR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONTROLEMEI_SEQEMPRESA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONTROLEMEI_SEQFILIAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_FILIAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONTROLEMEI_SEQSOLICITACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_CONTROLEMEI</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_CONTROLEMEI</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_CONTROLEMEI</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0011021</TD>
+<TD>Check</TD>
+<TD>"SEQ_EMPRESA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_EMPRESA</TD>
+</TR>
+<TR>
+<TD>SYS_C0011022</TD>
+<TD>Check</TD>
+<TD>"DT_PROCESSAMENTO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DT_PROCESSAMENTO</TD>
+</TR>
+<TR>
+<TD>PK_TB_CONTROLEMEI</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_CONTROLEMEI</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_CONTROLEMEI does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,384 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_HISTORICO_FILIAL_DADOS</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_HISTORICO_EMPRESA.html" TITLE="TB_HISTORICO_EMPRESA">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_HISTORICO_FILIAL_DADOS">Table TB_HISTORICO_FILIAL_DADOS</A></TD>
+<TD Class="NavR"><A HREF="./TB_HISTORICO_PRECO.html" TITLE="TB_HISTORICO_PRECO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_HISTORICO_FILIAL_DADOS</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Tabela para armazer as alterações dos campos das filiais</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_HISTORICO_FILIAL_DADOS</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_HISTORICO_FILIAL_DADOS</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_historico_filial_dados (PK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_FILIAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_filial (FK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_EMPRESA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_empresa (FK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>SEQ_PAIS</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tx_pais (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>DT_ALTERACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Data de alteração da ijrm.tb_filial</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>DS_ENDERECO_EXTERIOR</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descrição do Endereço no Exterior</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>NM_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do logradouro da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>NM_TIPO_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(36 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tipo do logradouro da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>NU_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do logradouro da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>DS_COMPLEMENTO_ENDERECO</TD>
+<TD nowrap>VARCHAR2(156 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Complemento do endereço da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>NM_BAIRRO</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do Bairro da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>NU_CEP</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CEP (Código de Endereçamento Postal)</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>VR_CAPITAL_SOCIAL</TD>
+<TD nowrap>NUMBER(19,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Valor do Capital Social</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Versão do registro</TD>
+</TR>
+<TR>
+<TD Class="NumRed">15</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tx_municipio (FK)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_HISTORICO_FILIAL_DADOS</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_HISTORICOFILIALDADOS_SEQEMPRESA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_HISTORICOFILIALDADOS_SEQFILIAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_FILIAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_HISTORICOFILIALDADOS_SEQMUNICIPIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_HISTORICOFILIALDADOS_SEQPAIS</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_PAIS</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_HISTORICO_FILIAL_DADOS</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_HISTORICO_FILIAL_DADOS</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_HISTORICO_FILIAL_DADOS</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_HISTORICOFILIALDADOS_EMPRESA</TD>
+<TD>SEQ_EMPRESA</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_EMPRESA" HREF="../tables/TB_EMPRESA.html">TB_EMPRESA</A></TD>
+<TD>SEQ_EMPRESA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_HISTORICOFILIALDADOS_FILIAL</TD>
+<TD>SEQ_FILIAL</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_FILIAL" HREF="../tables/TB_FILIAL.html">TB_FILIAL</A></TD>
+<TD>SEQ_FILIAL</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_HISTORICOFILIALDADOS_MUNICIPIO</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_MUNICIPIO" HREF="../tables/TX_MUNICIPIO.html">TX_MUNICIPIO</A></TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_HISTORICOFILIALDADOS_PAIS</TD>
+<TD>SEQ_PAIS</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_PAIS" HREF="../tables/TX_PAIS.html">TX_PAIS</A></TD>
+<TD>SEQ_PAIS</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_HISTORICO_FILIAL_DADOS</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0031681</TD>
+<TD>Check</TD>
+<TD>"SEQ_HISTORICO_FILIAL_DADOS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_HISTORICO_FILIAL_DADOS</TD>
+</TR>
+<TR>
+<TD>SYS_C0031682</TD>
+<TD>Check</TD>
+<TD>"SEQ_FILIAL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_FILIAL</TD>
+</TR>
+<TR>
+<TD>SYS_C0031683</TD>
+<TD>Check</TD>
+<TD>"SEQ_EMPRESA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_EMPRESA</TD>
+</TR>
+<TR>
+<TD>SYS_C0031684</TD>
+<TD>Check</TD>
+<TD>"DT_ALTERACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DT_ALTERACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0031685</TD>
+<TD>Check</TD>
+<TD>"VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_HISTORICO_FILIAL_DADOS</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_HISTORICO_FILIAL_DADOS</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_HISTORICO_FILIAL_DADOS does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

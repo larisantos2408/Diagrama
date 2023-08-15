@@ -1,0 +1,331 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_LOG_INTEGRADORESTADUAL</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_LOG_ESTATISTICA.html" TITLE="TB_LOG_ESTATISTICA">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables3.html#TB_LOG_INTEGRADORESTADUAL">Table TB_LOG_INTEGRADORESTADUAL</A></TD>
+<TD Class="NavR"><A HREF="./TB_LOG_PROCESSO_ALTERADO.html" TITLE="TB_LOG_PROCESSO_ALTERADO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_LOG_INTEGRADORESTADUAL</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Registra logs do integrador estadual</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_LOG_INTEGRADORESTADUAL</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_LOG_INTEGRADORESTADUAL</B></TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_log_integradorestadual (PK)</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>NU_CNPJ</TD>
+<TD nowrap>VARCHAR2(14 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do CNPJ do empreendimento enviado para chamar o serviço</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>NU_RECIBO_CADSINC</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do eecibo do CADSINC enviado para chamar o serviço</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>CD_IDENTIFICADOR_CADSINC</TD>
+<TD nowrap>VARCHAR2(14 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indentificador do cadsinc enviado para chamar o serviço</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>CL_XML_ENVIO</TD>
+<TD nowrap>CLOB</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>XML enviado.  Status Viabilidade: 01-Aprovada 02-Não Aprovada  Resultado Análises Nome/End: 00-Deferida 01-Indeferida 02-Não verificada 03-AtoLegado</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>CL_XML_RESPOSTA</TD>
+<TD nowrap>CLOB</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>XML de resposta enviado pelo órgão conveniado</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DS_ERRO</TD>
+<TD nowrap>CLOB</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Loga a pilha de erros do java</TD>
+</TR>
+<TR>
+<TD Class="NumRed">8</TD>
+<TD>CD_SERVICO</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Código do serviço solicitado</TD>
+</TR>
+<TR>
+<TD Class="NumRed">9</TD>
+<TD>DT_ENVIO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de envio para órgão conveniado</TD>
+</TR>
+<TR>
+<TD Class="NumRed">10</TD>
+<TD>SEQ_TX_ORGAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Orgão no qual a solicitação foi enviada. Identificador da tabela ijrm.tx_orgao (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Versão para controle de concorrência</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>CD_RESPOSTA_SERVICO</TD>
+<TD nowrap>VARCHAR2(3 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Código do resultado do serviço, sendo o valores:
+       NOK
+       OK </TD>
+</TR>
+<TR>
+<TD Class="NumRed">13</TD>
+<TD>NU_PROTOCOLO_VIABILIDADE</TD>
+<TD nowrap>VARCHAR2(13 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do protocolo da viabilidade enviado para chamar o serviço.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_LOG_INTEGRADORESTADUAL</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_LOGINTEGRADORESTADUAL_ORGAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TX_ORGAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LOGINTEGRADOR_CDIDENTCADSI</TD>
+<TD>NORMAL</TD>
+<TD>CD_IDENTIFICADOR_CADSINC</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LOGINTEGRADOR_CDSERVICO</TD>
+<TD>NORMAL</TD>
+<TD>CD_SERVICO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LOGINTEGRADOR_DTENVIO</TD>
+<TD>NORMAL</TD>
+<TD>DT_ENVIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LOGINTEGRADOR_NUPROTOVIABI</TD>
+<TD>NORMAL</TD>
+<TD>NU_PROTOCOLO_VIABILIDADE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LOGINTEGRADOR_NURECCADSINC</TD>
+<TD>NORMAL</TD>
+<TD>NU_RECIBO_CADSINC</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_LOG_INTEGRADORESTADUAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_LOG_INTEGRADORESTADUAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_LOG_INTEGRADORESTADUAL</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_LOGINTEGRADORESTADUAL_ORGAO</TD>
+<TD>SEQ_TX_ORGAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_ORGAO" HREF="../tables/TX_ORGAO.html">TX_ORGAO</A></TD>
+<TD>SEQ_ORGAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_LOG_INTEGRADORESTADUAL</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0011554</TD>
+<TD>Check</TD>
+<TD>"SEQ_LOG_INTEGRADORESTADUAL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_LOG_INTEGRADORESTADUAL</TD>
+</TR>
+<TR>
+<TD>PK_LOG_INTEGRADORESTADUAL</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_LOG_INTEGRADORESTADUAL</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_LOG_INTEGRADORESTADUAL does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

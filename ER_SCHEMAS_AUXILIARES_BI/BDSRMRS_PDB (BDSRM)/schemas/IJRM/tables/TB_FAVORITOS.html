@@ -1,0 +1,166 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_FAVORITOS</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_EXAMINADOR_TURMA_VOGAL.html" TITLE="TB_EXAMINADOR_TURMA_VOGAL">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_FAVORITOS">Table TB_FAVORITOS</A></TD>
+<TD Class="NavR"><A HREF="./TB_FERIADO.html" TITLE="TB_FERIADO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_FAVORITOS</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Tabela que armazena páginas favoritas dos usuários</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_FAVORITOS</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_FAVORITOS</B></TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela tb_favoritos (PK)</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>NM_PAGINA</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome da página mais usada pelo usuario</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador do usuário do ijss.tb_usuario (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>controle de versão</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_FAVORITOS</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_FAVORITOS</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_FAVORITOS</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_FAVORITOS</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0010702</TD>
+<TD>Check</TD>
+<TD>"SEQ_FAVORITOS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_FAVORITOS</TD>
+</TR>
+<TR>
+<TD>PK_TB_FAVORITOS</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_FAVORITOS</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_FAVORITOS does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

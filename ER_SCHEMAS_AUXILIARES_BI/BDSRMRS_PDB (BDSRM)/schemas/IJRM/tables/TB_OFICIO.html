@@ -1,0 +1,420 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_OFICIO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_NOTIFICACAOSERVICORFB.html" TITLE="TB_NOTIFICACAOSERVICORFB">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables3.html#TB_OFICIO">Table TB_OFICIO</A></TD>
+<TD Class="NavR"><A HREF="./TB_OFICIO_BLOQUEIO.html" TITLE="TB_OFICIO_BLOQUEIO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_OFICIO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_OFICIO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>NUM_OFICIO</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>NUM_PROTOCOLO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>DT_CADASTRAMENTO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>DT_OFICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>DT_POSTAGEM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>NOME_REQUERENTE</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>DESC_OFICIO</TD>
+<TD nowrap>VARCHAR2(1700 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>TIPO_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(36 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>NOME_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>NUM_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>COMPLEMENTO_ENDERECO</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>BAIRRO</TD>
+<TD nowrap>VARCHAR2(72 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>CEP</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>CPF_MULTIVALOR</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>NOME_PESSOA_FISICA_MULTIVALOR</TD>
+<TD nowrap>VARCHAR2(550 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>NIRE_MULTIVALOR</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>NOME_EMPRESA_MULTIVALOR</TD>
+<TD nowrap>VARCHAR2(550 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>DT_RESPOSTA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>NUM_OFICIO_RESPOSTA</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">23</TD>
+<TD>SEQ_FORMA_ENVIO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>DESC_OFICIO_RESPOSTA</TD>
+<TD nowrap>VARCHAR2(500 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">25</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_OFICIO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_OFICIO_FORMA_ENVIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_FORMA_ENVIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_OFICIO_SOLICITACO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_NUM_PROT_OFICIO</TD>
+<TD>NORMAL</TD>
+<TD>NUM_PROTOCOLO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>I_NUM_OFICIO</TD>
+<TD>NORMAL</TD>
+<TD>NUM_OFICIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_OFICIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_OFICIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_OFICIO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_OFICIO_FORMA_ENVIO</TD>
+<TD>SEQ_FORMA_ENVIO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_FORMA_ENVIO_OFICIO" HREF="../tables/TX_FORMA_ENVIO_OFICIO.html">TX_FORMA_ENVIO_OFICIO</A></TD>
+<TD>SEQ_FORMA_ENVIO_OFICIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_OFICIO_SOLICITACO</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_SOLICITACAO" HREF="../tables/TB_SOLICITACAO.html">TB_SOLICITACAO</A></TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_OFICIO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0010750</TD>
+<TD>Check</TD>
+<TD>"NUM_OFICIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NUM_OFICIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010751</TD>
+<TD>Check</TD>
+<TD>"NUM_PROTOCOLO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NUM_PROTOCOLO</TD>
+</TR>
+<TR>
+<TD>PK_TB_OFICIO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_OFICIO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_OFICIO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

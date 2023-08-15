@@ -1,0 +1,651 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJSS Table TB_USUARIO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJSS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:56</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_UNIDADE_USUARIO_LIBER.html" TITLE="TB_UNIDADE_USUARIO_LIBER">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_USUARIO">Table TB_USUARIO</A></TD>
+<TD Class="NavR"><A HREF="./TB_USUARIO_GRUPO_USUARIO.html" TITLE="TB_USUARIO_GRUPO_USUARIO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_USUARIO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_USUARIO</B></TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela TB_USUARIO (PK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>LOGIN</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Login de acesso </TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>SENHA</TD>
+<TD nowrap>VARCHAR2(256 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Senha de acesso</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>NOME</TD>
+<TD nowrap>VARCHAR2(256 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do usuário</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>EMAIL</TD>
+<TD nowrap>VARCHAR2(256 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>email do usuario</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>COD_USUARIO</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Login do último usuário que alterou o registro</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DAT_MOVIMENTACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de registro</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Controle de versão do sistema</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>TELEFONE</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Telefone do usuário</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>COD_UNIDADE</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Lançado o sq_funcionario da dba_dnrc.funcionario</TD>
+</TR>
+<TR>
+<TD Class="NumRed">11</TD>
+<TD>FLG_STATUS</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>A = ativo   B = bloqueado   E = excluído</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>DAT_SENHA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de alteração da senha</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>FOTO</TD>
+<TD nowrap>BLOB</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Foto do usuario</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>ASSINATURA</TD>
+<TD nowrap>BLOB</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Assinatura do usuário</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>HR_JORNADA_TRABALHO</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Jornada de trabalho do usuario</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela INTEGRADORV2.TX_MUNICIPIO (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>NOME_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do logradouro</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>TIPO_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tipo de logradouro</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>COMPLEMENTO_ENDERECO</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Complemento do endereço</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>NUM_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do logradouro</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>BAIRRO</TD>
+<TD nowrap>VARCHAR2(72 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do bairro</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>CEP</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CEP</TD>
+</TR>
+<TR>
+<TD Class="NumRed">23</TD>
+<TD>SEQ_UNIDADE</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela INTEGRADORV2.TB_UNIDADE (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>FLG_FUNCIONARIO_DED</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>CPF</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>SENHA_JOSSO</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>senha utilizada pelo novo portal</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela INTEGRADORV2.TB_TIPO_LOGRADOURO (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>SQ_FUNC_SIARCO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>CO_VOGAL_SIARCO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>DT_CADASTRO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>SYSDATE</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>CD_CONVENIADO</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo que indica se o usuário foi cadastrado pelos conveniados que receberam autonomia para gerir os usuários dos conveniados, prefeitura, sefaz , visa, semad,bombeiro e etc.</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>SEQ_USUARIO_AUD</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Usuário que efetuou a última alteração no registro</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>DT_ULTIMO_LOGIN</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data do último login do usuário. Campo criado no dia 22/05/2019 e populado com a data da criação.</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>CD_USUARIO_INVEST</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identifica se o usuário é do invest. Valores posíveis: S=SIM, N=NÃO A=Ambos(usuario da junta e do invest).</TD>
+</TR>
+<TR>
+<TD Class="NumRed">35</TD>
+<TD>SEQ_CARGO_PESSOA_RESPONSAVEL_INVEST</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave Estrangeira para a tabela invest.TB_CARGO_PESSOA_RESPONSAVEL_INVEST</TD>
+</TR>
+<TR>
+<TD Class="NumRed">36</TD>
+<TD>SEQ_DEPARTAMENTO_INVEST</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave Estrangeira para a tabela invest.TB_DEPARTAMENTO_INVEST</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>CD_USUARIO_LU</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identifica se o Usuário é do Licenciamento Unificado. Valores posíveis: S=SIM, N=NÃO A=Ambos(usuario da junta e do invest). DF e HMG</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>SEQ_DEPARTAMENTO_LU</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>fk para LICENCIAMENTO_UNIFICADO.TB_DEPARTAMENTO_LU</TD>
+</TR>
+<TR>
+<TD Class="NumRed">39</TD>
+<TD>SEQ_CARGO_PESSOA_RESPONSAVEL_LU</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>fk para LICENCIAMENTO_UNIFICADO.TB_CARGO_PESSOA_RESPONSAVEL_LU</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>CD_IGNORA_RELATORIO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identifica se é para ignorar o usuário na geração de relatórios</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>CD_BUSCA_PROCESSO_AUTOMATICAMENTE_PRE_ANALISE</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identifica se o usuário esta com a busca de processo automatica na pre-analise ativada (S) ou desativada (N)</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>CD_BUSCA_PROCESSO_AUTOMATICAMENTE_ANALISE</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identifica se o usuário esta com a busca de processo automatica na analise ativada (S) ou desativada (N)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_USUARIO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_USUARIO_SEQCARGOPESSOARESPONSAVELINVEST</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_CARGO_PESSOA_RESPONSAVEL_INVEST</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_USUARIO_SEQCARGOPESSOARESPONSAVELLU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_CARGO_PESSOA_RESPONSAVEL_LU</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_USUARIO_SEQDEPARTAMENTOINVEST</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_DEPARTAMENTO_INVEST</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_USUARIO_SEQSTATUS_SEQUSUARIO</TD>
+<TD>NORMAL</TD>
+<TD>FLG_STATUS, SEQ_USUARIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_USUARIO_SEQUNIDADE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_UNIDADE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX$$_033F0002</TD>
+<TD>NORMAL</TD>
+<TD>NOME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_USUARIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>UK_USUARIO</TD>
+<TD>NORMAL</TD>
+<TD>LOGIN</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_USUARIO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_USUARIO_CARGOPESSOARESPONSAVELINVEST</TD>
+<TD>SEQ_CARGO_PESSOA_RESPONSAVEL_INVEST</TD>
+<TD>INVEST</TD>
+<TD>TB_CARGO_PESSOA_RESPONSAVEL_INVEST</TD>
+<TD>SEQ_CARGO_PESSOA_RESPONSAVEL_INVEST</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_USUARIO_DEPARTAMENTOINVEST</TD>
+<TD>SEQ_DEPARTAMENTO_INVEST</TD>
+<TD>INVEST</TD>
+<TD>TB_DEPARTAMENTO_INVEST</TD>
+<TD>SEQ_DEPARTAMENTO_INVEST</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_USUARIO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_BUSCA_PROCESSO_AUTOMATICAMENTE_ANALISE</TD>
+<TD>Check</TD>
+<TD>CD_BUSCA_PROCESSO_AUTOMATICAMENTE_ANALISE IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_BUSCA_PROCESSO_AUTOMATICAMENTE_ANALISE</TD>
+</TR>
+<TR>
+<TD>CK_CD_BUSCA_PROCESSO_AUTOMATICAMENTE_PRE_ANALISE</TD>
+<TD>Check</TD>
+<TD>CD_BUSCA_PROCESSO_AUTOMATICAMENTE_PRE_ANALISE IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_BUSCA_PROCESSO_AUTOMATICAMENTE_PRE_ANALISE</TD>
+</TR>
+<TR>
+<TD>CK_CD_IGNORA_RELATORIO</TD>
+<TD>Check</TD>
+<TD>CD_IGNORA_RELATORIO IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_IGNORA_RELATORIO</TD>
+</TR>
+<TR>
+<TD>CK_CD_USUARIO_INVEST</TD>
+<TD>Check</TD>
+<TD>CD_USUARIO_INVEST IN ('S','N','A')</TD>
+<TD>ENABLED</TD>
+<TD>CD_USUARIO_INVEST</TD>
+</TR>
+<TR>
+<TD>CK_CD_USUARIO_LU</TD>
+<TD>Check</TD>
+<TD>CD_USUARIO_LU IN ('S','N','A')</TD>
+<TD>ENABLED</TD>
+<TD>CD_USUARIO_LU</TD>
+</TR>
+<TR>
+<TD>SYS_C0011527</TD>
+<TD>Check</TD>
+<TD>"SEQ_USUARIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_USUARIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0011528</TD>
+<TD>Check</TD>
+<TD>"LOGIN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>LOGIN</TD>
+</TR>
+<TR>
+<TD>SYS_C0011529</TD>
+<TD>Check</TD>
+<TD>"SENHA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SENHA</TD>
+</TR>
+<TR>
+<TD>SYS_C0011530</TD>
+<TD>Check</TD>
+<TD>"NOME" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NOME</TD>
+</TR>
+<TR>
+<TD>SYS_C0011531</TD>
+<TD>Check</TD>
+<TD>"EMAIL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>EMAIL</TD>
+</TR>
+<TR>
+<TD>SYS_C0011532</TD>
+<TD>Check</TD>
+<TD>"FLG_STATUS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLG_STATUS</TD>
+</TR>
+<TR>
+<TD>PK_USUARIO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_USUARIO</TD>
+</TR>
+<TR>
+<TD>UK_USUARIO</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>LOGIN</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_USUARIO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

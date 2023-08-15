@@ -1,0 +1,560 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_LIVRO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_LEILOEIRO.html" TITLE="TB_LEILOEIRO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables3.html#TB_LIVRO">Table TB_LIVRO</A></TD>
+<TD Class="NavR"><A HREF="./TB_LIVROMIGRACAO.html" TITLE="TB_LIVROMIGRACAO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_LIVRO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_EMPRESA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>NUM_ORDEM</TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>QTD_PAGINAS</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">5</TD>
+<TD>DT_AUTENTICACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">6</TD>
+<TD>SEQ_ESPECIE</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">7</TD>
+<TD>SEQ_SUBESPECIE</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">8</TD>
+<TD>SEQ_TIPO_LIVRO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>SEQ_USUARIO_AUT</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">10</TD>
+<TD><B>SEQ_LIVRO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>DT_INICIO_ESCRITURACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>DT_FIM_ESCRITURACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>SITUACAO_LIVRO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">15</TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>DESC_TERMO</TD>
+<TD nowrap>VARCHAR2(300 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>NUM_OBRA</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>FUNDO_INVESTIMENTO</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">19</TD>
+<TD>SEQ_FILIAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>HASH</TD>
+<TD nowrap>VARCHAR2(40 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>HASH_SUB</TD>
+<TD nowrap>VARCHAR2(40 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>DT_INICIORETIFICACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>DT_FIMRETIFICACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">25</TD>
+<TD>NUM_AUTENTICACAO</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>DS_OBSERVACAO</TD>
+<TD nowrap>VARCHAR2(1000 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo que descreve observações que saíram do fluxo normal de aprovação de livro. Como por exemplo livro de sped que sai da ordem ou livro vindo de cartório.</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>CD_EXTRAVIADO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Marca se o livro foi extraviado = S=SIM ou N=NÃO.</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>CD_LIVRO_BRANCO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Marca se o é livro em branco. Valores: S=SIM ou N=NÃO.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_LIVRO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_LIVRO_SUBESPECIE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SUBESPECIE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_TBLIVRO_AGENTEAUXILIAR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_SEQ_SOLICITACAO_LIVRO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LIVRO_DTAUTENTICACAO</TD>
+<TD>NORMAL</TD>
+<TD>DT_AUTENTICACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LIVRO_NUMAUTENTICACAO</TD>
+<TD>NORMAL</TD>
+<TD>NUM_AUTENTICACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LIVRO_SEQ_EMPRESA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LIVRO_SEQ_FILIAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_FILIAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LIVRO_SEQ_TIPO_LIVRO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_LIVRO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LIVRO_SOL_TIP_ESPE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO, SEQ_TIPO_LIVRO, SEQ_ESPECIE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_LIVRO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_LIVRO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>SE_ESPECIE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_ESPECIE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_LIVRO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_LIVRO_ESPECIE</TD>
+<TD>SEQ_ESPECIE</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_ESPECIE_LIVRO" HREF="../tables/TX_ESPECIE_LIVRO.html">TX_ESPECIE_LIVRO</A></TD>
+<TD>SEQ_ESPECIE_LIVRO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_LIVRO_SUBESPECIE</TD>
+<TD>SEQ_SUBESPECIE</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_SUBESPECIE_LIVRO" HREF="../tables/TX_SUBESPECIE_LIVRO.html">TX_SUBESPECIE_LIVRO</A></TD>
+<TD>SEQ_SUBESPECIE_LIVRO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_LIVRO_TIPO_LIVRO</TD>
+<TD>SEQ_TIPO_LIVRO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_TIPO_LIVRO" HREF="../tables/TX_TIPO_LIVRO.html">TX_TIPO_LIVRO</A></TD>
+<TD>SEQ_TIPO_LIVRO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_TB_FILIAL_TB_LIVRO</TD>
+<TD>SEQ_FILIAL</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_FILIAL" HREF="../tables/TB_FILIAL.html">TB_FILIAL</A></TD>
+<TD>SEQ_FILIAL</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_TBLIVRO_AGENTEAUXILIAR</TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_AGENTEAUXILIAR" HREF="../tables/TB_AGENTEAUXILIAR.html">TB_AGENTEAUXILIAR</A></TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_TB_LIVRO_SOLICITACAO</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_SOLICITACAO" HREF="../tables/TB_SOLICITACAO.html">TB_SOLICITACAO</A></TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_LIVRO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_EXTRAVIADO</TD>
+<TD>Check</TD>
+<TD>CD_EXTRAVIADO IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXTRAVIADO</TD>
+</TR>
+<TR>
+<TD>CK_TBLIVRO_CD_LIVRO_BRANCO</TD>
+<TD>Check</TD>
+<TD>CD_LIVRO_BRANCO IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_LIVRO_BRANCO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010675</TD>
+<TD>Check</TD>
+<TD>"SEQ_SOLICITACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_SOLICITACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010676</TD>
+<TD>Check</TD>
+<TD>"SEQ_LIVRO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_LIVRO</TD>
+</TR>
+<TR>
+<TD>PK_TB_LIVRO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_LIVRO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_LIVRO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

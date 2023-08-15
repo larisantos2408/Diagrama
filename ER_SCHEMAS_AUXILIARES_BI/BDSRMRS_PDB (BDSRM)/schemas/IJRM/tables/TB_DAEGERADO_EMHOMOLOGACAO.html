@@ -1,0 +1,454 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_DAEGERADO_EMHOMOLOGACAO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_DAE.html" TITLE="TB_DAE">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_DAEGERADO_EMHOMOLOGACAO">Table TB_DAEGERADO_EMHOMOLOGACAO</A></TD>
+<TD Class="NavR"><A HREF="./TB_DAEPROCESSADOERRO.html" TITLE="TB_DAEPROCESSADOERRO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_DAEGERADO_EMHOMOLOGACAO</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Daes gerados no banco de homologação por erro no apontamento do sistema Integrador</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_DAEGERADO_EMHOMOLOGACAO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="Num">1</TD>
+<TD>SEQ_DAEONLINE</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>SEQ_TIPO_LOGRADOUROREQ</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>SEQ_MUNICIPIOREQ</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>SEQ_UFREQ</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>SEQ_MUNICIPIOEMP</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>NU_DAE</TD>
+<TD nowrap>VARCHAR2(14 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DT_EMISSAODAE</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>NM_EMPRESA</TD>
+<TD nowrap>VARCHAR2(200 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>NM_REQUERENTE</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>NU_CNPJREQ</TD>
+<TD nowrap>VARCHAR2(14 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>NU_CPFREQ</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>NU_CEPREQ</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>NM_LOGRADOUROREQ</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>NU_LOGRADOUROREQ</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>DS_COMPLEMENTOREQ</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>NU_TELEFONEREQ</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>CD_BARRA</TD>
+<TD nowrap>VARCHAR2(60 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>NU_NIREEMP</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>NU_CNPJEMP</TD>
+<TD nowrap>VARCHAR2(14 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>VR_TOTAL</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>FLAG_DADOS_INCOMPLETOS</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>SEQ_EMPRESA</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>FLAG_ATO_NAO_DIGITALIZADO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>SEQ_ATO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>SEQ_TIPO_DAEAVULSO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>QT_VIAADICIONAL</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>QT_ATO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>VR_JUCEMG</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>DS_BAIRROREQ</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>VR_CNE</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>NU_NIREFILIAL</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>NU_CNPJFILIAL</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">35</TD>
+<TD>VR_VIAPOSTAL</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>NM_LEILOEIRO_TRADUTOR</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>MT_LEILOEIRO_TRADUTOR</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>SEQ_DAEMENU</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>NU_PROCESSOFCNREMP</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>DS_OBSERVACAO</TD>
+<TD nowrap>VARCHAR2(2000 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>DT_VALIDADE</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">43</TD>
+<TD>NU_PROTOCOLO_CERTIDAOWEB</TD>
+<TD nowrap>VARCHAR2(13 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">44</TD>
+<TD>DT_GRAVACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>sysdate</TD>
+<TD>data de gravacao do registro</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_DAEGERADO_EMHOMOLOGACAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0010965</TD>
+<TD>Check</TD>
+<TD>"SEQ_DAEONLINE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_DAEONLINE</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_DAEGERADO_EMHOMOLOGACAO does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Indexes</TD>
+</TR>
+<TR>
+<TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

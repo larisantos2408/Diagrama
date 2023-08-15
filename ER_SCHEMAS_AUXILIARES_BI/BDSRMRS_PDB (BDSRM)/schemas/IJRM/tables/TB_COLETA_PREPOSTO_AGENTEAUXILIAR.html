@@ -1,0 +1,855 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_COLETA_PREPOSTO_AGENTEAUXILIAR</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_COLETA_AGENTEAUXILIAR.html" TITLE="TB_COLETA_AGENTEAUXILIAR">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_COLETA_PREPOSTO_AGENTEAUXILIAR">Table TB_COLETA_PREPOSTO_AGENTEAUXILIAR</A></TD>
+<TD Class="NavR"><A HREF="./TB_COMUNICACAO_JUNTA_COMERCIAL.html" TITLE="TB_COMUNICACAO_JUNTA_COMERCIAL">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_COLETA_PREPOSTO_AGENTEAUXILIAR</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>TABELA PARA COLETA DE DADOS DO PREPOSTO DO AGENTE AUXILIAR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_COLETA_PREPOSTO_AGENTEAUXILIAR</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_COLETA_PREPOSTO_AGENTEAUXILIAR</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave primária</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_COLETA_AGENTEAUXILIAR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para IJRM.TB_COLETA_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_UF_ORGAO_EXPEDIDOR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para IJRM.TX_UF</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>SEQ_UF</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para da UF residencial para IJRM.TX_UF</TD>
+</TR>
+<TR>
+<TD Class="NumRed">5</TD>
+<TD>SEQ_UF_COMERCIAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira da UF comercial para IJRM.TX_UF</TD>
+</TR>
+<TR>
+<TD Class="NumRed">6</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para IJRM.TX_TIPO_LOGRADOURO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">7</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para IJRM.TX_MUNICIPIO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">8</TD>
+<TD>SEQ_MUNICIPIO_COMERCIAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira do município comercial para IJRM.TX_MUNICIPIO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">9</TD>
+<TD>SEQ_TIPO_LOGRADOURO_COMERCIAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para IJRM.TX_TIPO_LOGRADOURO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">10</TD>
+<TD>SEQ_ATO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para IJRM.TB_ATO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">11</TD>
+<TD>SEQ_NACIONALIDADE</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para IJRM.TX_NACIONALIDADE</TD>
+</TR>
+<TR>
+<TD Class="NumRed">12</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para PORTAL_SERVICOS.TB_USUARIOPORTAL</TD>
+</TR>
+<TR>
+<TD Class="NumRed">13</TD>
+<TD>SEQ_REPOSITORIO_CERTIDAO_ESPECIFICA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira da imagem de certidão para IJRM.TB_REPOSITORIO_IMAGEM</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>CD_TIPO_COLETA</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Informa o tipo de coleta </TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>CD_RECADASTRAMENTO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Informa se é recadastramento ou não</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>NM_PREPOSTO_AGENTEAUXILIAR</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do preposto</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>NU_CPF</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número de CPF</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>NU_RG</TD>
+<TD nowrap>VARCHAR2(18 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número de RG</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>DT_NASCIMENTO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de nascimento</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>DS_PROFISSAO</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Profissão</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>NM_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do logradouro</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>NU_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do logradouro</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>DS_COMPLEMENTO_ENDERECO</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Complemento do endereço</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>DS_BAIRRO_DISTRITO</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do bairro ou distrito</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>NU_CEP</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Cep</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>NM_LOGRADOURO_COMERCIAL</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do logradouro comercial</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>NU_LOGRADOURO_COMERCIAL</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do logradouro comercial</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>DS_COMPLEMENTO_ENDERECO_COMERCIAL</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Complemento do endereço comercial</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>DS_BAIRRO_DISTRITO_COMERCIAL</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do bairro ou distrito comercial</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>NU_CEP_COMERCIAL</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Cep comercial</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>NU_DDD_TELEFONE</TD>
+<TD nowrap>VARCHAR2(2 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>DDD do telefone</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>NU_TELEFONE</TD>
+<TD nowrap>VARCHAR2(9 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do telefone</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>NU_DDD_CELULAR</TD>
+<TD nowrap>VARCHAR2(2 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>DDD do celular</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>NU_CELULAR</TD>
+<TD nowrap>VARCHAR2(9 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do celular</TD>
+</TR>
+<TR>
+<TD Class="Num">35</TD>
+<TD>DS_EMAIL</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Email</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Data de início da inserção </TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de remoção da inserção</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Versão da inserção</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>NU_DDD_TELEFONE_COMERCIAL</TD>
+<TD nowrap>VARCHAR2(2 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>DDD do telefone comercial</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>NU_TELEFONE_COMERCIAL</TD>
+<TD nowrap>VARCHAR2(9 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do telefone comercial</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>NU_DDD_CELULAR_COMERCIAL</TD>
+<TD nowrap>VARCHAR2(2 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>DDD do celular comercial</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>NU_CELULAR_COMERCIAL</TD>
+<TD nowrap>VARCHAR2(9 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do celular comercial</TD>
+</TR>
+<TR>
+<TD Class="Num">43</TD>
+<TD>DS_SITE</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Link para o site</TD>
+</TR>
+<TR>
+<TD Class="Num">44</TD>
+<TD>NU_PORTARIA_NOMEACAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número da portaria de nomeação</TD>
+</TR>
+<TR>
+<TD Class="Num">45</TD>
+<TD>DT_PUBLICACAO_PORTARIA_NOMEACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de publicação da portaria de nomeação</TD>
+</TR>
+<TR>
+<TD Class="Num">46</TD>
+<TD>DS_LOCAL_ASSINATURA</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Local de assinatura</TD>
+</TR>
+<TR>
+<TD Class="Num">47</TD>
+<TD>DT_ASSINATURA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data da assinatura</TD>
+</TR>
+<TR>
+<TD Class="Num">48</TD>
+<TD>NM_ORGAO_EXPEDIDOR</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do orgão expeditor do documento</TD>
+</TR>
+<TR>
+<TD Class="Num">49</TD>
+<TD>NM_PAI</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do pai</TD>
+</TR>
+<TR>
+<TD Class="Num">50</TD>
+<TD>NM_MAE</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome da mãe</TD>
+</TR>
+<TR>
+<TD Class="Num">51</TD>
+<TD>NU_PROTOCOLO</TD>
+<TD nowrap>VARCHAR2(13 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do protocolo do processo de coleta de preposto do agente auxiliar.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_COLETA_PREPOSTO_AGENTEAUXILIAR</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQATO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_ATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQCOLETAAGENTEAUXILIAR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_COLETA_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQMUNICIPIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQMUNICIPIOCOMERCIAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_MUNICIPIO_COMERCIAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQNACIONALIDADE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_NACIONALIDADE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQREPOSITORIOCERTIDAOESPECIFICA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_REPOSITORIO_CERTIDAO_ESPECIFICA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQTIPOLOGRADOURO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQTIPOLOGRADOUROCOMERCIAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_LOGRADOURO_COMERCIAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQUF</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_UF</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQUFCOMERCIAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_UF_COMERCIAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQUFORGAOEXPEDIDOR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_UF_ORGAO_EXPEDIDOR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAPREPOSTOAGENTEAUXILIAR_SEQUSUARIOPORTAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_COLETA_PREPOSTO_AGENTEAUXILIAR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_COLETA_PREPOSTO_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_COLETA_PREPOSTO_AGENTEAUXILIAR</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_ATO</TD>
+<TD>SEQ_ATO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_ATO" HREF="../tables/TB_ATO.html">TB_ATO</A></TD>
+<TD>SEQ_ATO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_COLETA_AGENTEAUXILIAR</TD>
+<TD>SEQ_COLETA_AGENTEAUXILIAR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_COLETA_AGENTEAUXILIAR" HREF="../tables/TB_COLETA_AGENTEAUXILIAR.html">TB_COLETA_AGENTEAUXILIAR</A></TD>
+<TD>SEQ_COLETA_AGENTEAUXILIAR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_MUNICIPIO</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_MUNICIPIO" HREF="../tables/TX_MUNICIPIO.html">TX_MUNICIPIO</A></TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_MUNICIPIOCOMERCIAL</TD>
+<TD>SEQ_MUNICIPIO_COMERCIAL</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_MUNICIPIO" HREF="../tables/TX_MUNICIPIO.html">TX_MUNICIPIO</A></TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_NACIONALIDADE</TD>
+<TD>SEQ_NACIONALIDADE</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_NACIONALIDADE" HREF="../tables/TX_NACIONALIDADE.html">TX_NACIONALIDADE</A></TD>
+<TD>SEQ_NACIONALIDADE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_REPOSITORIOCERTIDAOESPECIFICA</TD>
+<TD>SEQ_REPOSITORIO_CERTIDAO_ESPECIFICA</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_REPOSITORIO_IMAGEM" HREF="../tables/TB_REPOSITORIO_IMAGEM.html">TB_REPOSITORIO_IMAGEM</A></TD>
+<TD>SEQ_REPOSITORIO_IMAGEM</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_TIPOLOGRADOURO</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_TIPO_LOGRADOURO" HREF="../tables/TX_TIPO_LOGRADOURO.html">TX_TIPO_LOGRADOURO</A></TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_TIPOLOGRADOUROCOMERCIAL</TD>
+<TD>SEQ_TIPO_LOGRADOURO_COMERCIAL</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_TIPO_LOGRADOURO" HREF="../tables/TX_TIPO_LOGRADOURO.html">TX_TIPO_LOGRADOURO</A></TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_UF</TD>
+<TD>SEQ_UF</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_UF" HREF="../tables/TX_UF.html">TX_UF</A></TD>
+<TD>SEQ_UF</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_UFCOMERCIAL</TD>
+<TD>SEQ_UF_COMERCIAL</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_UF" HREF="../tables/TX_UF.html">TX_UF</A></TD>
+<TD>SEQ_UF</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_UFORGAOEXPEDIDOR</TD>
+<TD>SEQ_UF_ORGAO_EXPEDIDOR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_UF" HREF="../tables/TX_UF.html">TX_UF</A></TD>
+<TD>SEQ_UF</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAPREPOSTOAGENTEAUXILIAR_USUARIOPORTAL</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+<TD>PORTAL_SERVICOS</TD>
+<TD>TB_USUARIOPORTAL</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_COLETA_PREPOSTO_AGENTEAUXILIAR</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_COLETAPREPOSTOAGENTEAUXILIAR_CD_RECADASTRAMENTO</TD>
+<TD>Check</TD>
+<TD>CD_RECADASTRAMENTO IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_RECADASTRAMENTO</TD>
+</TR>
+<TR>
+<TD>CK_COLETAPREPOSTOAGENTEAUXILIAR_CD_TIPO_COLETA</TD>
+<TD>Check</TD>
+<TD>CD_TIPO_COLETA IN ('L','T')</TD>
+<TD>ENABLED</TD>
+<TD>CD_TIPO_COLETA</TD>
+</TR>
+<TR>
+<TD>SYS_C0030948</TD>
+<TD>Check</TD>
+<TD>"SEQ_COLETA_PREPOSTO_AGENTEAUXILIAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_COLETA_PREPOSTO_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0030949</TD>
+<TD>Check</TD>
+<TD>"SEQ_COLETA_AGENTEAUXILIAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_COLETA_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0030956</TD>
+<TD>Check</TD>
+<TD>"DT_INICIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DT_INICIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0030957</TD>
+<TD>Check</TD>
+<TD>"VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_COLETA_PREPOSTO_AGENTEAUXILIAR</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_COLETA_PREPOSTO_AGENTEAUXILIAR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_COLETA_PREPOSTO_AGENTEAUXILIAR does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

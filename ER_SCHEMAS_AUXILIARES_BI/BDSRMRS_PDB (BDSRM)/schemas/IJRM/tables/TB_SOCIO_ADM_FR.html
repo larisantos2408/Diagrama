@@ -1,0 +1,681 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_SOCIO_ADM_FR</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_SOCIO_ADM.html" TITLE="TB_SOCIO_ADM">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables4.html#TB_SOCIO_ADM_FR">Table TB_SOCIO_ADM_FR</A></TD>
+<TD Class="NavR"><A HREF="./TB_SOCIO_FR.html" TITLE="TB_SOCIO_FR">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_SOCIO_ADM_FR</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_SOCIO_ADM_FR</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_EMPRESA_FR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>NOME</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>CPF</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">5</TD>
+<TD>CNPJ</TD>
+<TD nowrap>VARCHAR2(16 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">6</TD>
+<TD>NIRE</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>CI</TD>
+<TD nowrap>VARCHAR2(18 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>ORGAO_EXP_CI</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">9</TD>
+<TD>SEQ_UF_EXP_CI</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>DT_EXP_CI</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>DT_NASCIMENTO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>SEQ_MUNICIPIO_NASCIMENTO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>NOME_MAE</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>NOME_PAI</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>EMAIL_SOCIO_ADM</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>TIPO_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(36 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>NOME_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>NUM_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>COMPLEMENTO_ENDERECO</TD>
+<TD nowrap>VARCHAR2(156 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>BAIRRO</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>SEQ_MUNICIPIO_ENDERECO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">22</TD>
+<TD>CEP</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>ENDERECO_EXTERIOR</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>TIPO_PESSOA</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>PROFISSAO</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>SEXO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">27</TD>
+<TD>SEQ_ESTADO_CIVIL</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">28</TD>
+<TD>SEQ_FORMA_EMANCIPACAO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">29</TD>
+<TD>SEQ_REGIME_BENS</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">30</TD>
+<TD>SEQ_UF_NIRE</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">32</TD>
+<TD>SEQ_PAIS_NACIONALIDADE</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">33</TD>
+<TD>SEQ_PAIS_ENDERECO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>DESC_NACIONALIDADE</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">35</TD>
+<TD>CPF_MIGRACAO</TD>
+<TD nowrap>VARCHAR2(12 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>FLAG_CARTEIRA_EXERC_PROFIS</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>DT_VALIDADE_CI</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de vencimento de documento de identificação no caso de sócio estrangeiro</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>NM_SOCIAL</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome social pessoa física</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_SOCIO_ADM_FR</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_SOCIO_ADM_FR_ESTADO_CIVIL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_ESTADO_CIVIL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_SOCIO_ADM_FR_FORMA_EMANCIP</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_FORMA_EMANCIPACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_SOCIO_ADM_FR_PAIS_ENDER</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_PAIS_ENDERECO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_SOCIO_ADM_FR_PAIS_NACIONALI</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_PAIS_NACIONALIDADE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_SOCIO_ADM_FR_REGIME_BENS</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_REGIME_BENS</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_SOCIO_ADM_FR_UF_EXP_CI</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_UF_EXP_CI</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_SOCIO_ADM_FR_UF_NIRE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_UF_NIRE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_CNPJ_SOCIO_FR</TD>
+<TD>NORMAL</TD>
+<TD>CNPJ</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_CPF_SOCIO_FR</TD>
+<TD>NORMAL</TD>
+<TD>CPF</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_NIRE_SOCIO_FR</TD>
+<TD>NORMAL</TD>
+<TD>NIRE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_NOME_SOCIO_FR</TD>
+<TD>NORMAL</TD>
+<TD>NOME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_SEQ_EMP_FR_SOC_ADM_FR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA_FR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOCIOADMFR</TD>
+<TD>NORMAL</TD>
+<TD>CEP</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_SOCIO_ADM_FR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOCIO_ADM_FR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_SOCIO_ADM_FR</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_SOCIO_ADM_FR_EMPRESA_FR</TD>
+<TD>SEQ_EMPRESA_FR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_EMPRESA_FR" HREF="../tables/TB_EMPRESA_FR.html">TB_EMPRESA_FR</A></TD>
+<TD>SEQ_EMPRESA_FR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOCIO_ADM_FR_ESTADO_CIVIL</TD>
+<TD>SEQ_ESTADO_CIVIL</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_ESTADO_CIVIL" HREF="../tables/TX_ESTADO_CIVIL.html">TX_ESTADO_CIVIL</A></TD>
+<TD>SEQ_ESTADO_CIVIL</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOCIO_ADM_FR_FORMA_EMANCIP</TD>
+<TD>SEQ_FORMA_EMANCIPACAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_FORMA_EMANCIPACAO" HREF="../tables/TX_FORMA_EMANCIPACAO.html">TX_FORMA_EMANCIPACAO</A></TD>
+<TD>SEQ_FORMA_EMANCIPACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOCIO_ADM_FR_PAIS_ENDER</TD>
+<TD>SEQ_PAIS_ENDERECO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_PAIS" HREF="../tables/TX_PAIS.html">TX_PAIS</A></TD>
+<TD>SEQ_PAIS</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOCIO_ADM_FR_PAIS_NACIONALI</TD>
+<TD>SEQ_PAIS_NACIONALIDADE</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_PAIS" HREF="../tables/TX_PAIS.html">TX_PAIS</A></TD>
+<TD>SEQ_PAIS</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOCIO_ADM_FR_REGIME_BENS</TD>
+<TD>SEQ_REGIME_BENS</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_REGIME_BENS" HREF="../tables/TX_REGIME_BENS.html">TX_REGIME_BENS</A></TD>
+<TD>SEQ_REGIME_BENS</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOCIO_ADM_FR_UF_EXP_CI</TD>
+<TD>SEQ_UF_EXP_CI</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_UF" HREF="../tables/TX_UF.html">TX_UF</A></TD>
+<TD>SEQ_UF</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOCIO_ADM_FR_UF_NIRE</TD>
+<TD>SEQ_UF_NIRE</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_UF" HREF="../tables/TX_UF.html">TX_UF</A></TD>
+<TD>SEQ_UF</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_SOCIO_ADM_FR</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0010821</TD>
+<TD>Check</TD>
+<TD>"SEQ_EMPRESA_FR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_EMPRESA_FR</TD>
+</TR>
+<TR>
+<TD>SYS_C0010822</TD>
+<TD>Check</TD>
+<TD>"NOME" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NOME</TD>
+</TR>
+<TR>
+<TD>PK_TB_SOCIO_ADM_FR</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_SOCIO_ADM_FR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_SOCIO_ADM_FR does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

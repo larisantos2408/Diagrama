@@ -1,0 +1,295 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_LDASSINANTE</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_ITEM_VENDA_INF.html" TITLE="TB_ITEM_VENDA_INF">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_LDASSINANTE">Table TB_LDASSINANTE</A></TD>
+<TD Class="NavR"><A HREF="./TB_LDAUXILIAR.html" TITLE="TB_LDAUXILIAR">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_LDASSINANTE</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD> Assinantes dos documentos da solicitação do Livro Digital</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_LDASSINANTE</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_LDASSINANTE</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_ldassinante (PK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_LDDOCUMENTO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>identificador da tabela ijrm.tb_lddocumento (FK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_FUNCAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_ldfuncao (FK). A função exercida pelo assinante na empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>NM_SOCIO</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do sócio ou representante</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>NU_CPF</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do CPF do sócio ou representante</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>NU_CRC</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do CRC contador</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DS_EMAIL</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>email do assinante</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>Controle de versão do sistema</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>NU_CPF_REPRESENTADO</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do CPF do representado pelo Procurador</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>NM_REPRESENTADO</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do representado pelo Procurador</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>CD_ASSINATURA_IMAGEM</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
+<TD>&nbsp;</TD>
+<TD>'N'</TD>
+<TD>Indica se assinou a imagem, sendo: S - Sim     N - Não</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>NU_IP</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>IP de acesso</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_LDASSINANTE</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LDASSINANTE_SEQ_FUNCAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_FUNCAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_LDASSINANTE_SEQ_LDDOCUMENT</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_LDDOCUMENTO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_LDASSINANTE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_LDASSINANTE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_LDASSINANTE</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_LD_ASSINANTE_LDDOCUMENTO</TD>
+<TD>SEQ_LDDOCUMENTO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_LDDOCUMENTO" HREF="../tables/TB_LDDOCUMENTO.html">TB_LDDOCUMENTO</A></TD>
+<TD>SEQ_LDDOCUMENTO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_LDASSINANTE_LDFUNCAO</TD>
+<TD>SEQ_FUNCAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_LDFUNCAO" HREF="../tables/TX_LDFUNCAO.html">TX_LDFUNCAO</A></TD>
+<TD>SEQ_LDFUNCAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_LDASSINANTE</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_ASSINATURA_IMAGEM</TD>
+<TD>Check</TD>
+<TD>cd_assinatura_imagem in ('N','S')</TD>
+<TD>ENABLED</TD>
+<TD>CD_ASSINATURA_IMAGEM</TD>
+</TR>
+<TR>
+<TD>SYS_C0010694</TD>
+<TD>Check</TD>
+<TD>"SEQ_LDASSINANTE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_LDASSINANTE</TD>
+</TR>
+<TR>
+<TD>PK_TB_LDASSINANTE</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_LDASSINANTE</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_LDASSINANTE does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

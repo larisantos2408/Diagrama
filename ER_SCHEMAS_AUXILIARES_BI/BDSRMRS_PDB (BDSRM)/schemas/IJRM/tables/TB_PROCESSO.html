@@ -1,0 +1,914 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_PROCESSO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_PREPOSTO_AGENTEAUXILIAR.html" TITLE="TB_PREPOSTO_AGENTEAUXILIAR">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables3.html#TB_PROCESSO">Table TB_PROCESSO</A></TD>
+<TD Class="NavR"><A HREF="./TB_PROCESSOADMINISTRATIVO.html" TITLE="TB_PROCESSOADMINISTRATIVO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_PROCESSO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD>NOME_EMPRESA</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>O tamanho máximo é de 150</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>FLAG_ENQUADRAMENTO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>FLAG_SOLICITACAO_CNPJ</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>NUM_PROTOCOLO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">5</TD>
+<TD>NUM_APROVACAO</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">6</TD>
+<TD>DT_APROVACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DT_VALIDADE</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>NUM_APROVACAO_RERATIFICACAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>NUM_ROLO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>DT_ASSINATURA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Não usar. A data de assinatura do documento correta está no campo tb_solicitacao.data_assinatura_doc</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>DT_PARALISACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">12</TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">13</TD>
+<TD><B>SEQ_SOLICITACAO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>SEQ_USUARIO_RESP_PARALISACAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">16</TD>
+<TD>FLAG_CONFERIDO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>S=o processo ainda não foi lançado no cadastro da empresa,  N=já lançado (atualiza dados)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">17</TD>
+<TD>SEQ_DESPACHANTE</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>ID_MIGRACAO</TD>
+<TD nowrap>VARCHAR2(9 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Migração Siarco carregado com HISTORICO_EVENTO_PESSOA.sq_historico_evento</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>REGRA_MIGRACAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Migração Siarco carregado com HISTORICO_ATO_ARQUIVADO.sq_arquivamento</TD>
+</TR>
+<TR>
+<TD Class="NumRed">20</TD>
+<TD>SEQ_IMAGEM</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>QT_IMPRESSAO</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>Quantidade de cópias impressas no Minas Facil virtual</TD>
+</TR>
+<TR>
+<TD Class="NumRed">23</TD>
+<TD>CD_MFVIRTUAL</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>Y</TD>
+<TD>0</TD>
+<TD>0=Não é processo do MF Virtual  1=é processo MF Virtual   obs: só lançar para o processo de constituição, enquadramento não</TD>
+</TR>
+<TR>
+<TD Class="NumRed">24</TD>
+<TD>CD_REGISTRODIGITAL</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>0=Não é processo digital  1=é processo digital</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>DT_EFEITOMEI</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data em que o ato passará a ter efeito. Será usado para enquadramentos/desenquadramentos de MEI.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">26</TD>
+<TD>SEQ_PORTE</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CAMPO SEM USO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">27</TD>
+<TD>CD_ENVIADOPRODEMGE</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>'N'</TD>
+<TD>Gravar a confirmação de envio para de registro de empresa para base centralizada (PRODEMGE), sendo:
+          S - Sim
+          N - Não</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>NU_NIRE</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nire da empresa no ato da aprovação do processo</TD>
+</TR>
+<TR>
+<TD Class="NumRed">29</TD>
+<TD>DT_ATUAL_PESQ_NOME</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de atualização do pesquisa nome</TD>
+</TR>
+<TR>
+<TD Class="NumRed">30</TD>
+<TD>NU_TENTATIVA_ATUAL_PESQ_NOME</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">31</TD>
+<TD>CD_CONFERIDO_CADASTRO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>N = O processo de registro digital não foi conferido pelo cadastro
+      S = Já conferido pelo cadastro</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>DT_RETIRADA_PAUTA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data em que foi cancelada a aprovação do processo</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>SEQ_IMAGEM_SIARCO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave extrangeira para tb_imagem. Campo que ficará armazenado as imagens anteriores ao via única que necessitam de tratamento como por exemplo a retirada de documentos pessoais e guias de pagamento.</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>NUM_APROVACAOV</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">35</TD>
+<TD>SEQ_USUARIO_CONFERENCIA</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Usuário que fez a conferência do processo.</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>DT_CONFERENCIA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data que foi feita a conferência.</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>CD_SELO_CONFERIDO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Atributo para verificar se o selo de cartório foi conferido</TD>
+</TR>
+<TR>
+<TD Class="NumRed">38</TD>
+<TD>CD_DIGITALIZADOENTRADA</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Atributo que indica se o processo foi digitalizado na entrada</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>NU_SIGFACIL</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do protocolo do SIGFACIL</TD>
+</TR>
+<TR>
+<TD Class="NumRed">40</TD>
+<TD>NU_PROTOCOLO_REDESIM</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do protocolo do REDESIM.</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>DT_EFEITO_REGISTRO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data na qual o registro passa a ter efeito</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>CD_NOME_COMO_CNPJ</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>Marca se o nome é gerado automaticamente, os valores possíveis são: S=SIM ou N=NÃO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">43</TD>
+<TD>CD_INICIATIVA_PROCURADORIA</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica se o processo iniciou-se na procuradoria. Valores possíveis: S=SIM, N=NÃO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">44</TD>
+<TD>CD_DIGITALIZOU_DIGITALIZADA_NA_ENTRADA</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica se a imagem existente na ijrm.tb_imagemprocesso, valores=S=SIM ou N=NÃO.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_PROCESSO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_PROCESSO_DESPACHANTE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_DESPACHANTE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_PROCESSO_PORTE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_PORTE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_NUM_PROTOCOLO</TD>
+<TD>NORMAL</TD>
+<TD>NUM_PROTOCOLO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_CDDIGITALIENTRADA</TD>
+<TD>NORMAL</TD>
+<TD>CD_DIGITALIZADOENTRADA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_CDDIGITALIZADOENTRADA_SEQSOLICITACAO</TD>
+<TD>NORMAL</TD>
+<TD>CD_DIGITALIZADOENTRADA, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_CDDIGITALIZOUDIGITALIZADANAENTRADA</TD>
+<TD>NORMAL</TD>
+<TD>CD_DIGITALIZOU_DIGITALIZADA_NA_ENTRADA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_CD_INICIATIVA_PROCURADORIA</TD>
+<TD>NORMAL</TD>
+<TD>CD_INICIATIVA_PROCURADORIA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_CONFERIDO</TD>
+<TD>NORMAL</TD>
+<TD>CD_CONFERIDO_CADASTRO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_DTATUALIZACAO</TD>
+<TD>NORMAL</TD>
+<TD>DT_ATUAL_PESQ_NOME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_MFVIRTUAL</TD>
+<TD>NORMAL</TD>
+<TD>CD_MFVIRTUAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_NATUREZJURIDICA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_NOME_CORRIGIDO</TD>
+<TD>NORMAL</TD>
+<TD>NOME_EMPRESA, FLAG_CONFERIDO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_NUPROTOCOREDESIM</TD>
+<TD>NORMAL</TD>
+<TD>NU_PROTOCOLO_REDESIM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_NUTENTATIVA</TD>
+<TD>NORMAL</TD>
+<TD>NU_TENTATIVA_ATUAL_PESQ_NOME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_REGISTRODIGITAL</TD>
+<TD>NORMAL</TD>
+<TD>CD_REGISTRODIGITAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_SEQIMAGEM</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_IMAGEM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_SEQIMAGEM_SEQSOLICITACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_IMAGEM, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_SEQSOL_DTATPESQNO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO, DT_ATUAL_PESQ_NOME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_SEQSOLICITACAO_TRUNCDTAPROVACAO</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>SEQ_SOLICITACAO, TRUNC("DT_APROVACAO")</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_SEQUSUARIOCONFERE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIO_CONFERENCIA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_SEQUSUCONF_DTCONF</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>SEQ_USUARIO_CONFERENCIA, TRUNC("DT_CONFERENCIA")</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_01</TD>
+<TD>NORMAL</TD>
+<TD>CD_ENVIADOPRODEMGE, SEQ_SOLICITACAO, DT_APROVACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_02</TD>
+<TD>NORMAL</TD>
+<TD>DT_ATUAL_PESQ_NOME, NU_TENTATIVA_ATUAL_PESQ_NOME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_03</TD>
+<TD>NORMAL</TD>
+<TD>FLAG_CONFERIDO, NOME_EMPRESA, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_04</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>TRUNC("DT_APROVACAO"), SEQ_NATUREZA_JURIDICA, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_05</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>TRUNC("DT_APROVACAO"), SEQ_SOLICITACAO, NUM_APROVACAO, FLAG_CONFERIDO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_06</TD>
+<TD>NORMAL</TD>
+<TD>CD_REGISTRODIGITAL, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_07</TD>
+<TD>NORMAL</TD>
+<TD>FLAG_CONFERIDO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_PROCESSO_08</TD>
+<TD>NORMAL</TD>
+<TD>FLAG_CONFERIDO, DT_APROVACAO, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SEQSOL_DTAPROV</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO, DT_APROVACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_PROCESSO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>UK_DT_APROVACAO</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>TRUNC("DT_APROVACAO")</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>UK_NUM_APROVACAO2</TD>
+<TD>NORMAL</TD>
+<TD>NUM_APROVACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_PROCESSO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_PROCESSO_DESPACHANTE</TD>
+<TD>SEQ_DESPACHANTE</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_DESPACHANTE" HREF="../tables/TX_DESPACHANTE.html">TX_DESPACHANTE</A></TD>
+<TD>SEQ_DESPACHANTE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_PROCESSO_PORTE</TD>
+<TD>SEQ_PORTE</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_PORTE" HREF="../tables/TX_PORTE.html">TX_PORTE</A></TD>
+<TD>SEQ_PORTE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_TB_PROCESSO_TB_SOLICITACAO</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_SOLICITACAO" HREF="../tables/TB_SOLICITACAO.html">TB_SOLICITACAO</A></TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_PROCESSO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_PROCESSO_CDENVIADOPRODEMGE</TD>
+<TD>Check</TD>
+<TD>cd_enviadoprodemge in ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_ENVIADOPRODEMGE</TD>
+</TR>
+<TR>
+<TD>CK_PROCESSO_CD_NOME_COMO_CNPJ</TD>
+<TD>Check</TD>
+<TD>CD_NOME_COMO_CNPJ IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_NOME_COMO_CNPJ</TD>
+</TR>
+<TR>
+<TD>CK_TB_PROCESSO_CD_DIGITALIZOU_DIGITALIZADA_NA_ENTRADA</TD>
+<TD>Check</TD>
+<TD>CD_DIGITALIZOU_DIGITALIZADA_NA_ENTRADA IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_DIGITALIZOU_DIGITALIZADA_NA_ENTRADA</TD>
+</TR>
+<TR>
+<TD>CK_TB_PROCESSO_CD_INICIATIVA_PROCURADORIA</TD>
+<TD>Check</TD>
+<TD>CD_INICIATIVA_PROCURADORIA IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_INICIATIVA_PROCURADORIA</TD>
+</TR>
+<TR>
+<TD>SYS_C0010997</TD>
+<TD>Check</TD>
+<TD>"CD_MFVIRTUAL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_MFVIRTUAL</TD>
+</TR>
+<TR>
+<TD>SYS_C0017391</TD>
+<TD>Check</TD>
+<TD>"CD_NOME_COMO_CNPJ" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_NOME_COMO_CNPJ</TD>
+</TR>
+<TR>
+<TD>PK_TB_PROCESSO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_SOLICITACAO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_PROCESSO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

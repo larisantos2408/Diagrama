@@ -1,0 +1,223 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJSS Table TB_AVISO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJSS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:56</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_APLICACAO.html" TITLE="TB_APLICACAO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_AVISO">Table TB_AVISO</A></TD>
+<TD Class="NavR"><A HREF="./TB_GRUPO_USUARIO.html" TITLE="TB_GRUPO_USUARIO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_AVISO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_AVISO</B></TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>DAT_AVISO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>TITULO</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>CORPO</TD>
+<TD nowrap>VARCHAR2(4000 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>COD_USUARIO</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DAT_MOVIMENTACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_AVISO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_AVISO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_AVISO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_AVISO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0010325</TD>
+<TD>Check</TD>
+<TD>"SEQ_AVISO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_AVISO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010326</TD>
+<TD>Check</TD>
+<TD>"DAT_AVISO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DAT_AVISO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010327</TD>
+<TD>Check</TD>
+<TD>"TITULO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TITULO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010328</TD>
+<TD>Check</TD>
+<TD>"CORPO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CORPO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010329</TD>
+<TD>Check</TD>
+<TD>"VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010330</TD>
+<TD>Check</TD>
+<TD>"COD_USUARIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>COD_USUARIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010331</TD>
+<TD>Check</TD>
+<TD>"DAT_MOVIMENTACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DAT_MOVIMENTACAO</TD>
+</TR>
+<TR>
+<TD>PK_AVISO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_AVISO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_AVISO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,747 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_VENDA_INFORMACAO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_VALIDACAO_GERADOR_DOCUMENTO.html" TITLE="TB_VALIDACAO_GERADOR_DOCUMENTO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables4.html#TB_VENDA_INFORMACAO">Table TB_VENDA_INFORMACAO</A></TD>
+<TD Class="NavR"><A HREF="./TB_VIDEO.html" TITLE="TB_VIDEO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_VENDA_INFORMACAO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_SOLICITACAO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_TIPO_PESQUISA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_TIPO_SAIDA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>QTD_REGISTROS</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>DEL_PARAMETRO_CAPITAL</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>DEL_DT_INICIO_PESQUISA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DEL_DT_FIM_PESQUISA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>DEL_VALOR_CAPITAL</TD>
+<TD nowrap>NUMBER(19,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>TIPO_EMPRESA</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>FLAG_FILIAIS</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>FLAG_SOCIOS</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>FLAG_SOCIOS_END</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>FLAG_PART_NOME_TODAS</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>FLAG_PART_NOME_ALGUMAS</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>FLAG_OBJ_SOCIAL</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>FLAG_EMP_EXTINTAS</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>CD_PORTE_ME</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>CD_PORTE_EPP</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=item não selecionado para pesquisa  S=item selecionado</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>CD_PORTE_NORMAL</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=item não selecionado para pesquisa  S=item selecionado</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>CD_ATIVAS</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=item não selecionado para pesquisa  S=item selecionado</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>CD_CNAEPRINCIPAL</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>CD_CONSTITUICAO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=item não selecionado para pesquisa  S=item selecionado</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>CD_CONSTITUICAO_EMPNOVA</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=item não selecionado para pesquisa  S=item selecionado, só considerar consituição de empresa NOVA, inscr.transfsede e vinda de cartório não</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>CD_ALTERACAO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=item não selecionado para pesquisa  S=item selecionado</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>CD_EXTINCAO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=item não selecionado para pesquisa  S=item selecionado</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>CD_MEI</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não incluir MEI   S=incluir empresas MEI    M=só empresa MEI</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>CD_EXPORTA_TUDO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar tudo   S=exportação completa</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>CD_EXPORTA_NIRE</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar nire da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>CD_EXPORTA_NOMEEMP</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar nome da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>CD_EXPORTA_CNPJ</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar CNPJ</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>CD_EXPORTA_CONSTITUICAO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar data constituicao</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>CD_EXPORTA_CAPITAL</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar capital da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">35</TD>
+<TD>CD_EXPORTA_INIATV</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar data de início atividade</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>CD_EXPORTA_CNAE</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar CNAE empresa </TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>CD_EXPORTA_ENDERECO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar endereço da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>CD_EXPORTA_EMAIL</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar email da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>CD_EXPORTA_PORTE</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar porte da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>CD_EXPORTA_ULTIMODEF</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar data ultimo deferimento da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>CD_EXPORTA_ATO</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=não exportar   S=exportar ato</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>CD_FALENCIA</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>N=item não selecionado para pesquisa  S=item selecionado</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_VENDA_INFORMACAO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_VENDA_INFORM_TIPO_PESQ</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_PESQUISA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_VENDA_INFORM_TIPO_SAIDA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_SAIDA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_VENDA_INFORMACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_VENDA_INFORMACAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_VENDA_INFORMACAO_SOLIC</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_SOLICITACAO" HREF="../tables/TB_SOLICITACAO.html">TB_SOLICITACAO</A></TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_VENDA_INFORM_TIPO_PESQ</TD>
+<TD>SEQ_TIPO_PESQUISA</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_TIPO_PESQUISA" HREF="../tables/TX_TIPO_PESQUISA.html">TX_TIPO_PESQUISA</A></TD>
+<TD>SEQ_TIPO_PESQUISA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_VENDA_INFORM_TIPO_SAIDA</TD>
+<TD>SEQ_TIPO_SAIDA</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_TIPO_SAIDA" HREF="../tables/TX_TIPO_SAIDA.html">TX_TIPO_SAIDA</A></TD>
+<TD>SEQ_TIPO_SAIDA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_VENDA_INFORMACAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_MEI2</TD>
+<TD>Check</TD>
+<TD>CD_MEI in ('N','S','M')</TD>
+<TD>ENABLED</TD>
+<TD>CD_MEI</TD>
+</TR>
+<TR>
+<TD>SYS_C0010718</TD>
+<TD>Check</TD>
+<TD>"FLAG_FILIAIS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLAG_FILIAIS</TD>
+</TR>
+<TR>
+<TD>SYS_C0010719</TD>
+<TD>Check</TD>
+<TD>"FLAG_SOCIOS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLAG_SOCIOS</TD>
+</TR>
+<TR>
+<TD>SYS_C0010720</TD>
+<TD>Check</TD>
+<TD>"FLAG_SOCIOS_END" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLAG_SOCIOS_END</TD>
+</TR>
+<TR>
+<TD>SYS_C0010721</TD>
+<TD>Check</TD>
+<TD>"FLAG_PART_NOME_TODAS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLAG_PART_NOME_TODAS</TD>
+</TR>
+<TR>
+<TD>SYS_C0010722</TD>
+<TD>Check</TD>
+<TD>"FLAG_PART_NOME_ALGUMAS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLAG_PART_NOME_ALGUMAS</TD>
+</TR>
+<TR>
+<TD>SYS_C0010723</TD>
+<TD>Check</TD>
+<TD>"FLAG_OBJ_SOCIAL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLAG_OBJ_SOCIAL</TD>
+</TR>
+<TR>
+<TD>SYS_C0010724</TD>
+<TD>Check</TD>
+<TD>"FLAG_EMP_EXTINTAS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLAG_EMP_EXTINTAS</TD>
+</TR>
+<TR>
+<TD>SYS_C0010725</TD>
+<TD>Check</TD>
+<TD>"CD_PORTE_ME" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_PORTE_ME</TD>
+</TR>
+<TR>
+<TD>SYS_C0010726</TD>
+<TD>Check</TD>
+<TD>"CD_PORTE_EPP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_PORTE_EPP</TD>
+</TR>
+<TR>
+<TD>SYS_C0010727</TD>
+<TD>Check</TD>
+<TD>"CD_PORTE_NORMAL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_PORTE_NORMAL</TD>
+</TR>
+<TR>
+<TD>SYS_C0010728</TD>
+<TD>Check</TD>
+<TD>"CD_ATIVAS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_ATIVAS</TD>
+</TR>
+<TR>
+<TD>SYS_C0010729</TD>
+<TD>Check</TD>
+<TD>"CD_CNAEPRINCIPAL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_CNAEPRINCIPAL</TD>
+</TR>
+<TR>
+<TD>SYS_C0010730</TD>
+<TD>Check</TD>
+<TD>"CD_CONSTITUICAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_CONSTITUICAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010731</TD>
+<TD>Check</TD>
+<TD>"CD_CONSTITUICAO_EMPNOVA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_CONSTITUICAO_EMPNOVA</TD>
+</TR>
+<TR>
+<TD>SYS_C0010732</TD>
+<TD>Check</TD>
+<TD>"CD_ALTERACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_ALTERACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010733</TD>
+<TD>Check</TD>
+<TD>"CD_EXTINCAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXTINCAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010734</TD>
+<TD>Check</TD>
+<TD>"CD_MEI" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_MEI</TD>
+</TR>
+<TR>
+<TD>SYS_C0010735</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_TUDO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_TUDO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010736</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_NIRE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_NIRE</TD>
+</TR>
+<TR>
+<TD>SYS_C0010737</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_NOMEEMP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_NOMEEMP</TD>
+</TR>
+<TR>
+<TD>SYS_C0010738</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_CNPJ" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_CNPJ</TD>
+</TR>
+<TR>
+<TD>SYS_C0010739</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_CONSTITUICAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_CONSTITUICAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010740</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_CAPITAL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_CAPITAL</TD>
+</TR>
+<TR>
+<TD>SYS_C0010741</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_INIATV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_INIATV</TD>
+</TR>
+<TR>
+<TD>SYS_C0010742</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_CNAE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_CNAE</TD>
+</TR>
+<TR>
+<TD>SYS_C0010743</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_ENDERECO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_ENDERECO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010744</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_EMAIL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_EMAIL</TD>
+</TR>
+<TR>
+<TD>SYS_C0010745</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_PORTE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_PORTE</TD>
+</TR>
+<TR>
+<TD>SYS_C0010746</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_ULTIMODEF" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_ULTIMODEF</TD>
+</TR>
+<TR>
+<TD>SYS_C0010747</TD>
+<TD>Check</TD>
+<TD>"CD_EXPORTA_ATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXPORTA_ATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010748</TD>
+<TD>Check</TD>
+<TD>"CD_FALENCIA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_FALENCIA</TD>
+</TR>
+<TR>
+<TD>PK_TB_VENDA_INFORMACAO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_SOLICITACAO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_VENDA_INFORMACAO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

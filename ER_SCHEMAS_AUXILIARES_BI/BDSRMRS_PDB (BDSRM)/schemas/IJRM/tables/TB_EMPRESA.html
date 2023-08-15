@@ -1,0 +1,1197 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_EMPRESA</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_EMISSAO_ETIQUETA.html" TITLE="TB_EMISSAO_ETIQUETA">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_EMPRESA">Table TB_EMPRESA</A></TD>
+<TD Class="NavR"><A HREF="./TB_EMPRESA_ACERTO.html" TITLE="TB_EMPRESA_ACERTO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_EMPRESA</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_EMPRESA</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_empresa (PK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>NIRE</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número de Identificação do Registro da Empresa</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>NOME_EMPRESA</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome da Empresa; O tamanho máximo é de 150</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>CNPJ</TD>
+<TD nowrap>VARCHAR2(16 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do Cadastro Nacional de Pessoa Jurídica</TD>
+</TR>
+<TR>
+<TD Class="NumRed">5</TD>
+<TD>NOME_FANTASIA</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome Fantasia da Empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>NIRE_ANTERIOR</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CAMPO SEM USO</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">7</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data Inicio da Atividade</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>DATA_ASSINATURA_DOCUMENTO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>CAPITAL_INTEGRALIZADO</TD>
+<TD nowrap>NUMBER(19,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Valor do Capital Integralizado</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>CAPITAL_SOCIAL</TD>
+<TD nowrap>NUMBER(19,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Valor do Capital Social</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>VALOR_UNITARIO_COTA</TD>
+<TD nowrap>NUMBER(19,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Valor Unitário da Cota</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>DT_CADASTRO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de constituição da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>EMAIL</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Email da Empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>ENDERECO_EXTERIOR</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descrição do Endereço no Exterior</TD>
+</TR>
+<TR>
+<TD Class="NumRed">16</TD>
+<TD>SEQ_MOEDA</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tx_moeda (FK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">17</TD>
+<TD>SEQ_UF_ANTERIOR</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CAMPO SEM USO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">18</TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_natureza_juridica (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>NOME_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do logradouro da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>TIPO_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(36 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descrição do Tipo de Logradouro</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>COMPLEMENTO_ENDERECO</TD>
+<TD nowrap>VARCHAR2(156 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descrição do Complemento do Endereço</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>NUM_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do Logradouro</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>BAIRRO</TD>
+<TD nowrap>VARCHAR2(72 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do Bairro</TD>
+</TR>
+<TR>
+<TD Class="NumRed">24</TD>
+<TD>CEP</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Código de Endereçamento Postal</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>DT_SITUACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CAMPO SEM USO</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>DT_CANCELAMENTO_ADM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data em que a empresa foi cancelada administrativamente</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>TIPO_EMPRESA</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CAMPO SEM USO</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>FLAG_CANCELAMENTO_ADM</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CAMPO SEM USO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">29</TD>
+<TD>SEQ_NACIONALIDADE</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">30</TD>
+<TD>SEQ_TIPO_TRANSFORMACAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">31</TD>
+<TD>SEQ_SITUACAO_EMPRESA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">32</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>ENQUADRAMENTO</TD>
+<TD nowrap>VARCHAR2(5 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CAMPO SEM USO</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">35</TD>
+<TD>SEQ_TIPO_ENQUADRAMENTO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tx_tipo_enquadramento (FK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">36</TD>
+<TD>DT_ULTIMA_APROVACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>COD_ULTIMO_ATO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_ato  (seq_ato)</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>COD_ULTIMO_EVENTO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CAMPO SEM USO</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>AUT_GOVERNO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Autorização Governamental:  S= sim  N = não</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>CLAUSULA_RESTRITIVA</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Clausula Restritiva de Deliberação Majoritária:  S = sim  N = não</TD>
+</TR>
+<TR>
+<TD Class="NumRed">41</TD>
+<TD>SEQ_STATUS_EMPRESA</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">42</TD>
+<TD>SEQ_PAIS_ENDERECO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">43</TD>
+<TD>DT_LISTA_CANCELAMENTO_ADM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data em que a empresa foi listada como sujeita ao cancelamento administrativo</TD>
+</TR>
+<TR>
+<TD Class="Num">44</TD>
+<TD>DESCRICAO_OBJETO</TD>
+<TD nowrap>CLOB</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">45</TD>
+<TD>FLAG_EI</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>Y</TD>
+<TD>0</TD>
+<TD>1 = é empresa MEI   0 = não é</TD>
+</TR>
+<TR>
+<TD Class="Num">46</TD>
+<TD>NU_DDDTELEFONE</TD>
+<TD nowrap>VARCHAR2(3 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">47</TD>
+<TD>NU_TELEFONE</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">48</TD>
+<TD>NM_HOMEPAGE</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">49</TD>
+<TD>NU_ASSOCIADOS</TD>
+<TD nowrap>NUMBER(6)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número de associados de Cooperativas</TD>
+</TR>
+<TR>
+<TD Class="Num">50</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>último usuário que alterou o registro - ijss.tb_usuario</TD>
+</TR>
+<TR>
+<TD Class="Num">51</TD>
+<TD>NU_MATRICULAARMAZEMGERAL</TD>
+<TD nowrap>VARCHAR2(5 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">52</TD>
+<TD>DT_ALTERACAO_REGISTRO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data da última alteração do registro ou de alguma tabela(s) filha(s) para BI, ver triggers</TD>
+</TR>
+<TR>
+<TD Class="NumRed">53</TD>
+<TD>DT_ATUAL_PESQ_NOME</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de atualização do pesquisa nome</TD>
+</TR>
+<TR>
+<TD Class="NumRed">54</TD>
+<TD>NU_TENTATIVA_ATUAL_PESQ_NOME</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>Número de tentativas de atualização da pesquisa nome</TD>
+</TR>
+<TR>
+<TD Class="NumRed">55</TD>
+<TD>SQ_PESSOA</TD>
+<TD nowrap>NUMBER(9)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Migração SIARCO corresponde ao PESSOA.SQ_PESSOA</TD>
+</TR>
+<TR>
+<TD Class="Num">56</TD>
+<TD>NU_INSCRICAO_ESTADUAL</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">57</TD>
+<TD>CD_EMPRESA_ESTRATEGIA_DEFESA</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>'N'</TD>
+<TD>Empresa Estratégica de Defesa  - EED:  S = Sim; N = Não</TD>
+</TR>
+<TR>
+<TD Class="Num">58</TD>
+<TD>NU_LATITUDE</TD>
+<TD nowrap>NUMBER(15,10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Latitude do endereço da empresa no google</TD>
+</TR>
+<TR>
+<TD Class="Num">59</TD>
+<TD>NU_LONGITUDE</TD>
+<TD nowrap>NUMBER(15,10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Longitude do endereço da empresa no google</TD>
+</TR>
+<TR>
+<TD Class="Num">60</TD>
+<TD>DS_ENDERECO_GOOGLE</TD>
+<TD nowrap>VARCHAR2(300 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descrição do endereço da empresa no google</TD>
+</TR>
+<TR>
+<TD Class="NumRed">61</TD>
+<TD>CD_GEOLOCALIZACAO_ENCONTRADA</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da situação do geolocalizacao da empresa no google. S = Sim; N = Não; E = Erro.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">62</TD>
+<TD>DT_ATUALIZACAO_GEOLOCALIZACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data da última atualização da geolocalização do endereço</TD>
+</TR>
+<TR>
+<TD Class="Num">63</TD>
+<TD>CD_PLUS_CODE_GLOBAL</TD>
+<TD nowrap>VARCHAR2(25 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Plus code global da google</TD>
+</TR>
+<TR>
+<TD Class="Num">64</TD>
+<TD>CD_PLUS_CODE_COMPOSTO</TD>
+<TD nowrap>VARCHAR2(500 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Plus code composto da google</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_EMPRESA</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>EMPRE_IDX_CTX_NOMEEMPRESA</TD>
+<TD>DOMAIN</TD>
+<TD>NOME_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>EMPRE_IDX_CTX_NOMEFANTASI</TD>
+<TD>DOMAIN</TD>
+<TD>NOME_FANTASIA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_EMPRESA_MOEDA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_MOEDA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_EMPRESA_NACIONALIDADE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_NACIONALIDADE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_EMPRESA_STATUS_EMPRESA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_STATUS_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_EMPRESA_TIPO_TRANSFORMACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_TRANSFORMACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_EMPRESA_UF_ANTERIOR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_UF_ANTERIOR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_TB_EMPRESA_SEQ_PAIS_ENDEREC</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_PAIS_ENDERECO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_CNPJ_EMPRESA</TD>
+<TD>NORMAL</TD>
+<TD>CNPJ</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_SEQ_SITUACAO_EMPRESA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_CD_GEOLOCALIZACAO_ENCONTRADA</TD>
+<TD>NORMAL</TD>
+<TD>CD_GEOLOCALIZACAO_ENCONTRADA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_CEP</TD>
+<TD>NORMAL</TD>
+<TD>CEP</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_DTATUALIZACAO</TD>
+<TD>NORMAL</TD>
+<TD>DT_ATUAL_PESQ_NOME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_DTATUALIZACAOGEOLOCALIZACAO</TD>
+<TD>NORMAL</TD>
+<TD>DT_ATUALIZACAO_GEOLOCALIZACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_DTULTIMAAPROVACAO_SEQEMPRESA_CNPJ</TD>
+<TD>NORMAL</TD>
+<TD>DT_ULTIMA_APROVACAO, SEQ_EMPRESA, CNPJ</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_ENQUADRAMENTO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_ENQUADRAMENTO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_FLAGEI</TD>
+<TD>NORMAL</TD>
+<TD>FLAG_EI</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_FLAGEI_DTALREG</TD>
+<TD>NORMAL</TD>
+<TD>FLAG_EI, DT_ALTERACAO_REGISTRO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_MUNICIPIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_NATUREZAJURIDICA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_NMFANTASI_SEQEMPRE</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>UPPER("NOME_FANTASIA"), SEQ_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_NOMEEMPRESA</TD>
+<TD>NORMAL</TD>
+<TD>NOME_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_NUTENTATIVA</TD>
+<TD>NORMAL</TD>
+<TD>NU_TENTATIVA_ATUAL_PESQ_NOME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_SEQEMPRESA_DTATUALIZACAOGEOLOCALIZACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA, DT_ATUALIZACAO_GEOLOCALIZACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_SEQSITUACAOEMPRESA_DTATUALIZACAOGEOLOCALIZACAO_SEQMUNICIPIO_SEQEMPRESA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_EMPRESA, DT_ATUALIZACAO_GEOLOCALIZACAO, SEQ_MUNICIPIO, SEQ_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_SEQSITUACAOEMPRESA_DTINICIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_EMPRESA, DT_INICIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_SEQTIPOENQUADRAMENTO_FLAGEI</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_ENQUADRAMENTO, FLAG_EI</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_02</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_EMPRESA, NOME_EMPRESA, NIRE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESA_03</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>SEQ_SITUACAO_EMPRESA, SUBSTR("NOME_EMPRESA",1,12), NIRE, FLAG_EI, SEQ_MUNICIPIO, 
+SEQ_EMPRESA, SEQ_TIPO_ENQUADRAMENTO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMP_SEQE_NIR_SEQMOE_SEQNAT</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA, NIRE, SEQ_MOEDA, SEQ_NATUREZA_JURIDICA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_P_SEQUENCIAL</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>SUBSTR("NIRE",1,10)</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_TBEMPRESA_CNPJ</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>SUBSTR("CNPJ",1,8)</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_TBEMPRESA_NIRE</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>SUBSTR("NIRE",1,3)</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX$$_91BF0003</TD>
+<TD>NORMAL</TD>
+<TD>NOME_EMPRESA, SEQ_SITUACAO_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_EMPRESA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>SEQ_SITUACAO_EMPRESA</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>UPPER("NOME_EMPRESA"), SEQ_SITUACAO_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>UK_EMPRESA_NIRE</TD>
+<TD>NORMAL</TD>
+<TD>NIRE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>UK_EMPRESA_PESSOASIARCO</TD>
+<TD>NORMAL</TD>
+<TD>SQ_PESSOA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_EMPRESA</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_EMPRESA_MOEDA</TD>
+<TD>SEQ_MOEDA</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_MOEDA" HREF="../tables/TX_MOEDA.html">TX_MOEDA</A></TD>
+<TD>SEQ_MOEDA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESA_MUNICIPIO</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_MUNICIPIO" HREF="../tables/TX_MUNICIPIO.html">TX_MUNICIPIO</A></TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESA_NACIONALIDADE</TD>
+<TD>SEQ_NACIONALIDADE</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_NACIONALIDADE" HREF="../tables/TX_NACIONALIDADE.html">TX_NACIONALIDADE</A></TD>
+<TD>SEQ_NACIONALIDADE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESA_NAT_JURIDICA</TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_NATUREZA_JURIDICA" HREF="../tables/TB_NATUREZA_JURIDICA.html">TB_NATUREZA_JURIDICA</A></TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESA_SITUACAO_EMPRESA</TD>
+<TD>SEQ_SITUACAO_EMPRESA</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_SITUACAO_EMPRESA" HREF="../tables/TX_SITUACAO_EMPRESA.html">TX_SITUACAO_EMPRESA</A></TD>
+<TD>SEQ_SITUACAO_EMPRESA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESA_STATUS_EMPRESA</TD>
+<TD>SEQ_STATUS_EMPRESA</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_STATUS_EMPRESA" HREF="../tables/TX_STATUS_EMPRESA.html">TX_STATUS_EMPRESA</A></TD>
+<TD>SEQ_STATUS_EMPRESA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESA_TIPO_ENQUADRAMENTO</TD>
+<TD>SEQ_TIPO_ENQUADRAMENTO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_TIPO_ENQUADRAMENTO" HREF="../tables/TX_TIPO_ENQUADRAMENTO.html">TX_TIPO_ENQUADRAMENTO</A></TD>
+<TD>SEQ_TIPO_ENQUADRAMENTO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESA_TIPO_TRANSFORMACAO</TD>
+<TD>SEQ_TIPO_TRANSFORMACAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_TIPO_TRANSFORMACAO" HREF="../tables/TX_TIPO_TRANSFORMACAO.html">TX_TIPO_TRANSFORMACAO</A></TD>
+<TD>SEQ_TIPO_TRANSFORMACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESA_UF_ANTERIOR</TD>
+<TD>SEQ_UF_ANTERIOR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_UF" HREF="../tables/TX_UF.html">TX_UF</A></TD>
+<TD>SEQ_UF</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_TB_EMPRESA_SEQ_PAIS_ENDEREC</TD>
+<TD>SEQ_PAIS_ENDERECO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_PAIS" HREF="../tables/TX_PAIS.html">TX_PAIS</A></TD>
+<TD>SEQ_PAIS</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_EMPRESA</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_EMPRESA_ESTRATEGIA_DEFESA</TD>
+<TD>Check</TD>
+<TD>CD_EMPRESA_ESTRATEGIA_DEFESA IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_EMPRESA_ESTRATEGIA_DEFESA</TD>
+</TR>
+<TR>
+<TD>CK_CD_GEOLOCALIZACAO_ENCONTRADA</TD>
+<TD>Check</TD>
+<TD>CD_GEOLOCALIZACAO_ENCONTRADA IN ('S','N','E')</TD>
+<TD>ENABLED</TD>
+<TD>CD_GEOLOCALIZACAO_ENCONTRADA</TD>
+</TR>
+<TR>
+<TD>SYS_C0011577</TD>
+<TD>Check</TD>
+<TD>"FLAG_EI" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLAG_EI</TD>
+</TR>
+<TR>
+<TD>PK_TB_EMPRESA</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_EMPRESA</TD>
+</TR>
+<TR>
+<TD>UK_EMPRESA_NIRE</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>NIRE</TD>
+</TR>
+<TR>
+<TD>UK_EMPRESA_PESSOASIARCO</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SQ_PESSOA</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_EMPRESA does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

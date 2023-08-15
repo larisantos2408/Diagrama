@@ -1,0 +1,543 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_EXAME</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_EVENTO_VENDA_INFORMACAO.html" TITLE="TB_EVENTO_VENDA_INFORMACAO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_EXAME">Table TB_EXAME</A></TD>
+<TD Class="NavR"><A HREF="./TB_EXAMEDBE.html" TITLE="TB_EXAMEDBE">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_EXAME</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_EXAME</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_EXAMINADOR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">5</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">6</TD>
+<TD>RESULTADO_EXAME</TD>
+<TD nowrap>VARCHAR2(30 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>NC-Não Concluído
+ 	DE-Deferido
+	IN-Indeferido
+	PE-Pendente
+	AH-Aguardando Homologação
+	PR-Paralisado pelo Requerente
+	CA-Cancelado</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DESC_PARECER</TD>
+<TD nowrap>VARCHAR2(4000 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">8</TD>
+<TD>SEQ_UNIDADE</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>COD_PENDENCIA</TD>
+<TD nowrap>VARCHAR2(3 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CAMPO SEM USO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">11</TD>
+<TD>SEQ_AUTENTICADOR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Usuário que autenticou o livro. Este sequence é o ijss.tb_usuario.seq_usuario. Não há tabela com os autenticadores de livros.</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>ID_MIGRACAO</TD>
+<TD nowrap>VARCHAR2(9 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CAMPO SEM USO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">13</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Usuário para auditoria</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>CD_PRAZO_RELATORIO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>N= este exame não deve entrar na contagem de prazo para aprovação por não entrar na regra relatório COF. Houve mudança de ato ou evento no retorno do processo.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">15</TD>
+<TD>SEQ_REPO_BL_TERMOEXAME</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>NU_PRAZO_USUARIO</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>NU_PRAZO_JUNTA</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_EXAME</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_EXAME_UNIDADE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_UNIDADE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_SEQ_SOLICITACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_DTFIM</TD>
+<TD>NORMAL</TD>
+<TD>DT_FIM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_DTINICIO</TD>
+<TD>NORMAL</TD>
+<TD>DT_INICIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_DTINICIO_SEQ_SOLIC</TD>
+<TD>NORMAL</TD>
+<TD>DT_INICIO, SEQ_SOLICITACAO, SEQ_EXAMINADOR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_RESULTADOEXAME</TD>
+<TD>NORMAL</TD>
+<TD>RESULTADO_EXAME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_SEQAUT_DTINI_SEQSOLI</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_AUTENTICADOR, DT_INICIO, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_SEQEXAMINADOR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EXAMINADOR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_SEQEXAMIN_SEQEX_SEQSOL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EXAMINADOR, SEQ_EXAME, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_SEQUSUARIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_01</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>DECODE("RESULTADO_EXAME",'DE','DEFERIDO','PE','PENDENTE','AH','DEFERIDO','IN','INDEFERIDO','AP','PENDENTE')</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_02</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>SEQ_SOLICITACAO, TRUNC("DT_FIM"), SEQ_EXAMINADOR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_03</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>TRUNC("DT_FIM")</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_04</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>SEQ_SOLICITACAO, TRUNC("DT_FIM")</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EXAME_05</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO, SEQ_EXAMINADOR, SEQ_AUTENTICADOR, RESULTADO_EXAME, DT_FIM, 
+DT_INICIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_FK_EXAME_REPOSITORIOIMAGEM</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_REPO_BL_TERMOEXAME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SEQ_BL_TERMOEXAME</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>NVL("SEQ_REPO_BL_TERMOEXAME",0)</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_TB_EXAME_EXA_RESUL_SEQ</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EXAMINADOR, RESULTADO_EXAME, SEQ_REPO_BL_TERMOEXAME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_EXAME</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EXAME</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>UK_EXAME_05</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO, SEQ_EXAMINADOR, SEQ_AUTENTICADOR, RESULTADO_EXAME, DT_INICIO, 
+DT_FIM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_EXAME</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_EXAME_EXAMINADOR</TD>
+<TD>SEQ_EXAMINADOR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_EXAMINADOR" HREF="../tables/TB_EXAMINADOR.html">TB_EXAMINADOR</A></TD>
+<TD>SEQ_EXAMINADOR</TD>
+<TD>NO ACTION</TD>
+<TD>DISABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EXAME_REPOSITORIOIMAGEM</TD>
+<TD>SEQ_REPO_BL_TERMOEXAME</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_REPOSITORIO_IMAGEM" HREF="../tables/TB_REPOSITORIO_IMAGEM.html">TB_REPOSITORIO_IMAGEM</A></TD>
+<TD>SEQ_REPOSITORIO_IMAGEM</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EXAME_TB_SOLICITACAO</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_SOLICITACAO" HREF="../tables/TB_SOLICITACAO.html">TB_SOLICITACAO</A></TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EXAME_UNIDADE</TD>
+<TD>SEQ_UNIDADE</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_UNIDADE" HREF="../tables/TB_UNIDADE.html">TB_UNIDADE</A></TD>
+<TD>SEQ_UNIDADE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_EXAME</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0010585</TD>
+<TD>Check</TD>
+<TD>"SEQ_SOLICITACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_SOLICITACAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_EXAME</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_EXAME</TD>
+</TR>
+<TR>
+<TD>UK_EXAME_05</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_SOLICITACAO, SEQ_EXAMINADOR, SEQ_AUTENTICADOR, RESULTADO_EXAME, DT_INICIO, DT_FIM</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_EXAME does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

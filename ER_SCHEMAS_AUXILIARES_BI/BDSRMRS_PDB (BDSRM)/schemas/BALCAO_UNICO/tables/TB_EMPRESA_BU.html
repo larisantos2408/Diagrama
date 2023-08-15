@@ -1,0 +1,726 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>BALCAO_UNICO Table TB_EMPRESA_BU</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema BALCAO_UNICO</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:00</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_DECLARACAO_ACEITA_PROCESSO_BU.html" TITLE="TB_DECLARACAO_ACEITA_PROCESSO_BU">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_EMPRESA_BU">Table TB_EMPRESA_BU</A></TD>
+<TD Class="NavR"><A HREF="./TB_EMPRESA_FORMA_ATUACAO_BU.html" TITLE="TB_EMPRESA_FORMA_ATUACAO_BU">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_EMPRESA_BU</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Tabela que grava os dados temporários preenchidos no balcão único</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_EMPRESA_BU</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_EMPRESA_BU</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_empresa (PK)</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>NM_EMPRESA</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome da Empresa; O tamanho máximo é de 150</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>NR_CNPJ</TD>
+<TD nowrap>VARCHAR2(16 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do Cadastro Nacional de Pessoa Jurídica</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>NM_FANTASIA</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome Fantasia da Empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>DT_ASSINATURA_DOCUMENTO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>VR_CAPITAL_INTEGRALIZADO</TD>
+<TD nowrap>NUMBER(20,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Valor do Capital Integralizado</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>VR_CAPITAL_SOCIAL</TD>
+<TD nowrap>NUMBER(20,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Valor do Capital Social</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>VR_UNITARIO_COTA</TD>
+<TD nowrap>NUMBER(20,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Valor Unitário da Cota</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>DS_EMAIL</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Email da Empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>NM_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do logradouro da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>DS_COMPLEMENTO_ENDERECO</TD>
+<TD nowrap>VARCHAR2(156 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descrição do Complemento do Endereço</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>NU_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do Logradouro</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>NM_BAIRRO</TD>
+<TD nowrap>VARCHAR2(72 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do Bairro</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>NU_CEP</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Código de Endereçamento Postal</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">16</TD>
+<TD>SEQ_PORTE</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela ijrm.tx_porte (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>SEQ_PROCESSO_BU</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">18</TD>
+<TD>SEQ_EMPRESA_FORMA_ATUACAO_BU</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela balcao_unico.tb_empresa_forma_atuacao_bu (FK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">19</TD>
+<TD>SEQ_EMPRESA_TIPO_UNIDADE_BU</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela balcao_unico.tb_empresa_tipo_unidade_bu (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>NU_DDD_TELEFONE</TD>
+<TD nowrap>VARCHAR2(3 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>NU_TELEFONE</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Versao do Sistema.</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>NU_AREA_EDIFICADA</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Área do lote do empreendimento (em metros quadrados )</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>NU_AREA_UTILIZADA</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Área utilizada do empreendimento (em metros quadrados )</TD>
+</TR>
+<TR>
+<TD Class="NumRed">25</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela ijrm.TX_TIPO_LOGRADOURO (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>CD_DOMICILIO_FISCAL</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identifica se vai existir estabelecimento no empreendimento.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">27</TD>
+<TD>SEQ_REGIAO_ADMINISTRATIVA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira da tabela ijrm.tx_regiaoadministrativa</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>NU_INSCRICAO_IMOBILIARIA</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número da inscrição imobiliária do endereço do estabelecimento.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">29</TD>
+<TD>SEQ_ENDERECO_CORRESPONDENCIA_BU</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para BALCAO_UNICO.TB_ENDERECO_CORRESPONDENCIA_BU</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>CD_LOGRADOURO_PREFEITURA</TD>
+<TD nowrap>VARCHAR2(25 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo que armazenara o codigo vindo da api da prefeitura para utilizar na analise de cnae</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>DS_ENDERECO_FORMATADO_PREFEITURA</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Endereço que virá formatado na consulta de endereço da prefeitura</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>CD_NECESSITA_VIABILIDADE_ENDERECO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>Identifica se houve alterações de endereço e será preciso refazer a viabilidade de endereço. Valores possiveis: S ou N.</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>DS_TIPO_ENDERECO_CORRESPONDENCIA_SELECIONADO</TD>
+<TD nowrap>VARCHAR2(3 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Marca logica de seleção de endereco do balcao unico</TD>
+</TR>
+<TR>
+<TD Class="NumRed">34</TD>
+<TD>SEQ_SOCIO_ENDERECO_CORRESPONDENCIA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira com a tabela BALCAO_UNICO.TB_SOCIO_ADM_BU.SEQ_SOCIO_ADM_BU</TD>
+</TR>
+<TR>
+<TD Class="Num">35</TD>
+<TD>DS_REFERENCIA_ENDERECO</TD>
+<TD nowrap>VARCHAR2(200 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo de referencia do endereço</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>CD_COLETAR_DADOS_CONTADOR</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Marca qual opção marcada no campo de coletar dados contador. Valores possiveis: S ou N.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">37</TD>
+<TD>SEQ_NATUREZA_JURIDICA_BU</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela balcao_unico.TB_NATUREZA_JURIDICA_BU</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>CD_BAIRRO_PREFEITURA</TD>
+<TD nowrap>VARCHAR2(50 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Para armazenar o codigo do bairro que vem da prefeitura.</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>CD_TIPO_LOGRADOURO_PREFEITURA</TD>
+<TD nowrap>VARCHAR2(50 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Armazena o codigo do tipo de logradouro na prefeitura</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>NU_RECIBO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do recibo do DBE</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>NU_IDENTIFICADOR</TD>
+<TD nowrap>VARCHAR2(14 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do identificador do DBE</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>DS_OBJETO</TD>
+<TD nowrap>VARCHAR2(7000 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Objeto social da empresa</TD>
+</TR>
+<TR>
+<TD Class="Num">43</TD>
+<TD>CD_IDENTIFICADOR_LOTE</TD>
+<TD nowrap>VARCHAR2(50 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Para armazenar o codigo do lote que vem da prefeitura.</TD>
+</TR>
+<TR>
+<TD Class="Num">44</TD>
+<TD>CD_CADASTRAL_PREFEITURA</TD>
+<TD nowrap>VARCHAR2(25 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Código cadastral da prefeitura</TD>
+</TR>
+<TR>
+<TD Class="Num">45</TD>
+<TD>CD_BLOQUEAR_COMPLEMENTO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>'N'</TD>
+<TD>Controla se o usuário pode ou não editar este complemento. Valores possíveis: S ou N</TD>
+</TR>
+<TR>
+<TD Class="Num">46</TD>
+<TD>SEQ_ENDERECAMENTO_VA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_EMPRESA_BU</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_EMPRESABU_SOCIOADMBU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOCIO_ENDERECO_CORRESPONDENCIA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESABU_ENDCORRESPBU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_ENDERECO_CORRESPONDENCIA_BU</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESABU_SEQEMPFORAATUBU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA_FORMA_ATUACAO_BU</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESABU_SEQEMPTIPUNIDBU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA_TIPO_UNIDADE_BU</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESABU_SEQNATUREZAJURIDICABU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_NATUREZA_JURIDICA_BU</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESABU_SEQPORTE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_PORTE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESABU_SEQREGIAOADM</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_REGIAO_ADMINISTRATIVA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_EMPRESABU_SEQTIPOLOGRADOUR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_EMPRESA_BU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA_BU</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_EMPRESA_BU</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_EMPRESABU_EMPFORAATUBU</TD>
+<TD>SEQ_EMPRESA_FORMA_ATUACAO_BU</TD>
+<TD>BALCAO_UNICO</TD>
+<TD><A NAME="TB_EMPRESA_FORMA_ATUACAO_BU" HREF="../tables/TB_EMPRESA_FORMA_ATUACAO_BU.html">TB_EMPRESA_FORMA_ATUACAO_BU</A></TD>
+<TD>SEQ_EMPRESA_FORMA_ATUACAO_BU</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESABU_EMPTIPOUNIDADEBU</TD>
+<TD>SEQ_EMPRESA_TIPO_UNIDADE_BU</TD>
+<TD>BALCAO_UNICO</TD>
+<TD><A NAME="TB_EMPRESA_TIPO_UNIDADE_BU" HREF="../tables/TB_EMPRESA_TIPO_UNIDADE_BU.html">TB_EMPRESA_TIPO_UNIDADE_BU</A></TD>
+<TD>SEQ_EMPRESA_TIPO_UNIDADE_BU</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESABU_ENDCORRESPBU</TD>
+<TD>SEQ_ENDERECO_CORRESPONDENCIA_BU</TD>
+<TD>BALCAO_UNICO</TD>
+<TD><A NAME="TB_ENDERECO_CORRESPONDENCIA_BU" HREF="../tables/TB_ENDERECO_CORRESPONDENCIA_BU.html">TB_ENDERECO_CORRESPONDENCIA_BU</A></TD>
+<TD>SEQ_ENDERECO_CORRESPONDENCIA_BU</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESABU_NATUREZAJURIDICABU</TD>
+<TD>SEQ_NATUREZA_JURIDICA_BU</TD>
+<TD>BALCAO_UNICO</TD>
+<TD><A NAME="TB_NATUREZA_JURIDICA_BU" HREF="../tables/TB_NATUREZA_JURIDICA_BU.html">TB_NATUREZA_JURIDICA_BU</A></TD>
+<TD>SEQ_NATUREZA_JURIDICA_BU</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESABU_PORTE</TD>
+<TD>SEQ_PORTE</TD>
+<TD>IJRM</TD>
+<TD>TX_PORTE</TD>
+<TD>SEQ_PORTE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESABU_REGIAOADM</TD>
+<TD>SEQ_REGIAO_ADMINISTRATIVA</TD>
+<TD>IJRM</TD>
+<TD>TX_REGIAOADMINISTRATIVA</TD>
+<TD>SEQ_REGIAOADMINISTRATIVA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESABU_SOCIOADMBU</TD>
+<TD>SEQ_SOCIO_ENDERECO_CORRESPONDENCIA</TD>
+<TD>BALCAO_UNICO</TD>
+<TD><A NAME="TB_SOCIO_ADM_BU" HREF="../tables/TB_SOCIO_ADM_BU.html">TB_SOCIO_ADM_BU</A></TD>
+<TD>SEQ_SOCIO_ADM_BU</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_EMPRESABU_TXTIPOLOGRADOURO</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>IJRM</TD>
+<TD>TX_TIPO_LOGRADOURO</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_EMPRESA_BU</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_BLOQUEAR_COMPLEMENTO</TD>
+<TD>Check</TD>
+<TD>CD_BLOQUEAR_COMPLEMENTO IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_BLOQUEAR_COMPLEMENTO</TD>
+</TR>
+<TR>
+<TD>CK_CD_COLETAR_DADOS_CONTADOR</TD>
+<TD>Check</TD>
+<TD>CD_COLETAR_DADOS_CONTADOR IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_COLETAR_DADOS_CONTADOR</TD>
+</TR>
+<TR>
+<TD>CK_CD_DOMICILIO_FISCAL</TD>
+<TD>Check</TD>
+<TD>CD_DOMICILIO_FISCAL IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_DOMICILIO_FISCAL</TD>
+</TR>
+<TR>
+<TD>CK_CD_NECESSITA_VIABILIDADE_ENDERECO</TD>
+<TD>Check</TD>
+<TD>CD_NECESSITA_VIABILIDADE_ENDERECO IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_NECESSITA_VIABILIDADE_ENDERECO</TD>
+</TR>
+<TR>
+<TD>SYS_C0017134</TD>
+<TD>Check</TD>
+<TD>"SEQ_EMPRESA_BU" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_EMPRESA_BU</TD>
+</TR>
+<TR>
+<TD>SYS_C0017135</TD>
+<TD>Check</TD>
+<TD>"CD_NECESSITA_VIABILIDADE_ENDERECO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_NECESSITA_VIABILIDADE_ENDERECO</TD>
+</TR>
+<TR>
+<TD>PK_TB_EMPRESA_BU</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_EMPRESA_BU</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_EMPRESA_BU does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

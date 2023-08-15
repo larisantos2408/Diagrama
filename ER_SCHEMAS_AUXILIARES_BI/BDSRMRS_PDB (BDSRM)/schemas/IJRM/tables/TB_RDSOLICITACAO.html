@@ -1,0 +1,607 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_RDSOLICITACAO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_RDPROCURACAO.html" TITLE="TB_RDPROCURACAO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables3.html#TB_RDSOLICITACAO">Table TB_RDSOLICITACAO</A></TD>
+<TD Class="NavR"><A HREF="./TB_RDSOLICITACAO_VINCULADA.html" TITLE="TB_RDSOLICITACAO_VINCULADA">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_RDSOLICITACAO</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Armazena solicitação do Registro Digital</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_RDSOLICITACAO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_RDSOLICITACAO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela tb_rdsolicitacao (PK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela portal.tb_usuarioportal (FK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>NU_PROTOCOLOFCNREMP</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do processo do FCNREMP </TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de registro da solicitação</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data finalização do processo; está disponível para o usuário retirar</TD>
+</TR>
+<TR>
+<TD Class="NumRed">6</TD>
+<TD>CD_SITUACAO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identifica a situação da solicitação sendo:
+       0 - Cadastrado
+       1 - Assinando
+       2 - Assinado
+       3 - Em Análise
+       4 - Pendente
+       5 - Indeferido
+       6 - Deferido</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>BL_RDPROCESSADO_</TD>
+<TD nowrap>BLOB</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Contém a imagem do processo de registro digital assinado ou não, digitalmente; No novo registro digital  02/2014 este campo ficou sem uso</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>RECIBO_CADSINC</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">9</TD>
+<TD>NU_PROTOCOLO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Número do processo do SRM</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>Número de controle de versão do sistema</TD>
+</TR>
+<TR>
+<TD Class="NumRed">11</TD>
+<TD>SEQ_RDAUTORIZACAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela tb_rdautorizacao (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>CD_CHAVESEGURANCA</TD>
+<TD nowrap>VARCHAR2(4 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave de download de processo do registro digital nos moldes do via única.</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">13</TD>
+<TD>NU_PROTOCOLOENQ</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>BL_RDPROCESSADOENQ_</TD>
+<TD nowrap>BLOB</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>CD_VINCULAR_ENQUADRAMENTO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo que indica que o enquadramento será vinculado, sendo S - Sim  N - Não</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>DS_OBSERVACAO</TD>
+<TD nowrap>VARCHAR2(4000 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Observação que o usuário possa querer enviar ao analista</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>CD_AUTOMATICO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>S= processo é de registro automático</TD>
+</TR>
+<TR>
+<TD Class="NumRed">18</TD>
+<TD>NUM_PROTOCOLO_ALTERADO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo criado para salvar as solicitações que receberam 10 dígitos ou foram duplicadas.</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>CD_ASSINATURA_AVANCADA_CRIADA</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identifica se a solicitação criou os registros nas tabelas de assinatura avançada.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">20</TD>
+<TD>SEQ_REPO_BL_RDPROCESSADO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">21</TD>
+<TD>SEQ_REPO_BL_RDPROCESSADOENQ</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>CD_BALCAO_UNICO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica se é solicitação de balcão único, valores possíveis: S=SIM ou N=Não</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>CD_CONSTITUICAO_SEM_DBE</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica se o processo é de constituição sem DBE (via s53)</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>CD_DOC_PRINCIPAL_PADRAO_REMOVIDO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica se o documento padrão gerado pelo gerador de documentos foi removido/substituido</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>NU_IP</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>IP de acesso</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>CD_PROCESSADO_EXCLUSAO_DOC_PENDENCIA</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica se a solicitação foi processada pela rotina de exclusão de documentos com pendência. Valores possíveis: ‘S’ e ‘N’</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>NU_TENTATIVAS_EXCLUSAO_DOC_PENDENCIA</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica a quantidade de tentativas de exclusão sem sucesso dos documentos com pendência.</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>CD_AGENTEAUXILIAR</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica se é um protocolo de coleta de agente auxiliar. Valores possíveis: S, N.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_RDSOLICITACAO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_FK_RDSOL_REPOSIMG_SEQBLRDP</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_REPO_BL_RDPROCESSADO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_FK_RDSOL_REPOSIMG_SEQBLREN</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_REPO_BL_RDPROCESSADOENQ</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_RDSOLICITACAO_CDSIT_NUPROT</TD>
+<TD>NORMAL</TD>
+<TD>CD_SITUACAO, NU_PROTOCOLOENQ</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_RDSOLICITACAO_CDSITUACAO</TD>
+<TD>NORMAL</TD>
+<TD>CD_SITUACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_RDSOLICITACAO_NUMPROTALTER</TD>
+<TD>NORMAL</TD>
+<TD>NUM_PROTOCOLO_ALTERADO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_RDSOLICITACAO_SEQBLRDPROCE</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>NVL("SEQ_REPO_BL_RDPROCESSADO",0)</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_RDSOLICITACAO_SEQBLRDPROEN</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>NVL("SEQ_REPO_BL_RDPROCESSADOENQ",0)</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_RDSOLICITACAO_SEQ_RDAUTORI</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_RDAUTORIZACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_RDSOLICITACAO_SEQ_USUARIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_RDSOLICITACAO_01</TD>
+<TD>NORMAL</TD>
+<TD>CD_SITUACAO, NU_PROTOCOLO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_RDSOLICITACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_RDSOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>UK_RDSOLICITACAO_NUPROTFCNREMP</TD>
+<TD>NORMAL</TD>
+<TD>NU_PROTOCOLOFCNREMP</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>UK_RDSOLICITACAO_NU_PROTOCOLO</TD>
+<TD>NORMAL</TD>
+<TD>NU_PROTOCOLO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_RDSOLICITACAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_RDSOLICITACAO_RDAUTORIZACAO</TD>
+<TD>SEQ_RDAUTORIZACAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_RDAUTORIZACAO" HREF="../tables/TB_RDAUTORIZACAO.html">TB_RDAUTORIZACAO</A></TD>
+<TD>SEQ_RDAUTORIZACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_RDSOL_REPOSIMG_SEQBLRDP</TD>
+<TD>SEQ_REPO_BL_RDPROCESSADO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_REPOSITORIO_IMAGEM" HREF="../tables/TB_REPOSITORIO_IMAGEM.html">TB_REPOSITORIO_IMAGEM</A></TD>
+<TD>SEQ_REPOSITORIO_IMAGEM</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_RDSOL_REPOSIMG_SEQBLREN</TD>
+<TD>SEQ_REPO_BL_RDPROCESSADOENQ</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_REPOSITORIO_IMAGEM" HREF="../tables/TB_REPOSITORIO_IMAGEM.html">TB_REPOSITORIO_IMAGEM</A></TD>
+<TD>SEQ_REPOSITORIO_IMAGEM</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_RDSOLICITACAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CH_TBRDSOLICITACAO_CD_SITUACAO</TD>
+<TD>Check</TD>
+<TD>cd_situacao in (0,1,2,3,4,5,6)</TD>
+<TD>ENABLED</TD>
+<TD>CD_SITUACAO</TD>
+</TR>
+<TR>
+<TD>CK_CD_AGENTEAUXILIAR</TD>
+<TD>Check</TD>
+<TD>CD_AGENTEAUXILIAR IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD>CK_CD_DOC_PRINCIPAL_PADRAO_REMOVIDO</TD>
+<TD>Check</TD>
+<TD>CD_DOC_PRINCIPAL_PADRAO_REMOVIDO IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_DOC_PRINCIPAL_PADRAO_REMOVIDO</TD>
+</TR>
+<TR>
+<TD>CK_CD_PROCESSADO_EXCLUSAO_DOC_PENDENCIA</TD>
+<TD>Check</TD>
+<TD>CD_PROCESSADO_EXCLUSAO_DOC_PENDENCIA IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_PROCESSADO_EXCLUSAO_DOC_PENDENCIA</TD>
+</TR>
+<TR>
+<TD>CK_RDSOLIC_CDASSINAAVANCCRIADA</TD>
+<TD>Check</TD>
+<TD>CD_ASSINATURA_AVANCADA_CRIADA IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_ASSINATURA_AVANCADA_CRIADA</TD>
+</TR>
+<TR>
+<TD>CK_RDSOLIC_CD_BALCAO_UNICO</TD>
+<TD>Check</TD>
+<TD>CD_BALCAO_UNICO IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_BALCAO_UNICO</TD>
+</TR>
+<TR>
+<TD>SYS_C0011447</TD>
+<TD>Check</TD>
+<TD>"SEQ_RDSOLICITACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_RDSOLICITACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0015832</TD>
+<TD>Check</TD>
+<TD>"NU_PROTOCOLO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NU_PROTOCOLO</TD>
+</TR>
+<TR>
+<TD>PK_TB_RDSOLICITACAO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_RDSOLICITACAO</TD>
+</TR>
+<TR>
+<TD>UK_RDSOLICITACAO_NUPROTFCNREMP</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>NU_PROTOCOLOFCNREMP</TD>
+</TR>
+<TR>
+<TD>UK_RDSOLICITACAO_NU_PROTOCOLO</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>NU_PROTOCOLO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_RDSOLICITACAO does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

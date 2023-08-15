@@ -1,0 +1,372 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>PORTAL_SERVICOS Table TB_USUARIOPORTAL</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema PORTAL_SERVICOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:35:04</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_RESPOSTA_PESQUISA_SATISFACAO.html" TITLE="TB_RESPOSTA_PESQUISA_SATISFACAO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_USUARIOPORTAL">Table TB_USUARIOPORTAL</A></TD>
+<TD Class="NavR"><A HREF="./TB_USUARIOPORTAL_PERFIL.html" TITLE="TB_USUARIOPORTAL_PERFIL">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_USUARIOPORTAL</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_USUARIOPORTAL</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave Primaria.</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>DS_PASSWORD</TD>
+<TD nowrap>VARCHAR2(40 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Senha do usuario do portal.</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>NM_USUARIOPORTAL</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do usuario do portal.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>NU_CPF</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CPF do usuario cadastrado no portal este tambem sera o seu login.</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>NU_DDDTELEFONE</TD>
+<TD nowrap>VARCHAR2(3 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>DDD do telefone do usuario do portal.</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>NU_TELEFONE</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Numero do telefone do usuario do portal.</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>NU_DDDCELULAR</TD>
+<TD nowrap>VARCHAR2(3 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>DDD do telefone do usuario do portal. </TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>NU_CELULAR</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Numero do telefone celular do usuario do portal.</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>DS_EMAIL</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Email do usuario do portal.</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>NM_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do Logradouro do endereco do usuario do portal.</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave extrangeira do tipo logradouro selecinado no cadastro do usuario do portal. </TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>DS_COMPLEMENTO</TD>
+<TD nowrap>VARCHAR2(156 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Complemento do endereco do usuario do portal.</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>NU_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Numero do Logradouro do endereco do usuario do portal.</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>DS_BAIRRO</TD>
+<TD nowrap>VARCHAR2(72 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do Bairro do endereco do usuario do portal.</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>NU_CEP</TD>
+<TD nowrap>VARCHAR2(9 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Cep do Endereco do usuario do portal. </TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>DS_ENDERECOEXTERIOR</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Endereco descritivo de um usuario do portal do exteriror.</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave extrangeira do municipio selecinado no cadastro do usuario do portal.</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo para controle de concorrencia, utilizado na aplicac?o.</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>DT_ALTERACAOSENHA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>campo q especifica a uilma data de alterac?o da senha</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>DT_NASCIMENTO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>null</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>CD_STATUS</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>DT_VALIDADE_HASH</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>DT_ATUALIZACAO_GOV_BR</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data da última atualização dos dados do usuário pelo GovBR</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>DS_TOKEN_LOGIN_KEYCLOAK</TD>
+<TD nowrap>VARCHAR2(3000 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Token do keycloak gerado no momento do login</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>CD_EXIBE_PESQUISA_SATISFACAO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Valores posiveis: S=SIM ou N=NÃO e a letra D.</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>SEQ_IMAGEM_PERFIL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>DT_ALTERACAO_DADOS</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de Alteração dos Dados.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_USUARIOPORTAL</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_USUARIOPORTAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>UK_TB_USUARIOPORTAL_NU_CPF</TD>
+<TD>NORMAL</TD>
+<TD>NU_CPF</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_USUARIOPORTAL</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_EXIBE_PESQUISA_SATISFACAO</TD>
+<TD>Check</TD>
+<TD>CD_EXIBE_PESQUISA_SATISFACAO IN ('S','N','D')</TD>
+<TD>ENABLED</TD>
+<TD>CD_EXIBE_PESQUISA_SATISFACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010413</TD>
+<TD>Check</TD>
+<TD>"SEQ_USUARIOPORTAL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+</TR>
+<TR>
+<TD>SYS_C0010414</TD>
+<TD>Check</TD>
+<TD>"DS_PASSWORD" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DS_PASSWORD</TD>
+</TR>
+<TR>
+<TD>PK_TB_USUARIOPORTAL</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+</TR>
+<TR>
+<TD>UK_TB_USUARIOPORTAL_NU_CPF</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>NU_CPF</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_USUARIOPORTAL does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

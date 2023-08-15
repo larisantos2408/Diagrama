@@ -1,0 +1,469 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>BALCAO_UNICO Table TB_CONTADOR_BU</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema BALCAO_UNICO</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:00</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_CONSELHEIRO_BU.html" TITLE="TB_CONSELHEIRO_BU">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_CONTADOR_BU">Table TB_CONTADOR_BU</A></TD>
+<TD Class="NavR"><A HREF="./TB_DECLARACAO_ACEITA_PROCESSO_BU.html" TITLE="TB_DECLARACAO_ACEITA_PROCESSO_BU">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_CONTADOR_BU</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_CONTADOR_BU</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave Primária</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>NM_CONTADOR</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do contador</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>NU_CPF_CNPJ</TD>
+<TD nowrap>VARCHAR2(14 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do CPF ou CNPJ do contador</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>NU_CRC</TD>
+<TD nowrap>VARCHAR2(6 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número no Conselho Regional de Contabilidade</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>CD_CPF_CNPJ_CONTADOR</TD>
+<TD nowrap>VARCHAR2(2 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identifica se o contador é PF ou PJ sendo: 1 = PJ; 2 = PF</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>SEQ do municipio do endereço do contador</TD>
+</TR>
+<TR>
+<TD Class="NumRed">7</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira com a tabela IJRM.TX_TIPO_LOGRADOURO</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>DS_COMPLEMENTO</TD>
+<TD nowrap>VARCHAR2(156 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descricão complementar do endereço do contador</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>DS_EMAIL</TD>
+<TD nowrap>VARCHAR2(115 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descrição do Email do contador</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>NM_BAIRRO</TD>
+<TD nowrap>VARCHAR2(50 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do bairro do endereço do contador</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>NM_EMPRESA_CONTABIL</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome da Empresa Contábil</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>NM_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(60 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do logradouro do endereço do contador</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>NU_CEP</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do CEP do endereço do contador</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>NU_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(6 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do logradouro do endereço do contador</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>NU_DDD_TELEFONE</TD>
+<TD nowrap>VARCHAR2(9 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do DDD do telefone comercial do contador</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>NU_TELEFONE</TD>
+<TD nowrap>VARCHAR2(9 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do telefone residencial do contador</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>SEQ_UF</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Sequencia do estado do endereço do contador</TD>
+</TR>
+<TR>
+<TD Class="NumRed">18</TD>
+<TD>SEQ_UF_CRC</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira com a tabela IJRM.TX_UF</TD>
+</TR>
+<TR>
+<TD Class="NumRed">19</TD>
+<TD>SEQ_EMPRESA_BU</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira com a tabela BALCAO_UNICO.TB_EMPRESA_BU</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Data de criação lógica do registro</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de exclusão lógica do registro</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número da versão do registro</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>DS_CATEGORIA</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo pra armazenar a categoria do contador</TD>
+</TR>
+<TR>
+<TD Class="NumRed">24</TD>
+<TD>SEQ_TIPO_CRC_CONTADOR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira com a tabela INTEGRADOR_ESTADUAL.TX_TIPO_CRC_CONTADOR</TD>
+</TR>
+<TR>
+<TD Class="NumRed">25</TD>
+<TD>SEQ_CLASSIFICACAO_CRC_CONTADOR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira com a tabela INTEGRADOR_ESTADUAL.TX_CLASSIFICACAO_CRC_CONTADOR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_CONTADOR_BU</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONTADORBU_SEQCLASSIFICACAOCRCCONTADOR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_CLASSIFICACAO_CRC_CONTADOR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONTADORBU_SEQEMPRESABU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA_BU</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONTADORBU_SEQTIPOCRCCONTADOR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_CRC_CONTADOR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONTADORBU_SEQTIPOLOGRADOURO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONTADORBU_SEQUF</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_UF_CRC</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_CONTADOR_BU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_CONTADOR_BU</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_CONTADOR_BU</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_CONTADORBU_CLASSIFICACAOCRCCONTADOR</TD>
+<TD>SEQ_CLASSIFICACAO_CRC_CONTADOR</TD>
+<TD>INTEGRADOR_ESTADUAL</TD>
+<TD>TX_CLASSIFICACAO_CRC_CONTADOR</TD>
+<TD>SEQ_CLASSIFICACAO_CRC_CONTADOR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_CONTADORBU_EMPRESABU</TD>
+<TD>SEQ_EMPRESA_BU</TD>
+<TD>BALCAO_UNICO</TD>
+<TD><A NAME="TB_EMPRESA_BU" HREF="../tables/TB_EMPRESA_BU.html">TB_EMPRESA_BU</A></TD>
+<TD>SEQ_EMPRESA_BU</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_CONTADORBU_TIPOCRCCONTADOR</TD>
+<TD>SEQ_TIPO_CRC_CONTADOR</TD>
+<TD>INTEGRADOR_ESTADUAL</TD>
+<TD>TX_TIPO_CRC_CONTADOR</TD>
+<TD>SEQ_TIPO_CRC_CONTADOR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_CONTADORBU_TIPOLOGRADOURO</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>IJRM</TD>
+<TD>TX_TIPO_LOGRADOURO</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_CONTADORBU_UF</TD>
+<TD>SEQ_UF_CRC</TD>
+<TD>IJRM</TD>
+<TD>TX_UF</TD>
+<TD>SEQ_UF</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_CONTADOR_BU</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0017192</TD>
+<TD>Check</TD>
+<TD>"SEQ_CONTADOR_BU" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_CONTADOR_BU</TD>
+</TR>
+<TR>
+<TD>SYS_C0017193</TD>
+<TD>Check</TD>
+<TD>"DT_INICIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DT_INICIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0017923</TD>
+<TD>Check</TD>
+<TD>"SEQ_TIPO_CRC_CONTADOR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_TIPO_CRC_CONTADOR</TD>
+</TR>
+<TR>
+<TD>SYS_C0017924</TD>
+<TD>Check</TD>
+<TD>"SEQ_CLASSIFICACAO_CRC_CONTADOR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_CLASSIFICACAO_CRC_CONTADOR</TD>
+</TR>
+<TR>
+<TD>PK_TB_CONTADOR_BU</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_CONTADOR_BU</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_CONTADOR_BU does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

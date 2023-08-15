@@ -1,0 +1,359 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_GPDISTRIBUICAO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_FUNDO_LIVRO.html" TITLE="TB_FUNDO_LIVRO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_GPDISTRIBUICAO">Table TB_GPDISTRIBUICAO</A></TD>
+<TD Class="NavR"><A HREF="./TB_GPDISTRIBUICAO_TIPOJURIDICO.html" TITLE="TB_GPDISTRIBUICAO_TIPOJURIDICO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_GPDISTRIBUICAO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_GPDISTRIBUICAO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela IJRM.TB_GPDISTRIBUICAO (PK)</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>NM_GPDISTRIBUICAO</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do Grupo</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>NU_META</TD>
+<TD nowrap>VARCHAR2(3 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Quantidade de processos que devem ser analisados diariamente por cada usuário do grupo</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">4</TD>
+<TD>CD_CONSTITUICAO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de constituição  1 = analisa processo de constituição</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>CD_OUTROS</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de alteração  1 = analisa processo de alteração</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>CD_EXTINCAO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de extinção  1 = analisa processo de extinção</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>CD_TRANSFORMACAO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de transformação  1 = analisa processo de transformação</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>CD_TIPODECISAO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = SINGULAR 1=COLEGIADA 2=AMBOS</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>CD_AGENTEAUXILIAR</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = Não analisa processo de Agente Auxiliar 1=Analisa processo de Agente Auxiliar</TD>
+</TR>
+<TR>
+<TD Class="NumRed">10</TD>
+<TD>CD_ANALISTADBE</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = Analisa processo de Analista   1 = analisa processo de DBE</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Criação do grupo</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Termino do grupo</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Controle de versão</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>CD_DOCUMENTO_INTERESSE</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo com os atos(310,205 e 207)  1 = analisa processo com os atos(310,205 e 207)</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>CD_ARMAZEM_GERAL</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de armazem geral,  1 = analisa processo de armazem geral</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>CD_EVENTOS</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo com os eventos(039,040, 961 e 2246),  1 = analisa processo com os eventos(039,040, 961 e 2246)</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>CD_INCORPORACAO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de incorporacao/fusao/cisao,  1 = analisa processo de incorporacao/fusao/cisao</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>CD_ENQUADRAMENTO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de enquadramento/desenquadramento,  1 = analisa processo de enquadramento/desenquadramento</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>CD_ALTERACAO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de alteração,  1 = analisa processo de alteração</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>CD_DIGITALMANUAL</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = analisa processo manual,  1 = analisa processo digital</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>CD_DIGITALIZADO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = analisa processo não digitalizado,  1 = analisa processo de digitalizado</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>CD_VIAUNICA</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>1 = analisa processo de alteração após a entrada do via unica </TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>CD_LEILOEIRO_TRADUTOR</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de leiloeiro/tradutor ,  1 = analisa processo de leiloeiro/tradutor</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>CD_PROCURACAO</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de procuração ,  1 = analisa processo de procuração</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>CD_RERATIFICACAO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de re-ratificação ,  1 = analisa processo de re-ratificação
+</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>CD_BALANCO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>0 = não analisa processo de Balanço ,  1 = analisa processo de Balanço</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_GPDISTRIBUICAO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_GPDISTRIBUICAO_01</TD>
+<TD>NORMAL</TD>
+<TD>CD_ANALISTADBE, CD_CONSTITUICAO, SEQ_GPDISTRIBUICAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_GPDISTRIBUICAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_GPDISTRIBUICAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_GPDISTRIBUICAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_BALANCO</TD>
+<TD>Check</TD>
+<TD>CD_BALANCO IN (0,1)</TD>
+<TD>ENABLED</TD>
+<TD>CD_BALANCO</TD>
+</TR>
+<TR>
+<TD>CK_CD_RERATIFICACAO</TD>
+<TD>Check</TD>
+<TD>CD_RERATIFICACAO IN (0,1)</TD>
+<TD>ENABLED</TD>
+<TD>CD_RERATIFICACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010693</TD>
+<TD>Check</TD>
+<TD>"SEQ_GPDISTRIBUICAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_GPDISTRIBUICAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_GPDISTRIBUICAO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_GPDISTRIBUICAO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_GPDISTRIBUICAO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

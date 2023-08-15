@@ -1,0 +1,307 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TX_TIPOMOVIMENTOAGENTEAUX</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TX_TIPO_MINASFACIL.html" TITLE="TX_TIPO_MINASFACIL">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables5.html#TX_TIPOMOVIMENTOAGENTEAUX">Table TX_TIPOMOVIMENTOAGENTEAUX</A></TD>
+<TD Class="NavR"><A HREF="./TX_TIPO_PESQUISA.html" TITLE="TX_TIPO_PESQUISA">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TX_TIPOMOVIMENTOAGENTEAUX</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Tipos de arquivamento de movimentação de agentes auxiliares do comércio</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TX_TIPOMOVIMENTOAGENTEAUX</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_TIPOMOVIMENTOAGENTEAUX</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>DS_MOVIMENTACAO</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>CD_VALOR</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>Y</TD>
+<TD>0</TD>
+<TD>0=não coleta    1=coleta valor monetário</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>CD_DATA</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>Y</TD>
+<TD>0</TD>
+<TD>0=não coleta    1=coleta apenas uma data</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>CD_PERIODO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>Y</TD>
+<TD>0</TD>
+<TD>0=não coleta    1=coleta PERIODO: data inicial e data final</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>CD_QUANTIDADE</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>Y</TD>
+<TD>0</TD>
+<TD>0=não coleta    1=coleta quantidade</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>CD_PUBLICACAO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>Y</TD>
+<TD>0</TD>
+<TD>0=não coleta   1=coletar publicação em jornais</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>NM_CAMPODATA</TD>
+<TD nowrap>VARCHAR2(30 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do campo data na tela da aplicação</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>NM_CAMPOPERIODO</TD>
+<TD nowrap>VARCHAR2(30 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do campo período na tela da aplicação</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>CD_TIPOLEILAO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tipo de Leilão:  P= Particular  J=Judicial   A=Administração pública</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>CD_SITUACAOLEILAO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Situações:   R=realizado   A-anulado  S=suspenso</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TX_TIPOMOVIMENTOAGENTEAUX</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TX_TIPOMOVIMENTOAGENTEAUX</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPOMOVIMENTOAGENTEAUX</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TX_TIPOMOVIMENTOAGENTEAUX</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_DATA</TD>
+<TD>Check</TD>
+<TD>CD_DATA IN (0,1)</TD>
+<TD>ENABLED</TD>
+<TD>CD_DATA</TD>
+</TR>
+<TR>
+<TD>CK_CD_PERIODO</TD>
+<TD>Check</TD>
+<TD>CD_PERIODO IN (0,1)</TD>
+<TD>ENABLED</TD>
+<TD>CD_PERIODO</TD>
+</TR>
+<TR>
+<TD>CK_CD_PUBLICACAO</TD>
+<TD>Check</TD>
+<TD>CD_PUBLICACAO IN (0,1)</TD>
+<TD>ENABLED</TD>
+<TD>CD_PUBLICACAO</TD>
+</TR>
+<TR>
+<TD>CK_CD_QUANTIDADE</TD>
+<TD>Check</TD>
+<TD>CD_QUANTIDADE IN (0,1)</TD>
+<TD>ENABLED</TD>
+<TD>CD_QUANTIDADE</TD>
+</TR>
+<TR>
+<TD>CK_CD_VALOR</TD>
+<TD>Check</TD>
+<TD>CD_VALOR IN (0,1)</TD>
+<TD>ENABLED</TD>
+<TD>CD_VALOR</TD>
+</TR>
+<TR>
+<TD>SYS_C0010868</TD>
+<TD>Check</TD>
+<TD>"SEQ_TIPOMOVIMENTOAGENTEAUX" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_TIPOMOVIMENTOAGENTEAUX</TD>
+</TR>
+<TR>
+<TD>SYS_C0010869</TD>
+<TD>Check</TD>
+<TD>"DS_MOVIMENTACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DS_MOVIMENTACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010870</TD>
+<TD>Check</TD>
+<TD>"CD_VALOR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_VALOR</TD>
+</TR>
+<TR>
+<TD>SYS_C0010871</TD>
+<TD>Check</TD>
+<TD>"CD_DATA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_DATA</TD>
+</TR>
+<TR>
+<TD>SYS_C0010872</TD>
+<TD>Check</TD>
+<TD>"CD_PERIODO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_PERIODO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010873</TD>
+<TD>Check</TD>
+<TD>"CD_QUANTIDADE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_QUANTIDADE</TD>
+</TR>
+<TR>
+<TD>SYS_C0010874</TD>
+<TD>Check</TD>
+<TD>"CD_PUBLICACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_PUBLICACAO</TD>
+</TR>
+<TR>
+<TD>PK_TX_TIPOMOVIMENTOAGENTEAUX</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_TIPOMOVIMENTOAGENTEAUX</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TX_TIPOMOVIMENTOAGENTEAUX does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

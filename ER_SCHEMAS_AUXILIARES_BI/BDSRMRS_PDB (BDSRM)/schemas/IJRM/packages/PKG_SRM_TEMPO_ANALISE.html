@@ -1,0 +1,708 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Package PKG_SRM_TEMPO_ANALISE</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./PKG_CARGA_CORREIOS.html" TITLE="PKG_CARGA_CORREIOS">Prior Package</A></TD>
+<TD Class="NavC">Package PKG_SRM_TEMPO_ANALISE</TD>
+<TD Class="NavR"><A HREF="./PK_INDG.html" TITLE="PK_INDG">Next Package</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Objects and Arguments for Package PKG_SRM_TEMPO_ANALISE</CAPTION>
+<TR>
+<TH>Object Name</TH>
+<TH>Overload</TH>
+<TH>Argument Name</TH>
+<TH>Position</TH>
+<TH>Datatype</TH>
+<TH>Direction</TH>
+</TR>
+<TR>
+<TD>R_DASHBOARD_GRAFICO</TD>
+<TD>&nbsp;</TD>
+<TD>PETAPA</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_DASHBOARD_GRAFICO</TD>
+<TD>&nbsp;</TD>
+<TD>PCALCULO</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_DASHBOARD_GRAFICO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">3</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_DASHBOARD_MES_CORRENTE</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">1</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_DASHBOARD_RANKING_MUNICIPIOS</TD>
+<TD>&nbsp;</TD>
+<TD>PETAPA</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_DASHBOARD_RANKING_MUNICIPIOS</TD>
+<TD>&nbsp;</TD>
+<TD>PCALCULO</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_DASHBOARD_RANKING_MUNICIPIOS</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">3</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_DASHBOARD_REGISTRO_JUNTA</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">1</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_DASHBOARD_REGISTRO_JUNTA2</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">1</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PTIPO</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_TIPO_JURIDICO</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PTIPO_PESSOA</TD>
+<TD Class="Num">3</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_PAIS</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PSEXO</TD>
+<TD Class="Num">5</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PCLASSE_ATIVIDADE</TD>
+<TD Class="Num">6</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_CNAE_SUBCLASSE</TD>
+<TD Class="Num">7</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_MUNICIPIO</TD>
+<TD Class="Num">8</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PPORTE</TD>
+<TD Class="Num">9</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PMEI</TD>
+<TD Class="Num">10</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PTIPOCNAE</TD>
+<TD Class="Num">11</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PDATAINICIO</TD>
+<TD Class="Num">12</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PDATAFIM</TD>
+<TD Class="Num">13</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>PQUEBRA_SAIDA</TD>
+<TD Class="Num">14</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_ESTATISTICA_EMPRESAS</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">15</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_INTEGRACAO_MUNICIPIO</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_INTEGRACAO_MUNICIPIO</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_MUNICIPIO</TD>
+<TD Class="Num">2</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_INTEGRACAO_MUNICIPIO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">3</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_RANKING_PREFEITURAS</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_INI</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RANKING_PREFEITURAS</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RANKING_PREFEITURAS</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_MUNICIPIO</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RANKING_PREFEITURAS</TD>
+<TD>&nbsp;</TD>
+<TD>PTIPO_JURIDICO</TD>
+<TD Class="Num">4</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RANKING_PREFEITURAS</TD>
+<TD>&nbsp;</TD>
+<TD>PCALCULO</TD>
+<TD Class="Num">5</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RANKING_PREFEITURAS</TD>
+<TD>&nbsp;</TD>
+<TD>PINCLUIJUNTA</TD>
+<TD Class="Num">6</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RANKING_PREFEITURAS</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">7</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_RESUMO_INTEGRACAO</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RESUMO_INTEGRACAO</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANOFIM</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_RESUMO_INTEGRACAO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">3</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_SOLICITACAO_EM_ANALISE</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_UNIDADE</TD>
+<TD Class="Num">1</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_SOLICITACAO_EM_ANALISE</TD>
+<TD>&nbsp;</TD>
+<TD>PTIPOSOLICITACAO</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_SOLICITACAO_EM_ANALISE</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">3</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_TEMPO_ANALISE_LICENC_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_INI</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_MUNICIPIO</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PTIPO_LICENCIAMENTO</TD>
+<TD Class="Num">4</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PNIVELRISCO</TD>
+<TD Class="Num">5</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_ORGAO</TD>
+<TD Class="Num">6</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_TIPO_LICENCA_ORGAO</TD>
+<TD Class="Num">7</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PCALCULO</TD>
+<TD Class="Num">8</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">9</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_TEMPO_ANALISE_LICENC_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_INI</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_MUNICIPIO</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PTIPO_LICENCIAMENTO</TD>
+<TD Class="Num">4</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PNIVELRISCO</TD>
+<TD Class="Num">5</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_ORGAO</TD>
+<TD Class="Num">6</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_TIPO_LICENCA_ORGAO</TD>
+<TD Class="Num">7</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PCALCULO</TD>
+<TD Class="Num">8</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_LICENC_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">9</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_TEMPO_ANALISE_VIAB_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_INI</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_VIAB_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_VIAB_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_MUNICIPIO</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_VIAB_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PTIPO_VIAB</TD>
+<TD Class="Num">4</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_VIAB_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PCALCULO</TD>
+<TD Class="Num">5</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_ANALISE_VIAB_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">6</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_TEMPO_FORMALIZACAO_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_INI</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_FORMALIZACAO_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_FORMALIZACAO_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_MUNICIPIO</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_FORMALIZACAO_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PCALCULO</TD>
+<TD Class="Num">4</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_FORMALIZACAO_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">5</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_TEMPO_FORMALIZACAO_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_INI</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_FORMALIZACAO_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_FORMALIZACAO_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_MUNICIPIO</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_FORMALIZACAO_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>PCALCULO</TD>
+<TD Class="Num">4</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_FORMALIZACAO_MESANO</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">5</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>R_TEMPO_REGISTRO_JUNTA_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_INI</TD>
+<TD Class="Num">1</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_REGISTRO_JUNTA_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PMESANO_FIM</TD>
+<TD Class="Num">2</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_REGISTRO_JUNTA_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PSEQ_MUNICIPIO</TD>
+<TD Class="Num">3</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_REGISTRO_JUNTA_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PDS_FORMATRAB</TD>
+<TD Class="Num">4</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_REGISTRO_JUNTA_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PDS_DECISAO</TD>
+<TD Class="Num">5</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_REGISTRO_JUNTA_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PDS_TIPO</TD>
+<TD Class="Num">6</TD>
+<TD>CLOB</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_REGISTRO_JUNTA_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>PCALCULO</TD>
+<TD Class="Num">7</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">R_TEMPO_REGISTRO_JUNTA_CARGA</TD>
+<TD>&nbsp;</TD>
+<TD>OUT_RESULTSET</TD>
+<TD Class="Num">8</TD>
+<TD>REF CURSOR</TD>
+<TD>OUT</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

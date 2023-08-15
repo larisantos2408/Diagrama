@@ -1,0 +1,274 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJSS Table TB_RELATORIO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJSS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:56</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_RECURSO.html" TITLE="TB_RECURSO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_RELATORIO">Table TB_RELATORIO</A></TD>
+<TD Class="NavR"><A HREF="./TB_SISTEMA.html" TITLE="TB_SISTEMA">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_RELATORIO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="Num">1</TD>
+<TD>SEQ_RELATORIO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>COD_RELATORIO</TD>
+<TD nowrap>VARCHAR2(4 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>DES_RELATORIO</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>COD_USUARIO</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>DAT_MOVIMENTACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>NUM_VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>FLG_PERSONALIZADO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>FLG_PDF</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'S'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>FLG_XLS</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>FLG_CSV</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>FLG_HTML</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>FLG_TXT</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>FLG_BEAN</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'S'</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_RELATORIO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0010345</TD>
+<TD>Check</TD>
+<TD>"SEQ_RELATORIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_RELATORIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010346</TD>
+<TD>Check</TD>
+<TD>"COD_RELATORIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>COD_RELATORIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010347</TD>
+<TD>Check</TD>
+<TD>"DES_RELATORIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DES_RELATORIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010348</TD>
+<TD>Check</TD>
+<TD>"COD_USUARIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>COD_USUARIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010349</TD>
+<TD>Check</TD>
+<TD>"DAT_MOVIMENTACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DAT_MOVIMENTACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010350</TD>
+<TD>Check</TD>
+<TD>"FLG_PERSONALIZADO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLG_PERSONALIZADO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010351</TD>
+<TD>Check</TD>
+<TD>"FLG_PDF" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLG_PDF</TD>
+</TR>
+<TR>
+<TD>SYS_C0010352</TD>
+<TD>Check</TD>
+<TD>"FLG_XLS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLG_XLS</TD>
+</TR>
+<TR>
+<TD>SYS_C0010353</TD>
+<TD>Check</TD>
+<TD>"FLG_CSV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLG_CSV</TD>
+</TR>
+<TR>
+<TD>SYS_C0010354</TD>
+<TD>Check</TD>
+<TD>"FLG_HTML" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLG_HTML</TD>
+</TR>
+<TR>
+<TD>SYS_C0010355</TD>
+<TD>Check</TD>
+<TD>"FLG_TXT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLG_TXT</TD>
+</TR>
+<TR>
+<TD>SYS_C0010356</TD>
+<TD>Check</TD>
+<TD>"FLG_BEAN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLG_BEAN</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_RELATORIO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Indexes</TD>
+</TR>
+<TR>
+<TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

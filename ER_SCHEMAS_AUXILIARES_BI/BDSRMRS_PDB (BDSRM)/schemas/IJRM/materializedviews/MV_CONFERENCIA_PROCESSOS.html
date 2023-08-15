@@ -1,0 +1,275 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Materialized View MV_CONFERENCIA_PROCESSOS</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS E IJRM</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:22:00</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../indexes1.html">Indexes</a></li>
+<li><a href="../materializedviews1.html">Materialized Views</a></li>
+<li><a href="../sequences1.html">Sequences</a></li>
+<li><a href="../synonyms1.html">Synonyms</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../types1.html">Types</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavLSilver"><A>Prior Materialized View</A></TD>
+<TD Class="NavC"><A HREF="../materializedviews1.html#MV_CONFERENCIA_PROCESSOS">Materialized View MV_CONFERENCIA_PROCESSOS</A></TD>
+<TD Class="NavRSilver"><A>Next Materialized View</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Materialized View MV_CONFERENCIA_PROCESSOS</CAPTION>
+<TR>
+<TH>Table</TH>
+<TH>Query</TH>
+</TR>
+<TR>
+<TD><A NAME="MV_CONFERENCIA_PROCESSOS" HREF="../tables/MV_CONFERENCIA_PROCESSOS.html">MV_CONFERENCIA_PROCESSOS</A></TD>
+<TD><PRE>SELECT P.SEQ_SOLICITACAO,
+       P.NUM_PROTOCOLO,
+       E.NIRE,
+       E.SEQ_EMPRESA,
+       P.NOME_EMPRESA,
+       P.DT_APROVACAO,
+       P.NUM_APROVACAO,
+       NJ.SEQ_TIPO_JURIDICO,
+       NVL (P.CD_REGISTRODIGITAL, 0)
+           CDREGISTRODIGITAL,
+       CASE
+           --  Leiloeiro/Tradutor
+           WHEN S.SEQ_AGENTEAUXILIAR IS NOT NULL
+           THEN
+               &#x0027;LEILOEIROTRADUTOR&#x0027;
+           WHEN S.SEQ_SOLICITACAO IN
+                    (SELECT S.SEQ_SOLICITACAO
+                       FROM IJRM.TB_ATO_EVENTO_SOLICITACAO AE, IJRM.TB_ATO AT
+                      WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                            AND AE.SEQ_ATO = AT.SEQ_ATO(+)
+                            AND AT.FLAG_TIPO_ATO IN (&#x0027;S&#x0027;))
+           THEN
+               &#x0027;ARMAZEMGERAL&#x0027;
+           WHEN S.SEQ_SOLICITACAO IN
+                    (SELECT S.SEQ_SOLICITACAO
+                       FROM IJRM.TB_ATO_EVENTO_SOLICITACAO  AE,
+                            IJRM.TB_ATO                     AT,
+                            IJRM.TB_EVENTO                  EV
+                      WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                            AND AE.SEQ_ATO = AT.SEQ_ATO(+)
+                            AND AE.SEQ_EVENTO = EV.SEQ_EVENTO(+)
+                            AND (   AT.FLAG_TIPO_ATO = &#x0027;T&#x0027;
+                                 OR EV.FLAG_TIPO_EVENTO = &#x0027;T&#x0027;))
+           THEN
+               &#x0027;TRANSFORMACAO&#x0027;
+           WHEN (    S.SEQ_SOLICITACAO IN
+                         (SELECT S.SEQ_SOLICITACAO
+                            FROM IJRM.TB_ATO_EVENTO_SOLICITACAO  AE,
+                                 IJRM.TB_ATO                     AT
+                           WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                                 AND AE.SEQ_ATO = AT.SEQ_ATO
+                                 AND AT.COD_ATO = &#x0027;002&#x0027;)
+                 AND S.SEQ_SOLICITACAO IN
+                         (SELECT S.SEQ_SOLICITACAO
+                            FROM IJRM.TB_ATO_EVENTO_SOLICITACAO  AE,
+                                 IJRM.TB_EVENTO                  EV
+                           WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                                 AND AE.SEQ_EVENTO = EV.SEQ_EVENTO
+                                 AND EV.COD_EVENTO = &#x0027;021&#x0027;)
+                 AND EXISTS
+                         (SELECT SP.SEQ_SOLICITACAO
+                            FROM IJRM.TB_SOLICITACAO SP, IJRM.TB_PROCESSO PP
+                           WHERE     SP.SEQ_SOLICITACAO = PP.SEQ_SOLICITACAO
+                                 AND SP.SEQ_NIRE_SEDE = S.SEQ_NIRE_SEDE
+                                 AND SP.SEQ_SOLICITACAO IN
+                                         (SELECT AE.SEQ_SOLICITACAO
+                                            FROM IJRM.TB_ATO_EVENTO_SOLICITACAO
+                                                 AE,
+                                                 IJRM.TB_ATO     AT,
+                                                 IJRM.TB_EVENTO  EV
+                                           WHERE     AE.SEQ_SOLICITACAO =
+                                                     SP.SEQ_SOLICITACAO
+                                                 AND AE.SEQ_ATO =
+                                                     AT.SEQ_ATO(+)
+                                                 AND AE.SEQ_EVENTO =
+                                                     EV.SEQ_EVENTO(+)
+                                                 AND (   AT.FLAG_TIPO_ATO =
+                                                         &#x0027;T&#x0027;
+                                                      OR EV.FLAG_TIPO_EVENTO =
+                                                         &#x0027;T&#x0027;))
+                                 AND TRUNC (PP.DT_APROVACAO) =
+                                     TRUNC (P.DT_APROVACAO)))
+           THEN
+               &#x0027;TRANSFORMACAO&#x0027;
+           WHEN S.SEQ_SOLICITACAO IN
+                    (SELECT S.SEQ_SOLICITACAO
+                       FROM IJRM.TB_ATO_EVENTO_SOLICITACAO  AE,
+                            IJRM.TB_ATO                     AT,
+                            IJRM.TB_EVENTO                  EV
+                      WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                            AND AE.SEQ_ATO = AT.SEQ_ATO(+)
+                            AND AE.SEQ_EVENTO = EV.SEQ_EVENTO(+)
+                            AND (   AT.COD_ATO IN (&#x0027;010&#x0027;, &#x0027;011&#x0027;, &#x0027;012&#x0027;)
+                                 OR EV.COD_EVENTO IN (&#x0027;042&#x0027;,
+                                                      &#x0027;043&#x0027;,
+                                                      &#x0027;044&#x0027;,
+                                                      &#x0027;045&#x0027;,
+                                                      &#x0027;050&#x0027;)))
+           THEN
+               &#x0027;INCFUCISAO&#x0027;
+           WHEN S.SEQ_SOLICITACAO IN
+                    (SELECT S.SEQ_SOLICITACAO
+                       FROM IJRM.TB_ATO_EVENTO_SOLICITACAO  AE,
+                            IJRM.TB_ATO                     AT,
+                            IJRM.TB_EVENTO                  EV
+                      WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                            AND AE.SEQ_ATO = AT.SEQ_ATO(+)
+                            AND AE.SEQ_EVENTO = EV.SEQ_EVENTO(+)
+                            AND AT.FLAG_TIPO_ATO IN (&#x0027;E&#x0027;, &#x0027;D&#x0027;))
+           THEN
+               &#x0027;ENQDESENQ&#x0027;
+           WHEN S.SEQ_SOLICITACAO IN
+                    (SELECT S.SEQ_SOLICITACAO
+                       FROM IJRM.TB_ATO_EVENTO_SOLICITACAO  AE,
+                            IJRM.TB_EVENTO                  EV
+                      WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                            AND AE.TIPO_SERVICO = &#x0027;E&#x0027;
+                            AND AE.SEQ_EVENTO = EV.SEQ_EVENTO(+)
+                            AND EV.COD_EVENTO IN (&#x0027;039&#x0027;,
+                                                  &#x0027;040&#x0027;,
+                                                  &#x0027;961&#x0027;,
+                                                  &#x0027;2246&#x0027;))
+           THEN
+               &#x0027;TRANSCONVERAUTOR&#x0027;
+           WHEN S.SEQ_SOLICITACAO IN
+                    (SELECT S.SEQ_SOLICITACAO
+                       FROM IJRM.TB_ATO_EVENTO_SOLICITACAO  AE,
+                            IJRM.TB_ATO                     AT,
+                            IJRM.TB_EVENTO                  EV
+                      WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                            AND AE.SEQ_ATO = AT.SEQ_ATO(+)
+                            AND AE.SEQ_EVENTO = EV.SEQ_EVENTO(+)
+                            AND (   AT.FLAG_TIPO_ATO = &#x0027;C&#x0027;
+                                 OR EV.FLAG_TIPO_EVENTO = &#x0027;C&#x0027;))
+           THEN
+               &#x0027;CONSTITUICAO&#x0027;
+           WHEN S.SEQ_SOLICITACAO IN
+                    (SELECT S.SEQ_SOLICITACAO
+                       FROM IJRM.TB_ATO_EVENTO_SOLICITACAO  AE,
+                            IJRM.TB_ATO                     AT,
+                            IJRM.TB_EVENTO                  EV
+                      WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                            AND AE.SEQ_ATO = AT.SEQ_ATO(+)
+                            AND AE.SEQ_EVENTO = EV.SEQ_EVENTO(+)
+                            AND AT.COD_ATO = &#x0027;003&#x0027;)
+           THEN
+               &#x0027;EXTINCAO&#x0027;
+           WHEN S.SEQ_SOLICITACAO IN
+                    (SELECT S.SEQ_SOLICITACAO
+                       FROM IJRM.TB_ATO_EVENTO_SOLICITACAO  AE,
+                            IJRM.TB_ATO                     AT,
+                            IJRM.TB_EVENTO                  EV
+                      WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                            AND AE.SEQ_ATO = AT.SEQ_ATO(+)
+                            AND AE.SEQ_EVENTO = EV.SEQ_EVENTO(+)
+                            AND AT.COD_ATO IN (&#x0027;310&#x0027;,
+                                               &#x0027;205&#x0027;,
+                                               &#x0027;207&#x0027;,
+                                               &#x0027;021&#x0027;,
+                                               &#x0027;007&#x0027;))
+           THEN
+               &#x0027;DOCINTERESSE&#x0027;
+           WHEN S.SEQ_SOLICITACAO IN
+                    (SELECT S.SEQ_SOLICITACAO
+                       FROM IJRM.TB_ATO_EVENTO_SOLICITACAO  AE,
+                            IJRM.TB_ATO                     AT,
+                            IJRM.TB_EVENTO                  EV
+                      WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                            AND AE.SEQ_ATO = AT.SEQ_ATO(+)
+                            AND AE.SEQ_EVENTO = EV.SEQ_EVENTO(+)
+                            AND AT.COD_ATO = &#x0027;206&#x0027;)
+           THEN
+               &#x0027;PROCURACAO&#x0027;
+           ELSE
+               &#x0027;ALTERACAO&#x0027;
+       END
+           TIPO,
+       DECODE (P.SEQ_IMAGEM, NULL, &#x0027;N&#x0027;, &#x0027;S&#x0027;)
+           IMAGEM,
+       S.DT_INICIO,
+       S.DT_RETORNOPENDENCIA
+  FROM IJRM.TB_SOLICITACAO        S,
+       IJRM.TB_PROCESSO           P,
+       IJRM.TB_NATUREZA_JURIDICA  NJ,
+       IJRM.TB_EMPRESA            E,
+       IJRM.TB_RDSOLICITACAO      RS
+ WHERE     S.SEQ_SOLICITACAO = P.SEQ_SOLICITACAO
+       AND S.NUM_PROTOCOLO = RS.NU_PROTOCOLO(+)
+       AND (   (RS.SEQ_RDSOLICITACAO IS NOT NULL AND RS.CD_SITUACAO = 6)
+            OR (    RS.SEQ_RDSOLICITACAO IS NULL
+                AND S.NUM_PROTOCOLO IN
+                        (SELECT RS1.NU_PROTOCOLOENQ
+                           FROM IJRM.TB_RDSOLICITACAO RS1
+                          WHERE     RS1.NU_PROTOCOLOENQ = S.NUM_PROTOCOLO
+                                AND RS1.CD_SITUACAO = 6))
+            OR NVL (p.cd_registrodigital, 0) = 0)
+       AND S.SEQ_TIPO_SOLICITACAO = 1
+       AND S.SEQ_SITUACAO_SOLICITACAO = 18
+       AND (P.CD_CONFERIDO_CADASTRO = &#x0027;N&#x0027; OR P.CD_CONFERIDO_CADASTRO IS NULL)
+       AND S.SEQ_NIRE_SEDE = E.SEQ_EMPRESA
+       AND E.SEQ_NATUREZA_JURIDICA = NJ.SEQ_NATUREZA_JURIDICA
+       AND S.DT_FIM IS NULL
+       -- SE JUCEMG PEGA A DATA DE APROVACAO, PARA AS OUTRAS JUNTAS PEGA A DATA INICIO DA SOLICITACAO
+       -- SE JUCEMG PEGA A DATA 01/03/2018, DO CONTRARIO PEGAR A DATA DE INICIO DA IMPLANTACAO DO SRM NA TB_PARAMETRO
+       AND DECODE (
+               (SELECT pr.vr_parametro
+                  FROM ijrm.tb_parametro pr
+                 WHERE     pr.nm_parametro = &#x0027;SIGLA_JUNTA_COMERCIAL&#x0027;
+                       AND pr.vr_parametro != &#x0027;JUCEMG&#x0027;),
+               NULL, P.DT_APROVACAO,
+               s.dt_inicio) &gt;=
+           (DECODE (
+                NVL (p.cd_registrodigital, 0),
+                0, DECODE (
+                       (SELECT p.vr_parametro
+                          FROM ijrm.tb_parametro p
+                         WHERE     p.nm_parametro = &#x0027;SIGLA_JUNTA_COMERCIAL&#x0027;
+                               AND p.vr_parametro != &#x0027;JUCEMG&#x0027;),
+                       NULL, TO_DATE (&#x0027;01/03/2018&#x0027;, &#x0027;dd/mm/yyyy&#x0027;),
+                       (SELECT p.vr_parametro
+                          FROM ijrm.tb_parametro p
+                         WHERE p.nm_parametro = &#x0027;DATA_IMPLANTACAO_SISTEMA&#x0027;)),
+                TO_DATE (&#x0027;01/01/2000&#x0027;, &#x0027;dd/mm/yyyy&#x0027;) -- DATA FICTICIA PARA BUSCAR TODOS OS PROCESSOS DE REGISTRO DIGITAL
+                                                    ))
+       AND S.SEQ_SOLICITACAO NOT IN
+               (SELECT S.SEQ_SOLICITACAO
+                  FROM IJRM.TB_ATO_EVENTO_SOLICITACAO AE, IJRM.TB_EVENTO EV
+                 WHERE     AE.SEQ_SOLICITACAO = S.SEQ_SOLICITACAO
+                       AND AE.SEQ_EVENTO = EV.SEQ_EVENTO
+                       AND EV.COD_EVENTO = &#x0027;954&#x0027;)</PRE></TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS E IJRM</CENTER>
+</BODY>
+</HTML>

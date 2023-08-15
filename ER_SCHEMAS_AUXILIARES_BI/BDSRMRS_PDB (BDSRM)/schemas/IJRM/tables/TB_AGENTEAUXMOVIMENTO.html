@@ -1,0 +1,347 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_AGENTEAUXMOVIMENTO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_AGENTEAUXILIAR_IDIOMA.html" TITLE="TB_AGENTEAUXILIAR_IDIOMA">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_AGENTEAUXMOVIMENTO">Table TB_AGENTEAUXMOVIMENTO</A></TD>
+<TD Class="NavR"><A HREF="./TB_AGENTEAUXPUBLICACAO.html" TITLE="TB_AGENTEAUXPUBLICACAO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_AGENTEAUXMOVIMENTO</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Arquivamento das Movimentações de Agentes Auxiliares</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_AGENTEAUXMOVIMENTO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_AGENTEAUXMOVIMENTO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>FK da tabela IJRM.TB_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_TIPOMOVIMENTOAGENTEAUX</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>FK da tabela IJRM.TX_TIPOMOVIMENTACAOAGENTE</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>DT_CADASTRO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Data de inserção do registro no banco de dados</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>VR_VALOR</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data inicial quando o tipo de movimentação requer período</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data final quanto o tipo de movimentação requer período</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>QT_QUANTIDADE</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Município da realização do leilão</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>NM_EMPRESACOMITENTE</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome da empresa que está dispondo os bens para o leilão</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>WK_OBSERVACAO</TD>
+<TD nowrap>VARCHAR2(400 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo livre para lançar observações</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>DT_DATA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data única solicitada de acordo com o parâmetro do tipo do movimento em  TX_TIPOMOVIMENTOAGENTEAUX</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>Y</TD>
+<TD>0</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>CD_TIPOLEILAO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tipo de Leilão:  P= Particular  J=Judicial   A=Administração pública; só é gravado para o seq_tipo_movimento =6</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>DT_ALTERACAO_REGISTRO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data da última alteração do registro para BI</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_AGENTEAUXMOVIMENTO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_AGENTEAUXMOV_AGENTEAUX</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_AGENTEAUXMOV_TIPOMOVIMENTO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPOMOVIMENTOAGENTEAUX</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_AGENTEAUXMOVIMENTO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_AGENTEAUXMOVIMENTO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_AGENTEAUXMOVIMENTO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_AGENTEAUXMOV_AGENTEAUX</TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_AGENTEAUXILIAR" HREF="../tables/TB_AGENTEAUXILIAR.html">TB_AGENTEAUXILIAR</A></TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_AGENTEAUXMOV_TIPOMOVIMENTO</TD>
+<TD>SEQ_TIPOMOVIMENTOAGENTEAUX</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_TIPOMOVIMENTOAGENTEAUX" HREF="../tables/TX_TIPOMOVIMENTOAGENTEAUX.html">TX_TIPOMOVIMENTOAGENTEAUX</A></TD>
+<TD>SEQ_TIPOMOVIMENTOAGENTEAUX</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_AGENTEAUXMOVIMENTO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_TIPOLEILAO</TD>
+<TD>Check</TD>
+<TD>CD_TIPOLEILAO IN ('A','J','P')</TD>
+<TD>ENABLED</TD>
+<TD>CD_TIPOLEILAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010972</TD>
+<TD>Check</TD>
+<TD>"SEQ_AGENTEAUXMOVIMENTO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_AGENTEAUXMOVIMENTO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010973</TD>
+<TD>Check</TD>
+<TD>"SEQ_AGENTEAUXILIAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0010974</TD>
+<TD>Check</TD>
+<TD>"SEQ_TIPOMOVIMENTOAGENTEAUX" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_TIPOMOVIMENTOAGENTEAUX</TD>
+</TR>
+<TR>
+<TD>SYS_C0010975</TD>
+<TD>Check</TD>
+<TD>"DT_CADASTRO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DT_CADASTRO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010976</TD>
+<TD>Check</TD>
+<TD>"VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_AGENTEAUXMOVIMENTO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_AGENTEAUXMOVIMENTO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_AGENTEAUXMOVIMENTO does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

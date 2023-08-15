@@ -1,0 +1,508 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_ATO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_ATIVIDADE_VENDA_INFORMACAO.html" TITLE="TB_ATIVIDADE_VENDA_INFORMACAO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_ATO">Table TB_ATO</A></TD>
+<TD Class="NavR"><A HREF="./TB_ATO_EVEN_ERM2.html" TITLE="TB_ATO_EVEN_ERM2">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_ATO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_ATO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>COD_ATO</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>DESC_ATO</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>FLAG_OFICIAL</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>OBSERVACAO</TD>
+<TD nowrap>VARCHAR2(1000 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>AJUDA</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">9</TD>
+<TD>SEQ_SUBGRUPO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">11</TD>
+<TD>FLAG_TIPO_ATO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD> A=alteracão  C=constituicão  T=transformacão  E=enquadramento  D=desenquadramento   V=servico   S=agentes auxiliares   L=livros    R=Restituicão de DAE   O=outros</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>FLAG_EXIGE_EVENTO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>FLAG_EXIGE_FCN</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>FLAG_EXIGE_GERAR_NIRE</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">15</TD>
+<TD>SEQ_SITUACAO_EMPRESA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">16</TD>
+<TD>SEQ_STATUS_EMPRESA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>COD_TIPO_SERVICO</TD>
+<TD nowrap>CHAR(5 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>FLAG_EMPRESARIO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Se o ato pode ser usado para Empresario na aplicacão DAE_ONLINE</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>FLAG_ORDENACAO</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>Y</TD>
+<TD>0</TD>
+<TD>Ordem com que o ato aparece na lista de selecão na aplicacão DAE_ONLINE</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>FLAG_EXIGE_DBE</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>(S) (N) Exige numero de recibo e identificador do DBE para integrar os dados</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>FLAG_EXIGE_VIABILIDADE</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>(S) (N) Exige numero do protocolo de Viabilidade para integrar os dados</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>CD_PERMITE_DOWNLOAD</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Permite fazer download no site da imagem após aprovação:  S ou nulo=sim  N=não</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>CD_EMITE_REMP</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>S = sim, usado no Integrador para habilitar a emissão do REMP</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>CD_PROCESSO_MANUAL</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>S = sim, permite cadastro no gerir processo, exceção da trava para registro digital</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>CD_VINCULADO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Define se pode ter processo vinculado, sendo :  S - SIM   N - Não</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>CD_AUTOMATICO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>S = sim, permite a seleção do fluxo de registro automático no Registro Digital.</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>CD_DIRETO_VOGAL</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Processo de S/A com este evento não irá passar pelo Analista, indo direto para os Vogais</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_ATO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_ATO_STATUS_EMPRESA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_STATUS_EMPRESA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_ATO_SUBGRUPO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SUBGRUPO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_ATO_CODATO_SEQATO</TD>
+<TD>NORMAL</TD>
+<TD>COD_ATO, SEQ_ATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_ATO_FLAGTIPOATO</TD>
+<TD>NORMAL</TD>
+<TD>FLAG_TIPO_ATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_ATO_FLAGTIPOATO_SEQATO</TD>
+<TD>NORMAL</TD>
+<TD>FLAG_TIPO_ATO, SEQ_ATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_ATO_SEQSITUAEMPRESA_SEQATO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_EMPRESA, SEQ_ATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_ATO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_ATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>UK_TB_ATO</TD>
+<TD>NORMAL</TD>
+<TD>COD_ATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_ATO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_ATO_SITUACAO_EMPRESA</TD>
+<TD>SEQ_SITUACAO_EMPRESA</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_SITUACAO_EMPRESA" HREF="../tables/TX_SITUACAO_EMPRESA.html">TX_SITUACAO_EMPRESA</A></TD>
+<TD>SEQ_SITUACAO_EMPRESA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_ATO_STATUS_EMPRESA</TD>
+<TD>SEQ_STATUS_EMPRESA</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_STATUS_EMPRESA" HREF="../tables/TX_STATUS_EMPRESA.html">TX_STATUS_EMPRESA</A></TD>
+<TD>SEQ_STATUS_EMPRESA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_ATO_SUBGRUPO</TD>
+<TD>SEQ_SUBGRUPO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_SUBGRUPO_ATO" HREF="../tables/TB_SUBGRUPO_ATO.html">TB_SUBGRUPO_ATO</A></TD>
+<TD>SEQ_SUBGRUPO_ATO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_ATO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_EMITE_REMP</TD>
+<TD>Check</TD>
+<TD>CD_EMITE_REMP IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_EMITE_REMP</TD>
+</TR>
+<TR>
+<TD>CK_CD_PERMITE_DOWNLOAD</TD>
+<TD>Check</TD>
+<TD>CD_PERMITE_DOWNLOAD IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_PERMITE_DOWNLOAD</TD>
+</TR>
+<TR>
+<TD>SYS_C0011098</TD>
+<TD>Check</TD>
+<TD>"COD_ATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>COD_ATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0011099</TD>
+<TD>Check</TD>
+<TD>"DESC_ATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DESC_ATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0011100</TD>
+<TD>Check</TD>
+<TD>"FLAG_ORDENACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLAG_ORDENACAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_ATO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_ATO</TD>
+</TR>
+<TR>
+<TD>UK_TB_ATO</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>COD_ATO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_ATO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

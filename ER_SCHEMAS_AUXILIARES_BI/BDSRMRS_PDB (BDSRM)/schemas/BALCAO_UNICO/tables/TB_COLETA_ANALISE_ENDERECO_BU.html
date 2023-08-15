@@ -1,0 +1,432 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>BALCAO_UNICO Table TB_COLETA_ANALISE_ENDERECO_BU</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema BALCAO_UNICO</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:00</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_CNAE_BU.html" TITLE="TB_CNAE_BU">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_COLETA_ANALISE_ENDERECO_BU">Table TB_COLETA_ANALISE_ENDERECO_BU</A></TD>
+<TD Class="NavR"><A HREF="./TB_COLETA_ANALISE_NOME_BU.html" TITLE="TB_COLETA_ANALISE_NOME_BU">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_COLETA_ANALISE_ENDERECO_BU</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_COLETA_ANALISE_ENDERECO_BU</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_PROCESSO_BU</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_SITUACAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>NU_PROTOCOLO_VIABILIDADE</TD>
+<TD nowrap>VARCHAR2(13 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>NM_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(255 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DS_COMPLEMENTO_ENDERECO</TD>
+<TD nowrap>VARCHAR2(156 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>NU_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>NM_BAIRRO</TD>
+<TD nowrap>VARCHAR2(72 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>NU_CEP</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>DS_OBSERVACAO</TD>
+<TD nowrap>CLOB</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">15</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>fk para a tabela TX_TIPO_LOGRADOURO</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>NU_IPTU</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>DS_REFERENCIA_ENDERECO</TD>
+<TD nowrap>VARCHAR2(200 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Referencia do Endereco</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_COLETA_ANALISE_ENDERECO_BU</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAANALISEENDERECOBU_SEQMUNICIPIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAANALISEENDERECOBU_SEQPROCESSOBU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_PROCESSO_BU</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAANALISEENDERECOBU_SEQSITUACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_COLETAANALISEENDERECOBU_SEQTIPOLOGRADOURO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_COLETA_ANALISE_ENDERECO_BU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_COLETA_ANALISE_ENDERECO_BU</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_COLETA_ANALISE_ENDERECO_BU</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_COLETAANALISEENDERECOBU_MUNICIPIO</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>IJRM</TD>
+<TD>TX_MUNICIPIO</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAANALISEENDERECOBU_PROCESSOBU</TD>
+<TD>SEQ_PROCESSO_BU</TD>
+<TD>BALCAO_UNICO</TD>
+<TD><A NAME="TB_PROCESSO_BU" HREF="../tables/TB_PROCESSO_BU.html">TB_PROCESSO_BU</A></TD>
+<TD>SEQ_PROCESSO_BU</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAANALISEENDERECOBU_SITUACAO</TD>
+<TD>SEQ_SITUACAO</TD>
+<TD>VIABILIDADE2</TD>
+<TD>TX_SITUACAO</TD>
+<TD>SEQ_SITUACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_COLETAANALISEENDERECOBU_TIPOLOGRADOURO</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>IJRM</TD>
+<TD>TX_TIPO_LOGRADOURO</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_COLETA_ANALISE_ENDERECO_BU</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0031500</TD>
+<TD>Check</TD>
+<TD>"SEQ_COLETA_ANALISE_ENDERECO_BU" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_COLETA_ANALISE_ENDERECO_BU</TD>
+</TR>
+<TR>
+<TD>SYS_C0031501</TD>
+<TD>Check</TD>
+<TD>"SEQ_PROCESSO_BU" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_PROCESSO_BU</TD>
+</TR>
+<TR>
+<TD>SYS_C0031502</TD>
+<TD>Check</TD>
+<TD>"SEQ_MUNICIPIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_MUNICIPIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0031503</TD>
+<TD>Check</TD>
+<TD>"NU_PROTOCOLO_VIABILIDADE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NU_PROTOCOLO_VIABILIDADE</TD>
+</TR>
+<TR>
+<TD>SYS_C0031504</TD>
+<TD>Check</TD>
+<TD>"NM_LOGRADOURO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NM_LOGRADOURO</TD>
+</TR>
+<TR>
+<TD>SYS_C0031505</TD>
+<TD>Check</TD>
+<TD>"NU_LOGRADOURO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NU_LOGRADOURO</TD>
+</TR>
+<TR>
+<TD>SYS_C0031506</TD>
+<TD>Check</TD>
+<TD>"NM_BAIRRO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NM_BAIRRO</TD>
+</TR>
+<TR>
+<TD>SYS_C0031507</TD>
+<TD>Check</TD>
+<TD>"NU_CEP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NU_CEP</TD>
+</TR>
+<TR>
+<TD>SYS_C0031508</TD>
+<TD>Check</TD>
+<TD>"DT_INICIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DT_INICIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0031509</TD>
+<TD>Check</TD>
+<TD>"VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0031624</TD>
+<TD>Check</TD>
+<TD>"SEQ_TIPO_LOGRADOURO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_TIPO_LOGRADOURO</TD>
+</TR>
+<TR>
+<TD>PK_COLETA_ANALISE_ENDERECO_BU</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_COLETA_ANALISE_ENDERECO_BU</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_COLETA_ANALISE_ENDERECO_BU does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

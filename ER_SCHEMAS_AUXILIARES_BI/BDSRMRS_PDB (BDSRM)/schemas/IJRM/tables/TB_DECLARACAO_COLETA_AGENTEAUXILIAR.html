@@ -1,0 +1,259 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_DECLARACAO_COLETA_AGENTEAUXILIAR</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_DECLARACAO_AGENTEAUXILIAR_ATO.html" TITLE="TB_DECLARACAO_AGENTEAUXILIAR_ATO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_DECLARACAO_COLETA_AGENTEAUXILIAR">Table TB_DECLARACAO_COLETA_AGENTEAUXILIAR</A></TD>
+<TD Class="NavR"><A HREF="./TB_DECLARACAO_PREPOSTO_AGENTEAUXILIAR.html" TITLE="TB_DECLARACAO_PREPOSTO_AGENTEAUXILIAR">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_DECLARACAO_COLETA_AGENTEAUXILIAR</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_DECLARACAO_COLETA_AGENTEAUXILIAR</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave primária</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_COLETA_AGENTEAUXILIAR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para ijrm.tb_coleta_agenteauxiliar</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para IJRM.TX_DECLARACAO_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Data Inicio do Registro.</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data fim do Registro.</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Versão do Registro.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_DECLARACAO_COLETA_AGENTEAUXILIAR</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_DECLARACAOCOLETAAGENTEAUXILIAR_SEQCOLETAAGENTEAUXILIAR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_COLETA_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_DECLARACAOCOLETAAGENTEAUXILIAR_SEQDECLARACAOAGENTEAUXILIAR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_DECLARACAO_COLETA_AGENTEAUXILIAR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_DECLARACAO_COLETA_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_DECLARACAO_COLETA_AGENTEAUXILIAR</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_DECLARACAOCOLETAAGENTEAUXILIAR_COLETAAGENTEAUXILIAR</TD>
+<TD>SEQ_COLETA_AGENTEAUXILIAR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_COLETA_AGENTEAUXILIAR" HREF="../tables/TB_COLETA_AGENTEAUXILIAR.html">TB_COLETA_AGENTEAUXILIAR</A></TD>
+<TD>SEQ_COLETA_AGENTEAUXILIAR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_DECLARACAOCOLETAAGENTEAUXILIAR_DECLARACAOAGENTEAUXILIAR</TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_DECLARACAO_AGENTEAUXILIAR" HREF="../tables/TX_DECLARACAO_AGENTEAUXILIAR.html">TX_DECLARACAO_AGENTEAUXILIAR</A></TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_DECLARACAO_COLETA_AGENTEAUXILIAR</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0029031</TD>
+<TD>Check</TD>
+<TD>"SEQ_DECLARACAO_COLETA_AGENTEAUXILIAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_DECLARACAO_COLETA_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0029032</TD>
+<TD>Check</TD>
+<TD>"SEQ_COLETA_AGENTEAUXILIAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_COLETA_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0029033</TD>
+<TD>Check</TD>
+<TD>"SEQ_DECLARACAO_AGENTEAUXILIAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0029034</TD>
+<TD>Check</TD>
+<TD>"DT_INICIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DT_INICIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0029035</TD>
+<TD>Check</TD>
+<TD>"VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_DECLARACAO_COLETA_AGENTEAUXILIAR</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_DECLARACAO_COLETA_AGENTEAUXILIAR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_DECLARACAO_COLETA_AGENTEAUXILIAR does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

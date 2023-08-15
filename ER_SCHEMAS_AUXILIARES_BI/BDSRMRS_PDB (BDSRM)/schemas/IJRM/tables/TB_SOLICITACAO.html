@@ -1,0 +1,1096 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_SOLICITACAO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_SOCIO_HISTORICO.html" TITLE="TB_SOCIO_HISTORICO">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables4.html#TB_SOLICITACAO">Table TB_SOLICITACAO</A></TD>
+<TD Class="NavR"><A HREF="./TB_SOLICITACAO_ATA.html" TITLE="TB_SOLICITACAO_ATA">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_SOLICITACAO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_SOLICITACAO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>NUM_PROTOCOLO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>DATA_ASSINATURA_DOC</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>DT_RETIFICACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>NOME_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(72 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>TIPO_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(36 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>COMPLEMENTO_ENDERECO</TD>
+<TD nowrap>VARCHAR2(156 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>NUM_LOGRADOURO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>BAIRRO</TD>
+<TD nowrap>VARCHAR2(72 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>SEQ_MUNICIPIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>CEP</TD>
+<TD nowrap>VARCHAR2(8 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>VALOR_PAGO</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>VALOR_SOLICITACAO</TD>
+<TD nowrap>NUMBER(15,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>EMAIL_REQUERENTE</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>NOME_REQUERENTE</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>TEL_REQUERENTE</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">17</TD>
+<TD>SEQ_TIPO_SOLICITACAO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">18</TD>
+<TD>SEQ_SITUACAO_SOLICITACAO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">19</TD>
+<TD>SEQ_UNIDADE_ORIGEM</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">20</TD>
+<TD>SEQ_NIRE_SEDE</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Este campo corresponde ao tb_empresa.seq_empresa</TD>
+</TR>
+<TR>
+<TD Class="NumRed">21</TD>
+<TD>SEQ_CONVENIO</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>DT_RECEBIMENTO_RETIFICACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">23</TD>
+<TD>SEQ_MOTIVO_ISENCAO_PGTO</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>NOME_EMPRESA_NIRE_SEDE</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">25</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">26</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>NUM_PROTOCOLO_OFICIO</TD>
+<TD nowrap>VARCHAR2(12 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">28</TD>
+<TD>SEQ_EMPRESA_FR</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">30</TD>
+<TD>SEQ_SOLICITACAO_PRINCIPAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>FLAG_LIBERADO_APROVACAO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>REGRA_MIGRACAO</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">33</TD>
+<TD>DT_EXECUCAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>DT_VALIDADE</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">35</TD>
+<TD>SEQ_FILIAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>CPF_CNPJ_REQUERENTE</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>NU_DDDSMS</TD>
+<TD nowrap>VARCHAR2(2 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>NU_CELULARSMS</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">40</TD>
+<TD>DT_RETORNOPENDENCIA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data do último retorno de pendência</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>CD_ENVIOSMS</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>0</TD>
+<TD>Informa se a mensagem foi enviada, sendo:
+         0 - não enviado
+         1 - enviado</TD>
+</TR>
+<TR>
+<TD Class="NumRed">42</TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">43</TD>
+<TD>CD_LOTELIVROS</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>S= a solicitação faz parte de um lote    N= não é lote    (informado pelo usuário no momento do cadastro da solicitação de livros)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">44</TD>
+<TD>SEQ_USUARIO_LIBERACAO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Usuário que liberou o processo ou livro para aprovação - flag_liberado_aprovacao</TD>
+</TR>
+<TR>
+<TD Class="Num">45</TD>
+<TD>SEQ_PORTE</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tx_porte (FK). Utilizada para a definição do preço</TD>
+</TR>
+<TR>
+<TD Class="NumRed">46</TD>
+<TD>NU_PROTOCOLO_SIARCO</TD>
+<TD nowrap>VARCHAR2(9 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Protocolo original do SIARCO inserido na migração para SRM</TD>
+</TR>
+<TR>
+<TD Class="Num">47</TD>
+<TD>CD_AUTOMATICO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>S= solicitação é de registro automático</TD>
+</TR>
+<TR>
+<TD Class="Num">48</TD>
+<TD>DT_LIBERACAODOC</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">49</TD>
+<TD>NU_DOWNLOADLIBERADO</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">50</TD>
+<TD>NUM_PROTOCOLO_ALTERADO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo criado para salvar as solicitações que receberam 10 dígitos ou foram duplicadas.</TD>
+</TR>
+<TR>
+<TD Class="Num">51</TD>
+<TD>CD_EMAILVALIDADE</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Confirma o envio do email para a solicitação, quando está se encontra pendente e no
+prazo estipulado para alertar o usuário.</TD>
+</TR>
+<TR>
+<TD Class="Num">52</TD>
+<TD>CD_AGENTEAUXILIAR</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica se é um protocolo de coleta de agente auxiliar. Valores possíveis: S, N.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">53</TD>
+<TD>SEQ_PREPOSTO_AGENTEAUXILIAR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela ijrm.tb_preposto_agenteauxiliar</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_SOLICITACAO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_SOLICITACAO_CONVENIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_CONVENIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_SOLICITACAO_MOTIV_ISENCAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_MOTIVO_ISENCAO_PGTO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_SOLICITACAO_USULIBERACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIO_LIBERACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>ID_SEQ_SITUACAO_SOLICITACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_DATA_INICIO</TD>
+<TD>NORMAL</TD>
+<TD>DT_INICIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SEQ_AGENTEAUXILIAR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SEQEMPRESAFR_SEQNIRESEDE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA_FR, SEQ_NIRE_SEDE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SEQ_SIT_PROTOCOL</TD>
+<TD>NORMAL</TD>
+<TD>NUM_PROTOCOLO, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLIC_DT_RETORNOPENDENCIA</TD>
+<TD>NORMAL</TD>
+<TD>DT_RETORNOPENDENCIA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_DTEXECUCAO</TD>
+<TD>NORMAL</TD>
+<TD>DT_EXECUCAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_M</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_SOLICITACAO, SEQ_TIPO_SOLICITACAO, DT_FIM, SEQ_UNIDADE_ORIGEM, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_PROTSIARCO</TD>
+<TD>NORMAL</TD>
+<TD>NU_PROTOCOLO_SIARCO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_SEQFILIAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_FILIAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_SEQNIRESEDE_SEQTIPOSOLICITACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_NIRE_SEDE, SEQ_TIPO_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_SEQPREPOSTOAGENTEAUXILIAR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_PREPOSTO_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_SEQSITSOL_DTFIM_SEQAGENT</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_SOLICITACAO, DT_FIM, SEQ_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_SEQSITUACAOSOLICITACAO_DTFIM</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_SOLICITACAO, DT_FIM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_SEQ_TDTI</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>SEQ_TIPO_SOLICITACAO, TRUNC("DT_INICIO")</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_SEQTIPOSOLICITACAO_DTFIM</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_SOLICITACAO, DT_FIM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_TIPOSOLIC</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_01</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO, SEQ_UNIDADE_ORIGEM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_02</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO, SEQ_EMPRESA_FR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_03</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_SOLICITACAO, SEQ_TIPO_SOLICITACAO, DT_FIM, SEQ_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_04</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_SOLICITACAO, SEQ_FILIAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_05</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_SOLICITACAO, SEQ_TIPO_SOLICITACAO, DT_FIM, SEQ_SOLICITACAO, SEQ_NIRE_SEDE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLICITACAO_06</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_SOLICITACAO, NUM_PROTOCOLO, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_SOLIC_NUMPROTOCOLOALTERADO</TD>
+<TD>NORMAL</TD>
+<TD>NUM_PROTOCOLO_ALTERADO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX$$_244E0001</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_SOLICITACAO, DT_FIM, SEQ_UNIDADE_ORIGEM, SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX$$_70A6000E</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SITUACAO_SOLICITACAO, SEQ_TIPO_SOLICITACAO, DT_FIM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_SOLICITACAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>UK_NUM_PROTOCOLO</TD>
+<TD>NORMAL</TD>
+<TD>NUM_PROTOCOLO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>UK_SEQ_NIRE_SEDE</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_NIRE_SEDE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>UK_SEQ_SOLIC_PRINCIPAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOLICITACAO_PRINCIPAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>UK_SEQ_UNIDADE_ORIGEM</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_UNIDADE_ORIGEM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>UK_SOLICITACAO_EMPRESA_FR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA_FR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_SOLICITACAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_FILIAL_SOLICITACAO</TD>
+<TD>SEQ_FILIAL</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_FILIAL" HREF="../tables/TB_FILIAL.html">TB_FILIAL</A></TD>
+<TD>SEQ_FILIAL</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOLICITACAO_AGENTEAUXILIAR</TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_AGENTEAUXILIAR" HREF="../tables/TB_AGENTEAUXILIAR.html">TB_AGENTEAUXILIAR</A></TD>
+<TD>SEQ_AGENTEAUXILIAR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOLICITACAO_CONVENIO</TD>
+<TD>SEQ_CONVENIO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_CONVENIO" HREF="../tables/TB_CONVENIO.html">TB_CONVENIO</A></TD>
+<TD>SEQ_CONVENIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOLICITACAO_EMPRESA</TD>
+<TD>SEQ_NIRE_SEDE</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_EMPRESA" HREF="../tables/TB_EMPRESA.html">TB_EMPRESA</A></TD>
+<TD>SEQ_EMPRESA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOLICITACAO_EMPRESA_FR</TD>
+<TD>SEQ_EMPRESA_FR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_EMPRESA_FR" HREF="../tables/TB_EMPRESA_FR.html">TB_EMPRESA_FR</A></TD>
+<TD>SEQ_EMPRESA_FR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOLICITACAO_MOTIV_ISENCAO</TD>
+<TD>SEQ_MOTIVO_ISENCAO_PGTO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_MOTIVO_ISENCAO_PGTO" HREF="../tables/TX_MOTIVO_ISENCAO_PGTO.html">TX_MOTIVO_ISENCAO_PGTO</A></TD>
+<TD>SEQ_MOTIVO_ISENCAO_PGTO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOLICITACAO_PREPOSTOAGENTEAUXILIAR</TD>
+<TD>SEQ_PREPOSTO_AGENTEAUXILIAR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_PREPOSTO_AGENTEAUXILIAR" HREF="../tables/TB_PREPOSTO_AGENTEAUXILIAR.html">TB_PREPOSTO_AGENTEAUXILIAR</A></TD>
+<TD>SEQ_PREPOSTO_AGENTEAUXILIAR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOLICITACAO_SITUACAO_SOLI</TD>
+<TD>SEQ_SITUACAO_SOLICITACAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_SITUACAO_SOLICITACAO" HREF="../tables/TX_SITUACAO_SOLICITACAO.html">TX_SITUACAO_SOLICITACAO</A></TD>
+<TD>COD_SITUACAO_SOLICITACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOLICITACAO_TIPO_SOLICIT</TD>
+<TD>SEQ_TIPO_SOLICITACAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_TIPO_SOLICITACAO" HREF="../tables/TX_TIPO_SOLICITACAO.html">TX_TIPO_SOLICITACAO</A></TD>
+<TD>SEQ_TIPO_SOLICITACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOLICITACAO_UNIDADE</TD>
+<TD>SEQ_UNIDADE_ORIGEM</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_UNIDADE" HREF="../tables/TB_UNIDADE.html">TB_UNIDADE</A></TD>
+<TD>SEQ_UNIDADE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_SOLICITACAO_USULIBERACAO</TD>
+<TD>SEQ_USUARIO_LIBERACAO</TD>
+<TD>IJSS</TD>
+<TD>TB_USUARIO</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_SOLICITACAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_SOLICITACAO_CD_AGENTEAUXILIAR</TD>
+<TD>Check</TD>
+<TD>CD_AGENTEAUXILIAR IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD>CK_TB_SOLICITACAO</TD>
+<TD>Check</TD>
+<TD>CD_ENVIOSMS in (0,1)</TD>
+<TD>ENABLED</TD>
+<TD>CD_ENVIOSMS</TD>
+</TR>
+<TR>
+<TD>CK_TB_SOLICIT_CD_EMAILVALIDADE</TD>
+<TD>Check</TD>
+<TD>CD_EMAILVALIDADE in ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_EMAILVALIDADE</TD>
+</TR>
+<TR>
+<TD>SYS_C0010667</TD>
+<TD>Check</TD>
+<TD>"NUM_PROTOCOLO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NUM_PROTOCOLO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010668</TD>
+<TD>Check</TD>
+<TD>"SEQ_TIPO_SOLICITACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_TIPO_SOLICITACAO</TD>
+</TR>
+<TR>
+<TD>PK_SOLICITACAO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_SOLICITACAO</TD>
+</TR>
+<TR>
+<TD>UK_NUM_PROTOCOLO</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>NUM_PROTOCOLO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_SOLICITACAO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

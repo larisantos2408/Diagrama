@@ -1,0 +1,295 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_CONSELHEIRO_HISTORICO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_CONSELHEIRO_FR.html" TITLE="TB_CONSELHEIRO_FR">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_CONSELHEIRO_HISTORICO">Table TB_CONSELHEIRO_HISTORICO</A></TD>
+<TD Class="NavR"><A HREF="./TB_CONTRA_RAZAO.html" TITLE="TB_CONTRA_RAZAO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_CONSELHEIRO_HISTORICO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_CONSELHEIRO_HISTORICO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave primaria da tabela</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_SOCIO_ADM</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela IJRM.TB_SOCIO_ADM</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_CONDICAO_ADM</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela IJRM.TX_CONDICAO_ADM</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>DT_INICIO_MANDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data início de mandato</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>DT_FIM_MANDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data fim de mandato</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>DT_SAIDA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data saída</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DT_ALTERACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>sysdate</TD>
+<TD>Data alteração do registro</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>DS_CARGO</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descrição do cargo</TD>
+</TR>
+<TR>
+<TD Class="NumRed">9</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela ijss.tb_usuario.</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>Y</TD>
+<TD>0</TD>
+<TD>Controle de versão.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_CONSELHEIRO_HISTORICO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONSELHEIROHISTORICO_SEQCONDICAOADM</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_CONDICAO_ADM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONSELHEIROHISTORICO_SEQSOCIOADM</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SOCIO_ADM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_CONSELHEIROHISTORICO_SEQUSUARIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_CONSELHEIRO_HISTORICO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_CONSELHEIRO_HISTORICO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_CONSELHEIRO_HISTORICO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_CONSELHEIROHISTORICO_CONDICAOADM</TD>
+<TD>SEQ_CONDICAO_ADM</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_CONDICAO_ADM" HREF="../tables/TX_CONDICAO_ADM.html">TX_CONDICAO_ADM</A></TD>
+<TD>SEQ_CONDICAO_ADM</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_CONSELHEIROHISTORICO_SOCIOADM</TD>
+<TD>SEQ_SOCIO_ADM</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_SOCIO_ADM" HREF="../tables/TB_SOCIO_ADM.html">TB_SOCIO_ADM</A></TD>
+<TD>SEQ_SOCIO_ADM</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_CONSELHEIRO_HISTORICO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0028884</TD>
+<TD>Check</TD>
+<TD>"SEQ_CONSELHEIRO_HISTORICO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_CONSELHEIRO_HISTORICO</TD>
+</TR>
+<TR>
+<TD>SYS_C0028885</TD>
+<TD>Check</TD>
+<TD>"SEQ_SOCIO_ADM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_SOCIO_ADM</TD>
+</TR>
+<TR>
+<TD>SYS_C0028886</TD>
+<TD>Check</TD>
+<TD>"DT_ALTERACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DT_ALTERACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0028887</TD>
+<TD>Check</TD>
+<TD>"VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_CONSELHEIRO_HISTORICO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_CONSELHEIRO_HISTORICO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_CONSELHEIRO_HISTORICO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

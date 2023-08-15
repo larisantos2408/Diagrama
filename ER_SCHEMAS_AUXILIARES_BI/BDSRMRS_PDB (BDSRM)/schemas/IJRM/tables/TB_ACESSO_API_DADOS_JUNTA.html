@@ -1,0 +1,294 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_ACESSO_API_DADOS_JUNTA</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_ACERTO_SEF_DAE.html" TITLE="TB_ACERTO_SEF_DAE">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_ACESSO_API_DADOS_JUNTA">Table TB_ACESSO_API_DADOS_JUNTA</A></TD>
+<TD Class="NavR"><A HREF="./TB_ADMINISTRADOR.html" TITLE="TB_ADMINISTRADOR">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_ACESSO_API_DADOS_JUNTA</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_ACESSO_API_DADOS_JUNTA</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave primária</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>NU_CPF_SOLICITACAO</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Número do CPF do usuário que solicitou autorizacao de acesso</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>NM_USUARIO_SOLICITACAO</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do usuário que solicitou autorizacao de acesso</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>CD_JUNTA_COMERCIAL_ORIGEM</TD>
+<TD nowrap>VARCHAR2(2 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Sigla UF da junta comercial de origem</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>CD_JUNTA_COMERCIAL_DESTINO</TD>
+<TD nowrap>VARCHAR2(2 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Sigla UF da junta comercial de destino</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Data da solicitacao</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>CD_SITUACAO</TD>
+<TD nowrap>VARCHAR2(2 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Situacao da solicitacao (‘AP’: Aprovada, ‘RV’: Revogada)</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>NU_CPF_APROVACAO</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do CPF do usuário que autorizou o acesso</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>NM_USUARIO_APROVACAO</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do usuário que autorizou o acesso</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>DT_APROVACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data da aprovação da solicitacao</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>NU_CPF_REVOGACAO</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Número do CPF do usuário que revogou o acesso</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>NM_USUARIO_REVOGACAO</TD>
+<TD nowrap>VARCHAR2(250 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do usuário que revogou o acesso</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>DT_REVOGACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data da revogação</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de exclusao logica do registro.</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Versao do registro</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_ACESSO_API_DADOS_JUNTA</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_ACESSO_API_DADOS_JUNTA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_ACESSO_API_DADOS_JUNTA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_ACESSO_API_DADOS_JUNTA</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_SITUACAO_TB_ACESSO_API_DADOS_JUNTA</TD>
+<TD>Check</TD>
+<TD>cd_situacao in ('AP','RV')</TD>
+<TD>ENABLED</TD>
+<TD>CD_SITUACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0026994</TD>
+<TD>Check</TD>
+<TD>"SEQ_ACESSO_API_DADOS_JUNTA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_ACESSO_API_DADOS_JUNTA</TD>
+</TR>
+<TR>
+<TD>SYS_C0026995</TD>
+<TD>Check</TD>
+<TD>"NU_CPF_SOLICITACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NU_CPF_SOLICITACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0026996</TD>
+<TD>Check</TD>
+<TD>"NM_USUARIO_SOLICITACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NM_USUARIO_SOLICITACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0026997</TD>
+<TD>Check</TD>
+<TD>"CD_JUNTA_COMERCIAL_ORIGEM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_JUNTA_COMERCIAL_ORIGEM</TD>
+</TR>
+<TR>
+<TD>SYS_C0026998</TD>
+<TD>Check</TD>
+<TD>"CD_JUNTA_COMERCIAL_DESTINO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_JUNTA_COMERCIAL_DESTINO</TD>
+</TR>
+<TR>
+<TD>SYS_C0026999</TD>
+<TD>Check</TD>
+<TD>"DT_INICIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DT_INICIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0027000</TD>
+<TD>Check</TD>
+<TD>"VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_ACESSO_API_DADOS_JUNTA</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_ACESSO_API_DADOS_JUNTA</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_ACESSO_API_DADOS_JUNTA does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

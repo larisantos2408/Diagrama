@@ -1,0 +1,428 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_INCONSISTENTES</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_IMAGEMVIAUNICA.html" TITLE="TB_IMAGEMVIAUNICA">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_INCONSISTENTES">Table TB_INCONSISTENTES</A></TD>
+<TD Class="NavR"><A HREF="./TB_INDEFERIMENTO_DBE.html" TITLE="TB_INDEFERIMENTO_DBE">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_INCONSISTENTES</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_INCONSISTENTES</B></TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_inconsistentes (PK)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>CD_IDENTIFICADOR</TD>
+<TD nowrap>VARCHAR2(15 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Código de indentificação da inconsistência.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_EMPRESA</TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave Extrangeira da ijrm.tb_empresa.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>NU_SISTEMA</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do Sistema que originou a inconsistência. Apenas sistemas do portal.  0 - certidao_web   1 - dae_online</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">5</TD>
+<TD>NU_SITUACAO_INCONSISTENTES</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Status da inconsistência, sendo
+         0 - não resolvido
+         1 - resolvido</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>CD_VALIDA_DOWNLOAD</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identifica se a certidão necessita de validação ao fazer download, sendo:
+         0 - validar
+         1 - não validar</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>DT_SOLICITACAO</TD>
+<TD nowrap>TIMESTAMP(6)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data da solicitação da certidão web e daeonline</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">8</TD>
+<TD>DT_SOLUCAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data da solução do problema</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de criação do registro na tb_inconsistentes. Identifica o inicio da inconsistência.</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Controle de versão do sistema</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>SEQ_FILIAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijrm.tb_filial (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>DS_ERRO</TD>
+<TD nowrap>CLOB</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descrição dos erros de inconsistência</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>NM_NOME</TD>
+<TD nowrap>VARCHAR2(150 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do usuário que solicitou o acerto do cadastro da empresa. utilizado pela função de recadastramento do portal serviços.</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>DS_EMAIL</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descrição do email do usuário que solicitou o acerto do cadastro da empresa. utilizado pela função de recadastramento do portal serviços.</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>DS_NEGADO</TD>
+<TD nowrap>CLOB</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Atributo usado para informar o motivo pelo qual as alterações nesta solicitação foram negadas.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">16</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador da tabela ijss.tb_usuario (FK)</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>DT_CONFERENCIA</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data da conferência por parte do analista que solicitou a correção/digitalização.</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>SEQ_HISTORICO_ORGAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Identificador do registro da tabela  integrador_estadual.tb_historico_orgao para o reprocessamento.</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>DT_TERMINO_VIABILIDADE</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Campo que indicará que a viabilidade foi finalizada e poderá liberar a inconsistência para o cnpj</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data fim da inconsistência. Utilizado para exclusão lógica do registro.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">21</TD>
+<TD>SEQ_USUARIO_LGPD</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela PORTAL_SERVICOS.TB_USUARIOPORTAL</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>DT_ALTERACAO_LGPD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de alteração da LGPD</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_INCONSISTENTES</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_INCONSISTENTES_USUARIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_INCONSISTENTES_NUSISTNUSITINCONS</TD>
+<TD>NORMAL</TD>
+<TD>NU_SISTEMA, NU_SITUACAO_INCONSISTENTES</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_INCONSISTENTES_SEQUSUARIOPORTAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIO_LGPD</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_TBINCONSIS_EMPRESA_SOLUCAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_EMPRESA, DT_SOLUCAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_TBINCONSIS_IDENTIF_SOLUCAO</TD>
+<TD>NORMAL</TD>
+<TD>CD_IDENTIFICADOR, DT_SOLUCAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_TBINCONSISTENTES_IDENTIFIC</TD>
+<TD>NORMAL</TD>
+<TD>CD_IDENTIFICADOR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_INCONSISTENTES</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_INCONSISTENTES</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_INCONSISTENTES</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_INCONSISTENTES_USUARIO</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>IJSS</TD>
+<TD>TB_USUARIO</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_INCONSISTENTES_USUARIOPORTAL</TD>
+<TD>SEQ_USUARIO_LGPD</TD>
+<TD>PORTAL_SERVICOS</TD>
+<TD>TB_USUARIOPORTAL</TD>
+<TD>SEQ_USUARIOPORTAL</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_INCONSISTENTES</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0011449</TD>
+<TD>Check</TD>
+<TD>"SEQ_INCONSISTENTES" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_INCONSISTENTES</TD>
+</TR>
+<TR>
+<TD>SYS_C0011450</TD>
+<TD>Check</TD>
+<TD>"CD_IDENTIFICADOR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_IDENTIFICADOR</TD>
+</TR>
+<TR>
+<TD>SYS_C0011451</TD>
+<TD>Check</TD>
+<TD>"NU_SISTEMA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NU_SISTEMA</TD>
+</TR>
+<TR>
+<TD>SYS_C0011452</TD>
+<TD>Check</TD>
+<TD>"NU_SITUACAO_INCONSISTENTES" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NU_SITUACAO_INCONSISTENTES</TD>
+</TR>
+<TR>
+<TD>PK_TB_INCONSISTENTES</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_INCONSISTENTES</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_INCONSISTENTES does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

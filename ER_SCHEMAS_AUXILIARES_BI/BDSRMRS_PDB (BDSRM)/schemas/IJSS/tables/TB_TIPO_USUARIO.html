@@ -1,0 +1,281 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJSS Table TB_TIPO_USUARIO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJSS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:56</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_SISTEMA.html" TITLE="TB_SISTEMA">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_TIPO_USUARIO">Table TB_TIPO_USUARIO</A></TD>
+<TD Class="NavR"><A HREF="./TB_UNIDADE_USUARIO_LIBER.html" TITLE="TB_UNIDADE_USUARIO_LIBER">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_TIPO_USUARIO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>TIPO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'B'</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>COD_USUARIO</TD>
+<TD nowrap>VARCHAR2(20 CHAR)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>Y</TD>
+<TD>1</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">5</TD>
+<TD>SEQ_APLICACAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>DAT_MOVIMENTACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">7</TD>
+<TD><B>SEQ_TIPO_USUARIO</B></TD>
+<TD nowrap>NUMBER(15)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_TIPO_USUARIO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_TIPO_USU_APL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_APLICACAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>FK_TIPO_USU_USU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TIPO_URUARIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_TIPO_USUARIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_TIPO_USUARIO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_TIPO_USU_APL</TD>
+<TD>SEQ_APLICACAO</TD>
+<TD>IJSS</TD>
+<TD><A NAME="TB_APLICACAO" HREF="../tables/TB_APLICACAO.html">TB_APLICACAO</A></TD>
+<TD>SEQ_APLICACAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_TIPO_USU_USU</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>IJSS</TD>
+<TD><A NAME="TB_USUARIO" HREF="../tables/TB_USUARIO.html">TB_USUARIO</A></TD>
+<TD>SEQ_USUARIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_TIPO_USUARIO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0010338</TD>
+<TD>Check</TD>
+<TD>"SEQ_USUARIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_USUARIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010339</TD>
+<TD>Check</TD>
+<TD>"TIPO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TIPO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010340</TD>
+<TD>Check</TD>
+<TD>"COD_USUARIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>COD_USUARIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010341</TD>
+<TD>Check</TD>
+<TD>"VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010342</TD>
+<TD>Check</TD>
+<TD>"SEQ_APLICACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_APLICACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010343</TD>
+<TD>Check</TD>
+<TD>"DAT_MOVIMENTACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DAT_MOVIMENTACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0010344</TD>
+<TD>Check</TD>
+<TD>"SEQ_TIPO_USUARIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_TIPO_USUARIO</TD>
+</TR>
+<TR>
+<TD>PK_TIPO_URUARIO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_TIPO_USUARIO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_TIPO_USUARIO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,238 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>BALCAO_UNICO Table TB_NATUREZA_JURIDICA_BU</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema BALCAO_UNICO</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:00</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_FLUXO_TELA_BU.html" TITLE="TB_FLUXO_TELA_BU">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#TB_NATUREZA_JURIDICA_BU">Table TB_NATUREZA_JURIDICA_BU</A></TD>
+<TD Class="NavR"><A HREF="./TB_PERGUNTA_RESPOSTA_LICENCIAMENTO_BU.html" TITLE="TB_PERGUNTA_RESPOSTA_LICENCIAMENTO_BU">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_NATUREZA_JURIDICA_BU</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Tabela da Natureza Juridica do Balcão Único.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_NATUREZA_JURIDICA_BU</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_NATUREZA_JURIDICA_BU</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave Primária da tabela BALCAO_UNICO.TB_NATUREZA_JURIDICA_BU.</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave Estrangeira para a tabela IJRM.TB_NATUREZA_JURIDICA.</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>SG_NATUREZA_JURIDICA</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Sigla da Natureza Jurídica (ex: EIRELI, EI, LTDA, etc).</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>DS_TITULO</TD>
+<TD nowrap>VARCHAR2(100 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Título da explicação relativa à essa natureza juridica.</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>DS_TEXTO</TD>
+<TD nowrap>VARCHAR2(1000 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Texto da explicação relativa à essa natureza juridica</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>CD_SOCIO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>S ou N - Indica se essa natureza juridica permite ou não a existência de sócios na empresa</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_NATUREZA_JURIDICA_BU</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_NATUJURIDICABU_NATJURIDICA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_NATUREZA_JURIDICA_BU</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_NATUREZA_JURIDICA_BU</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_NATUREZA_JURIDICA_BU</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_NATJURIDBU_NATJURIDICA</TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+<TD>IJRM</TD>
+<TD>TB_NATUREZA_JURIDICA</TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_NATUREZA_JURIDICA_BU</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_SOCIO</TD>
+<TD>Check</TD>
+<TD>CD_SOCIO IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_SOCIO</TD>
+</TR>
+<TR>
+<TD>CK_SG_NATUREZA_JURIDICA</TD>
+<TD>Check</TD>
+<TD>sg_natureza_juridica IN ('EIRELI', 'EI', 'LTDA')</TD>
+<TD>ENABLED</TD>
+<TD>SG_NATUREZA_JURIDICA</TD>
+</TR>
+<TR>
+<TD>SYS_C0017161</TD>
+<TD>Check</TD>
+<TD>"SEQ_NATUREZA_JURIDICA_BU" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_NATUREZA_JURIDICA_BU</TD>
+</TR>
+<TR>
+<TD>SYS_C0017162</TD>
+<TD>Check</TD>
+<TD>"SEQ_NATUREZA_JURIDICA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_NATUREZA_JURIDICA</TD>
+</TR>
+<TR>
+<TD>PK_TB_NATUREZA_JURIDICA_BU</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_NATUREZA_JURIDICA_BU</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_NATUREZA_JURIDICA_BU does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

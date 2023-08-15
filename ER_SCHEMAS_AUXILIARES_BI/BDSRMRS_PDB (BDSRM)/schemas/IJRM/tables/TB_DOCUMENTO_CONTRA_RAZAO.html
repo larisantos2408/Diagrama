@@ -1,0 +1,262 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_DOCUMENTO_CONTRA_RAZAO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_DISTRIBUICAOSETOR.html" TITLE="TB_DISTRIBUICAOSETOR">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_DOCUMENTO_CONTRA_RAZAO">Table TB_DOCUMENTO_CONTRA_RAZAO</A></TD>
+<TD Class="NavR"><A HREF="./TB_DOCUMENTO_FLUXO_UNIDADE.html" TITLE="TB_DOCUMENTO_FLUXO_UNIDADE">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_DOCUMENTO_CONTRA_RAZAO</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Tabela que irá gravar os documentos da contra razão.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_DOCUMENTO_CONTRA_RAZAO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_DOCUMENTO_CONTRA_RAZAO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave Primária</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_CONTRA_RAZAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estragenira para IJRM.TB_CONTRA_RAZAO.</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>DS_DOCUMENTO</TD>
+<TD nowrap>VARCHAR2(200 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Link do documento na nuvem.</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Versão do Sistema.</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>NM_ARQUIVO</TD>
+<TD nowrap>VARCHAR2(300 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nome do arquivo de Documento contra-razaão anexado.</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>SEQ_IMAGEM_REPOSITORIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>ID do Documento salvo na nuvem e retornado pela API de Imagem.</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>CD_COMPOE_IMAGEM</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>Y</TD>
+<TD>'N'</TD>
+<TD>Indica se o documento deve ou não ser anexado à imagem de inteiro teor. Valores possíveis: S, N. </TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>CD_SITUACAO</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica a situação do documento: C: Cadastrado, A: Assinado, E: Enviado.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_DOCUMENTO_CONTRA_RAZAO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_DOCCONTRAZAO_SEQCONTRAZAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_CONTRA_RAZAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_DOCUMENTO_CONTRA_RAZAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_DOCUMENTO_CONTRA_RAZAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_DOCUMENTO_CONTRA_RAZAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_DOCCONTRARAZAO_CONTRARAZAO</TD>
+<TD>SEQ_CONTRA_RAZAO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_CONTRA_RAZAO" HREF="../tables/TB_CONTRA_RAZAO.html">TB_CONTRA_RAZAO</A></TD>
+<TD>SEQ_CONTRA_RAZAO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_DOCUMENTO_CONTRA_RAZAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_CD_COMPOE_IMAGEM</TD>
+<TD>Check</TD>
+<TD>cd_compoe_imagem IN ('S','N')</TD>
+<TD>ENABLED</TD>
+<TD>CD_COMPOE_IMAGEM</TD>
+</TR>
+<TR>
+<TD>CK_DOCUMENTOCONTRARAZAO_CD_SITUACAO</TD>
+<TD>Check</TD>
+<TD>cd_situacao in ('C','A','E')</TD>
+<TD>ENABLED</TD>
+<TD>CD_SITUACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0023760</TD>
+<TD>Check</TD>
+<TD>"SEQ_DOCUMENTO_CONTRA_RAZAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_DOCUMENTO_CONTRA_RAZAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0023761</TD>
+<TD>Check</TD>
+<TD>"SEQ_CONTRA_RAZAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_CONTRA_RAZAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0023762</TD>
+<TD>Check</TD>
+<TD>"CD_COMPOE_IMAGEM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_COMPOE_IMAGEM</TD>
+</TR>
+<TR>
+<TD>PK_TB_DOCUMENTO_CONTRA_RAZAO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_DOCUMENTO_CONTRA_RAZAO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_DOCUMENTO_CONTRA_RAZAO does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

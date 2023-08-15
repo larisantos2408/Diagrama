@@ -1,0 +1,301 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_DECLARACAO_AGENTEAUXILIAR_ATO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_DECISAO_COLEGIADA.html" TITLE="TB_DECISAO_COLEGIADA">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TB_DECLARACAO_AGENTEAUXILIAR_ATO">Table TB_DECLARACAO_AGENTEAUXILIAR_ATO</A></TD>
+<TD Class="NavR"><A HREF="./TB_DECLARACAO_COLETA_AGENTEAUXILIAR.html" TITLE="TB_DECLARACAO_COLETA_AGENTEAUXILIAR">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_DECLARACAO_AGENTEAUXILIAR_ATO</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Tabela de relacionamento para filtrar declarações de agente auxiliar por ato</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_DECLARACAO_AGENTEAUXILIAR_ATO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_DECLARACAO_AGENTEAUXILIAR_ATO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave primária</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela ijrm.tx_declaracao_agenteauxiliar</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_ATO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela ijrm.tb_ato</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>CD_DECLARACAO_AGENTEAUXILIAR_ATO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave única para código da coluna</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>DT_INICIO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Data de início</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>DT_FIM</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Data de fim</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Versao do registro</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_DECLARACAO_AGENTEAUXILIAR_ATO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_DECLARACAOAGENTEAUXILIARATO_SEQATO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_ATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_DECLARACAOAGENTEAUXILIARATO_SEQDECLARACAOAGENTEAUXILIAR</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_DECLARACAO_AGENTEAUXILIAR_ATO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR_ATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>UK_CD_DECLARACAO_AGENTEAUXILIAR_ATO</TD>
+<TD>NORMAL</TD>
+<TD>CD_DECLARACAO_AGENTEAUXILIAR_ATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_DECLARACAO_AGENTEAUXILIAR_ATO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_DECLARACAOAGENTEAUXILIARATO_ATO</TD>
+<TD>SEQ_ATO</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TB_ATO" HREF="../tables/TB_ATO.html">TB_ATO</A></TD>
+<TD>SEQ_ATO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_DECLARACAOAGENTEAUXILIARATO_DECLARACAOAGENTEAUXILIAR</TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_DECLARACAO_AGENTEAUXILIAR" HREF="../tables/TX_DECLARACAO_AGENTEAUXILIAR.html">TX_DECLARACAO_AGENTEAUXILIAR</A></TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_DECLARACAO_AGENTEAUXILIAR_ATO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0031112</TD>
+<TD>Check</TD>
+<TD>"SEQ_DECLARACAO_AGENTEAUXILIAR_ATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR_ATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0031113</TD>
+<TD>Check</TD>
+<TD>"SEQ_DECLARACAO_AGENTEAUXILIAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0031114</TD>
+<TD>Check</TD>
+<TD>"SEQ_ATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_ATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0031115</TD>
+<TD>Check</TD>
+<TD>"CD_DECLARACAO_AGENTEAUXILIAR_ATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>CD_DECLARACAO_AGENTEAUXILIAR_ATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0031116</TD>
+<TD>Check</TD>
+<TD>"DT_INICIO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DT_INICIO</TD>
+</TR>
+<TR>
+<TD>SYS_C0031117</TD>
+<TD>Check</TD>
+<TD>"VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_DECLARACAO_AGENTEAUXILIAR_ATO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_DECLARACAO_AGENTEAUXILIAR_ATO</TD>
+</TR>
+<TR>
+<TD>UK_CD_DECLARACAO_AGENTEAUXILIAR_ATO</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>CD_DECLARACAO_AGENTEAUXILIAR_ATO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_DECLARACAO_AGENTEAUXILIAR_ATO does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

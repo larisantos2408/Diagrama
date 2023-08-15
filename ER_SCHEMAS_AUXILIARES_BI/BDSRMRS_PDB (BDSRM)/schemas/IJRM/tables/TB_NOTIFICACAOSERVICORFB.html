@@ -1,0 +1,428 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_NOTIFICACAOSERVICORFB</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_NOTIFICACAO_FLUXO_UNID.html" TITLE="TB_NOTIFICACAO_FLUXO_UNID">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables3.html#TB_NOTIFICACAOSERVICORFB">Table TB_NOTIFICACAOSERVICORFB</A></TD>
+<TD Class="NavR"><A HREF="./TB_OFICIO.html" TITLE="TB_OFICIO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TB_NOTIFICACAOSERVICORFB</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Notificações serviço disponível Receita Federal do Brasil</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_NOTIFICACAOSERVICORFB</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_NOTIFICACAOSERVICORFB</B></TD>
+<TD nowrap>NUMBER(19)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>CD_SERVICO</TD>
+<TD nowrap>VARCHAR2(3 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>CD_SERVICO_DISPONIVEL</TD>
+<TD nowrap>VARCHAR2(3 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">4</TD>
+<TD>NU_PROTOCOLO</TD>
+<TD nowrap>VARCHAR2(13 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>NU_OCORRENCIA</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>NU_VERSAO</TD>
+<TD nowrap>VARCHAR2(6 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">7</TD>
+<TD>NU_RECIBO</TD>
+<TD nowrap>VARCHAR2(10 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">8</TD>
+<TD>NU_IDENTIFICADOR</TD>
+<TD nowrap>VARCHAR2(14 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumRed">9</TD>
+<TD>NU_ATO_OFICIO</TD>
+<TD nowrap>VARCHAR2(25 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>CD_CONVENIO</TD>
+<TD nowrap>VARCHAR2(4 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">12</TD>
+<TD>CD_PROCESSADA</TD>
+<TD nowrap>CHAR(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica se o serviço notificado foi processada, sendo: S - processado com sucesso, E - processado com erro)</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>DT_GRAVACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>UF</TD>
+<TD nowrap>VARCHAR2(2 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>NU_CNPJ_MEI</TD>
+<TD nowrap>VARCHAR2(14 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>ENVIADO QUANDO FOR UMA NOTIFICAÇÃO DE RECEBIMENTO DE MEI, OBRIGATÓRIO QUANDO O CAMPOS IN_MEI FOR PREENCHIDO</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>IN_MEI</TD>
+<TD nowrap>VARCHAR2(1 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>(I=INSCRICAO, A= ALTERACAO, B = BAIXA, E = ENQUADRAMENTO, D = DESENQUADRAMENTO, N = ALTERACAO DE NOME NA BASE CPF DA RECEITA FEDERAL)</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>DT_EVENTO_MEI</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>DATA DO EVENTO DO MEI, OBRIGATÓRIO QUANDO O CAMPOS IN_MEI FOR PREENCHIDO</TD>
+</TR>
+<TR>
+<TD Class="NumRed">18</TD>
+<TD>CD_PROCESSADO_IE</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica se o registro foi recuperado pelo novo integrador estadual. S = Sim</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>CD_DBE_FASE04</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>S indica que os DBE foram gerados após a implantação da fase 04, onde é necessário chamar o serviço de validação cadastral para tais DBEs.</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>NU_TENTATIVAS_ENVIO_S04</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica o número de tentiva tentou enviar o serviço S04 (validação cadastral) para o DBE.</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>CD_PROCESSADA_VALIDACAO</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica se o serviço de validação cadastral do DBE (S04) foi enviado, sendo: S - processado com sucesso, E - processado com erro)</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>DT_ENVIO_S04</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Indica a data/hora que o serviço de validação cadastral do dbe (s04) foi enviado.</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>DS_ERRO</TD>
+<TD nowrap>VARCHAR2(15000 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Descrição do erro ocorrido no processamento da notificação</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>NU_CNPJ</TD>
+<TD nowrap>VARCHAR2(14 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>CNPJ do registro da notificação da RFB</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_NOTIFICACAOSERVICORFB</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_NOTIFICACAOSERVICORFB_M</TD>
+<TD>NORMAL</TD>
+<TD>CD_SERVICO_DISPONIVEL, CD_PROCESSADA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_NOTIFICACAOSERVICORFB_01</TD>
+<TD>NORMAL</TD>
+<TD>NU_IDENTIFICADOR, CD_SERVICO_DISPONIVEL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_NOTIFICACAOSERVICORFB_02</TD>
+<TD>NORMAL</TD>
+<TD>NU_ATO_OFICIO, CD_SERVICO_DISPONIVEL, CD_PROCESSADO_IE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_NOTIFICACAOSERVICORFB_03</TD>
+<TD>NORMAL</TD>
+<TD>NU_RECIBO, CD_SERVICO_DISPONIVEL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_NOTIFICACAOSERVICORFB_04</TD>
+<TD>NORMAL</TD>
+<TD>NU_PROTOCOLO, CD_SERVICO_DISPONIVEL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_NOTIFSERRFB_CDPROCESSADOIE</TD>
+<TD>NORMAL</TD>
+<TD>CD_PROCESSADO_IE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_NOTIFSERRFB_CDSERVICODISP</TD>
+<TD>NORMAL</TD>
+<TD>CD_SERVICO_DISPONIVEL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_NOTIFSERRFB_DTGRAVACAO</TD>
+<TD>FUNCTION-BASED NORMAL</TD>
+<TD>TRUNC("DT_GRAVACAO")</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_NOTIFICACAOSERVICORFB</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_NOTIFICACAOSERVICORFB</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_NOTIFICACAOSERVICORFB</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>CK_IN_MEI</TD>
+<TD>Check</TD>
+<TD>IN_MEI IN ('I','A','B','E','D','N')</TD>
+<TD>ENABLED</TD>
+<TD>IN_MEI</TD>
+</TR>
+<TR>
+<TD>SYS_C0012362</TD>
+<TD>Check</TD>
+<TD> CD_DBE_FASE04 IN ('S','N') </TD>
+<TD>ENABLED</TD>
+<TD>CD_DBE_FASE04</TD>
+</TR>
+<TR>
+<TD>SYS_C0012363</TD>
+<TD>Check</TD>
+<TD> CD_PROCESSADA_VALIDACAO IN ('S','E') </TD>
+<TD>ENABLED</TD>
+<TD>CD_PROCESSADA_VALIDACAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_NOTIFICACAOSERVICORFB</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_NOTIFICACAOSERVICORFB</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_NOTIFICACAOSERVICORFB does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>

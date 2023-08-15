@@ -1,0 +1,271 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>IJRM Table TB_VISUALIZACAO_COMUNICACAO_VERSAO</TITLE>
+</HEAD>
+<CENTER class="h1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+<HR ALIGN="center">
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema IJRM</div></CENTER>
+<center><div class="subtitle1">Oracle Version 19.0.0.0.0</div></CENTER>
+<center><div class="subtitle2">As Of 15/08/2023 12:34:23</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../../../../master.html">Schema Index</a></li>
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./TB_VINCULO_EVENTO_JUNTA_RFB.html" TITLE="TB_VINCULO_EVENTO_JUNTA_RFB">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables4.html#TB_VISUALIZACAO_COMUNICACAO_VERSAO">Table TB_VISUALIZACAO_COMUNICACAO_VERSAO</A></TD>
+<TD Class="NavR"><A HREF="./TB_VOTACAO.html" TITLE="TB_VOTACAO">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TB_VISUALIZACAO_COMUNICACAO_VERSAO</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>SEQ_VISUALIZACAO_COMUNICACAO_VERSAO</B></TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave primária</TD>
+</TR>
+<TR>
+<TD Class="NumRed">2</TD>
+<TD>SEQ_USUARIO</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela ijss.tb_usuario</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>SEQ_SISTEMA</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela ijrm.TX_SISTEMA_CONTROLE_VERSAO</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>DT_VISUALIZACAO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Data de visualização da comunicação de versão</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>VERSAO</TD>
+<TD nowrap>NUMBER(10)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Versão do registro</TD>
+</TR>
+<TR>
+<TD Class="NumRed">6</TD>
+<TD>SEQ_JUNTA_COMERCIAL</TD>
+<TD nowrap>NUMBER(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Chave estrangeira para a tabela ijrm.tb_junta_comercial</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>NU_CPF</TD>
+<TD nowrap>VARCHAR2(11 CHAR)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Numero do CPF.</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TB_VISUALIZACAO_COMUNICACAO_VERSAO</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_VISUALIZACAOCOMUNICACAOVERSAO_SEQJUNTACOMERCIAL</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_JUNTA_COMERCIAL</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_VISUALIZACAOCOMUNICACAOVERSAO_SEQSISTEMA</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_SISTEMA</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>IDX_VISUALIZACAOCOMUNICACAOVERSAO_SEQUSUARIO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>PK_TB_VISUALIZACAO_COMUNICACAO_VERSAO</TD>
+<TD>NORMAL</TD>
+<TD>SEQ_VISUALIZACAO_COMUNICACAO_VERSAO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TB_VISUALIZACAO_COMUNICACAO_VERSAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FK_VISUALIZACAOCOMUNICACAOVERSAO_SISTEMACONTROLEVERSAO</TD>
+<TD>SEQ_SISTEMA</TD>
+<TD>IJRM</TD>
+<TD><A NAME="TX_SISTEMA_CONTROLE_VERSAO" HREF="../tables/TX_SISTEMA_CONTROLE_VERSAO.html">TX_SISTEMA_CONTROLE_VERSAO</A></TD>
+<TD>SEQ_SISTEMA</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FK_VISUALIZACAOCOMUNICACAOVERSAO_USUARIO</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>IJSS</TD>
+<TD>TB_USUARIO</TD>
+<TD>SEQ_USUARIO</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TB_VISUALIZACAO_COMUNICACAO_VERSAO</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0023999</TD>
+<TD>Check</TD>
+<TD>"SEQ_VISUALIZACAO_COMUNICACAO_VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_VISUALIZACAO_COMUNICACAO_VERSAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0024001</TD>
+<TD>Check</TD>
+<TD>"SEQ_SISTEMA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_SISTEMA</TD>
+</TR>
+<TR>
+<TD>SYS_C0024002</TD>
+<TD>Check</TD>
+<TD>"DT_VISUALIZACAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DT_VISUALIZACAO</TD>
+</TR>
+<TR>
+<TD>SYS_C0024003</TD>
+<TD>Check</TD>
+<TD>"VERSAO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSAO</TD>
+</TR>
+<TR>
+<TD>PK_TB_VISUALIZACAO_COMUNICACAO_VERSAO</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SEQ_VISUALIZACAO_COMUNICACAO_VERSAO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TB_VISUALIZACAO_COMUNICACAO_VERSAO does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR ALIGN="center">
+<CENTER class="f1">IJSS / IJRM / PORTAL SERVIÇOS / BALCÃO ÚNICO</CENTER>
+</BODY>
+</HTML>
